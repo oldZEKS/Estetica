@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/ZEKSTK/Downloads/estetica%20(3).html -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Estética — Q&amp;A</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Estética — Q&amp;A_files/css2" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#111;color:#f0f0ec;font-family:'Archivo',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased}
+
+/* HEADER */
+header{padding:40px 20px 28px;border-bottom:1px solid #222}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#444;margin-bottom:16px}
+h1{font-family:'Archivo Black',sans-serif;font-size:clamp(52px,16vw,80px);line-height:.88;letter-spacing:-.04em;color:#f0f0ec;margin-bottom:24px}
+h1 em{font-style:normal;color:#2e2e2e}
+
+/* SEARCH */
+.search-wrap{position:relative;margin-bottom:0}
+.search-wrap input{
+  width:100%;background:#1a1a1a;border:1px solid #2e2e2e;
+  color:#f0f0ec;font-family:'Archivo',sans-serif;font-size:16px;
+  padding:14px 44px 14px 16px;outline:none;border-radius:0;
+  -webkit-appearance:none;transition:border-color .2s
+}
+.search-wrap input::placeholder{color:#444}
+.search-wrap input:focus{border-color:#555}
+.s-icon,.s-clear{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:#555;cursor:pointer;font-size:18px;line-height:1;padding:4px}
+.s-clear{display:none;color:#888}
+.s-clear:hover{color:#f0f0ec}
+
+/* STATS */
+.stats{display:flex;gap:24px;padding:14px 20px;border-bottom:1px solid #1e1e1e;background:#0d0d0d}
+.stat-num{font-family:'Archivo Black',sans-serif;font-size:18px;color:#f0f0ec;letter-spacing:-.04em;margin-right:5px}
+.stat-lbl{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#444}
+#result-bar{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#444;align-self:center}
+
+/* SECTIONS */
+main{background:#f6f6f2}
+.section-block{}
+.section-header{
+  display:flex;align-items:baseline;gap:12px;
+  padding:28px 20px 16px;
+  border-bottom:1px solid #ddddd8;
+  position:sticky;top:0;background:#f6f6f2;z-index:10
+}
+.sec-letter{font-family:'Archivo Black',sans-serif;font-size:28px;color:#ccc;letter-spacing:-.04em;line-height:1}
+.sec-name{font-size:12px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.06em}
+
+/* CARDS */
+.q-card{
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e4e4e0;
+  display:grid;grid-template-columns:32px 1fr;gap:0;
+  background:#f6f6f2
+}
+.q-num{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#ccc;padding-top:3px;font-weight:400}
+.q-question{font-size:14px;font-weight:700;line-height:1.4;color:#1a1a1a;margin-bottom:10px;letter-spacing:-.01em}
+.q-answer{font-size:13px;line-height:1.68;color:#6a6a6a;font-weight:400}
+mark{background:#1a1a1a;color:#f6f6f2;padding:0 1px;border-radius:0}
+
+/* EMPTY */
+.empty-state{display:none;padding:64px 20px;text-align:center;background:#f6f6f2}
+.empty-big{font-family:'Archivo Black',sans-serif;font-size:72px;color:#e0e0da;letter-spacing:-.06em;line-height:1;margin-bottom:12px}
+.empty-msg{font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#aaa}
+
+/* HIDDEN */
+.section-block.hidden{display:none}
+.q-card.hidden{display:none}
+
+/* FOOTER */
+footer{background:#0d0d0d;padding:20px;border-top:1px solid #1e1e1e}
+.foot{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#333;text-transform:uppercase;letter-spacing:.1em;line-height:1.8}
+</style>
+</head>
+<body>
+
+<header>
+  <p class="tag">Estética — Questões &amp; Respostas</p>
+  <h1><em>—</em><br>Estética</h1>
+  <div class="search-wrap">
+    <input type="search" id="s" placeholder="Pesquisar…" autocomplete="off" spellcheck="false">
+    <svg class="s-icon" id="sIco" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    <button class="s-clear" id="sClr" aria-label="Limpar" style="display: block;">×</button>
+  </div>
+</header>
+
+<div class="stats">
+  <span><span class="stat-num">50</span><span class="stat-lbl">Questões</span></span>
+  <span><span class="stat-num">5</span><span class="stat-lbl">Secções</span></span>
+  <span id="result-bar">5 resultados</span>
+</div>
+
+<main id="main">
+
+<div class="section-block hidden" id="sec-a">
+  <div class="section-header"><span class="sec-letter">A</span><span class="sec-name">Fundamentos da estética</span></div>
+  <div class="q-card hidden" data-q="1"><span class="q-num">01</span><div><p class="q-question">Explique o significado do termo estética e a sua origem no conceito grego aisthesis.</p><p class="q-answer">O termo estética significa aquilo que se nota ou se percebe, estando ligado à perceção sensorial. Indica a teoria do conhecimento do sensível.</p></div></div>
+  <div class="q-card hidden" data-q="2"><span class="q-num">02</span><div><p class="q-question">Por que razão a estética pode ser entendida como uma disciplina filosófica autónoma?</p><p class="q-answer">A estética explora princípios fundamentais que regem a experiência estética sem depender diretamente de outros campos. O seu escopo inclui a análise de propriedades e conceitos estéticos, o estudo da expressão artística e da criatividade, e a relação entre juízos estéticos e contextos culturais ou históricos. Tem objeto próprio de estudo, usa métodos próprios e procura fundamentos próprios; a experiência estética possui validade própria, não derivada de outras áreas.</p></div></div>
+  <div class="q-card hidden" data-q="3"><span class="q-num">03</span><div><p class="q-question">Explique a contribuição de Alexander Baumgarten para a fundação da estética moderna.</p><p class="q-answer">Baumgarten atribuiu o atual significado ao termo estética, designando-a como ciência que trata do conhecimento sensorial, que chega à apreensão do belo e se expressa nas imagens da arte.</p></div></div>
+  <div class="q-card hidden" data-q="4"><span class="q-num">04</span><div><p class="q-question">O que significa afirmar que, para Baumgarten, a estética é a "ciência do conhecimento sensível"?</p><p class="q-answer">Significa que Baumgarten introduziu a estética como ciência do conhecimento sensorial, propondo um estudo sistemático paralelo à lógica, mas focado na experiência sensível em vez do intelecto.</p></div></div>
+  <div class="q-card hidden" data-q="5"><span class="q-num">05</span><div><p class="q-question">Explique a ideia de beleza como perfeição sensível em Baumgarten.</p><p class="q-answer">A perfeição sensível envolve a plenitude harmoniosa que a mente apreende não pela razão, mas pela cognição sensorial. Ela proporciona prazer quando um objeto é percebido de forma rica, vívida e unificada, aproximando-se da ideia do objeto.</p></div></div>
+  <div class="q-card hidden" data-q="6"><span class="q-num">06</span><div><p class="q-question">Qual é a diferença entre conhecimento sensorial e conhecimento lógico no pensamento de Baumgarten?</p><p class="q-answer">A lógica procura a verdade através da razão, enquanto a estética procura compreender a perfeição e a riqueza da experiência sensível.</p></div></div>
+  <div class="q-card hidden" data-q="7"><span class="q-num">07</span><div><p class="q-question">Explique por que razão a estética não deve ser reduzida apenas ao estudo do belo.</p><p class="q-answer">Limitar a estética unicamente ao belo restringe o seu âmbito e ignora o leque mais vasto de experiências humanas envolvidas na perceção artística e sensorial, como o sublime, o feio, o grotesco, o trágico, o cómico e o kitsch.</p></div></div>
+  <div class="q-card hidden" data-q="8"><span class="q-num">08</span><div><p class="q-question">Analise a relação entre estética, perceção e experiência sensorial na arquitetura.</p><p class="q-answer">A arquitetura não é meramente o produto de estruturas físicas; é também uma experiência imersiva que envolve os sentidos e as faculdades cognitivas humanas. A estética diz respeito aos princípios e qualidades que determinam a beleza e o poder expressivo do objeto. A perceção refere-se à forma como os seres humanos interpretam a informação sensorial para formar uma compreensão do ambiente.</p></div></div>
+  <div class="q-card hidden" data-q="9"><span class="q-num">09</span><div><p class="q-question">Por que razão a estética é considerada uma dimensão irredutível da experiência humana?</p><p class="q-answer">Porque envolve perceções, emoções e julgamentos que vão além do aspeto funcional. Está ligada à maneira como percebemos e valorizamos a arte, a beleza, a harmonia e a forma, constituindo parte fundamental da nossa vivência e compreensão do mundo.</p></div></div>
+  <div class="q-card hidden" data-q="10"><span class="q-num">10</span><div><p class="q-question">Explique a diferença entre juízo estético, preferência pessoal e gosto subjetivo.</p><p class="q-answer">O juízo estético procura justificar por que algo é considerado belo. A preferência pessoal refere-se ao que cada indivíduo gosta ou não gosta. O gosto subjetivo está relacionado com as características individuais, experiências e sensibilidades de cada pessoa.</p></div></div>
+</div>
+
+<div class="section-block" id="sec-b">
+  <div class="section-header"><span class="sec-letter">B</span><span class="sec-name">Kant, Hegel e juízo estético</span></div>
+  <div class="q-card hidden" data-q="11"><span class="q-num">11</span><div><p class="q-question">Explique o conceito kantiano de juízo de gosto.</p><p class="q-answer">Refere-se a um juízo que determina a beleza ou agradabilidade de um objeto sem se fixar em conceitos ou propriedades objetivas, mas sim num sentimento subjetivo de prazer ou desprazer. O objeto é considerado belo sem ter em conta a sua utilidade ou valor moral.</p></div></div>
+  <div class="q-card hidden" data-q="12"><span class="q-num">12</span><div><p class="q-question">O que significa dizer que o juízo de gosto é universal sem conceito?</p><p class="q-answer">Significa que, embora o juízo de gosto não se baseie em conceitos ou regras definidas, ele reivindica uma validade universal. Quando alguém faz um juízo de gosto, espera que outros possam concordar.</p></div></div>
+  <div class="q-card hidden" data-q="13"><span class="q-num">13</span><div><p class="q-question">Explique a noção kantiana de prazer desinteressado.</p><p class="q-answer">É o prazer que sentimos diante do belo sem querer possuir, usar ou tirar proveito do objeto. Trata-se de uma apreciação pura, livre de interesse prático, moral ou material.</p></div></div>
+  <div class="q-card hidden" data-q="14"><span class="q-num">14</span><div><p class="q-question">Distinga, segundo Kant, beleza livre e beleza aderente, aplicando a distinção à arquitetura.</p><p class="q-answer">Na arquitetura, a beleza livre pode ser encontrada em elementos decorativos que encantam simplesmente pela sua forma e proporção. A beleza aderente é aquela em que o atrativo está ligado ao modo como o design serve a função ou expressa o seu propósito.</p></div></div>
+  <div class="q-card hidden" data-q="15"><span class="q-num">15</span><div><p class="q-question">Como pode ser aplicado o pensamento de Kant à avaliação estética de um edifício?</p><p class="q-answer">Pode ser aplicado avaliando o efeito estético produzido pelo edifício, e não apenas a sua utilidade. Devem ser consideradas a forma, a harmonia, o prazer desinteressado e, ao mesmo tempo, o facto de que a arquitetura pode possuir uma beleza aderente, ligada à função.</p></div></div>
+  <div class="q-card" data-q="16"><span class="q-num">16</span><div><p class="q-question">Explique a afirmação de <mark>Hegel</mark> segundo a qual a arte é a manifestação sensível da ideia.</p><p class="q-answer">A arte é o lugar onde a ideia pode ser contemplada. É através da arte que o ser humano ganha perceção de si mesmo e transforma algo exterior ou alheio ao espírito em algo próprio.</p></div></div>
+  <div class="q-card" data-q="17"><span class="q-num">17</span><div><p class="q-question">Para <mark>Hegel</mark>, por que razão a beleza artística é superior à beleza natural?</p><p class="q-answer">Porque a obra artística nasce do espírito humano, expressa uma ideia e possui intenção. A natureza pode ser bela, mas não possui a mesma intenção estética consciente que existe na criação artística.</p></div></div>
+</div>
+
+<div class="section-block" id="sec-c">
+  <div class="section-header"><span class="sec-letter">C</span><span class="sec-name">Estética e arquitetura</span></div>
+  <div class="q-card" data-q="18"><span class="q-num">18</span><div><p class="q-question">Explique as três formas históricas de arte em <mark>Hegel</mark>: simbólica, clássica e romântica.</p><p class="q-answer">Forma simbólica: excessiva, quando o conteúdo é maior que a forma. Forma clássica: equilíbrio entre forma e conteúdo; a forma representa a expressão adequada do espírito. Forma romântica: desloca-se para o interior, a subjetividade e o espiritual, revelando a inadequação da matéria para expressar o espírito infinito.</p></div></div>
+  <div class="q-card" data-q="19"><span class="q-num">19</span><div><p class="q-question">Qual é o lugar da arquitetura no sistema estético de <mark>Hegel</mark>?</p><p class="q-answer">A arquitetura é considerada a primeira arte, pois organiza a matéria e cria espaços adequados para a manifestação do espírito humano, trabalhando com a exterioridade e a materialidade.</p></div></div>
+  <div class="q-card" data-q="20"><span class="q-num">20</span><div><p class="q-question">Compare a conceção de beleza de Kant e <mark>Hegel</mark>.</p><p class="q-answer">Kant enfatiza a experiência estética como subjetiva e desinteressada, na qual o belo é percebido sem a intervenção de conceitos ou interesses. <mark>Hegel</mark> propõe uma filosofia da arte que considera a relação entre reflexão intelectual, contexto histórico, experiência artística e busca do conhecimento do espírito.</p></div></div>
+  <div class="q-card hidden" data-q="21"><span class="q-num">21</span><div><p class="q-question">Explique a diferença entre estética arquitetónica e teoria arquitetónica.</p><p class="q-answer">A teoria arquitetónica fornece métodos para alcançar fins conhecidos. A estética arquitetónica procura compreender o valor universal e abstrato presente na apreciação da arquitetura.</p></div></div>
+  <div class="q-card hidden" data-q="22"><span class="q-num">22</span><div><p class="q-question">Segundo Roger Scruton, por que razão a arquitetura não pode ser entendida apenas como técnica?</p><p class="q-answer">Porque a arquitetura possui uma dimensão que transcende o puro construir. Ela envolve reflexão sobre a experiência da beleza e sobre a necessidade humana de uma relação emocional com o espaço.</p></div></div>
+  <div class="q-card hidden" data-q="23"><span class="q-num">23</span><div><p class="q-question">Explique a ideia de que arquitetura é uma arte pública e uma responsabilidade cívica.</p><p class="q-answer">A arquitetura molda espaços, ambientes e comunidades, impactando o quotidiano e o bem-estar das pessoas. Por isso, contribui para a identidade cultural e assume uma responsabilidade cívica.</p></div></div>
+  <div class="q-card hidden" data-q="24"><span class="q-num">24</span><div><p class="q-question">Por que razão a beleza arquitetónica não pode ser reduzida à eficiência funcional?</p><p class="q-answer">A beleza arquitetónica reside na capacidade de um edifício despertar emoção através da contemplação, algo que a eficiência funcional, por si só, não consegue suscitar de forma plena.</p></div></div>
+  <div class="q-card hidden" data-q="25"><span class="q-num">25</span><div><p class="q-question">Explique a diferença entre construir corretamente e construir com valor estético.</p><p class="q-answer">Construir corretamente significa conhecer os métodos para alcançar fins conhecidos, como funcionalidade, estabilidade e utilidade. Construir com valor estético procura também o porquê da apreciação, conferindo ao edifício identidade e capacidade de despertar emoções.</p></div></div>
+  <div class="q-card hidden" data-q="26"><span class="q-num">26</span><div><p class="q-question">Analise a relação entre forma, função e significado na arquitetura.</p><p class="q-answer">A forma organiza o espaço; a função responde às necessidades de uso; e o significado expressa valores culturais, simbólicos e sociais.</p></div></div>
+  <div class="q-card hidden" data-q="27"><span class="q-num">27</span><div><p class="q-question">Em que sentido a teoria arquitetónica fornece regras práticas enquanto a estética interroga o valor da experiência?</p><p class="q-answer">A teoria pergunta como projetar; a estética pergunta por que esse projeto emociona, comunica, representa e adquire significado.</p></div></div>
+  <div class="q-card hidden" data-q="28"><span class="q-num">28</span><div><p class="q-question">Por que razão a estética exige argumentação racional?</p><p class="q-answer">Porque a análise estética deve basear-se em critérios como proporção, coerência e contexto. Isso evita reduzir o debate crítico à simples afirmação "gosto" ou "não gosto", distinguindo o juízo de gosto da mera preferência pessoal.</p></div></div>
+  <div class="q-card hidden" data-q="29"><span class="q-num">29</span><div><p class="q-question">Como a proporção, a escala e a materialidade criam experiência estética na arquitetura?</p><p class="q-answer">A proporção cria ordem; a escala define a relação com o corpo humano; a materialidade produz textura, peso, temperatura e atmosfera. Juntas, essas dimensões criam experiência estética.</p></div></div>
+  <div class="q-card hidden" data-q="30"><span class="q-num">30</span><div><p class="q-question">Explique a importância da perceção corporal na experiência arquitetónica.</p><p class="q-answer">Habitamos a arquitetura com o corpo. Os nossos sentidos moldam a interação com o espaço e produzem respostas emocionais aos ambientes.</p></div></div>
+</div>
+
+<div class="section-block hidden" id="sec-d">
+  <div class="section-header"><span class="sec-letter">D</span><span class="sec-name">Beleza, função, sustentabilidade e cultura</span></div>
+  <div class="q-card hidden" data-q="31"><span class="q-num">31</span><div><p class="q-question">Discuta a tensão entre função e beleza na arquitetura.</p><p class="q-answer">A arquitetura deve responder às necessidades práticas sem perder qualidade estética.</p></div></div>
+  <div class="q-card hidden" data-q="32"><span class="q-num">32</span><div><p class="q-question">Como o Edifício Seagram, de Mies van der Rohe, demonstra valor estético?</p><p class="q-answer">O Seagram Building mostra que um edifício funcional pode ter valor estético pela proporção, rigor estrutural, simplicidade, praça frontal, uso do vidro e bronze, e clareza formal. Porém, também pode ser criticado por representar uma arquitetura corporativa, universal e pouco adaptada a certos contextos.</p></div></div>
+  <div class="q-card hidden" data-q="33"><span class="q-num">33</span><div><p class="q-question">A função pode ser fonte de valor estético?</p><p class="q-answer">Sim. A função pode gerar valor estético quando produz ordem, clareza e harmonia.</p></div></div>
+  <div class="q-card hidden" data-q="34"><span class="q-num">34</span><div><p class="q-question">Discuta a tensão entre sustentabilidade e estética.</p><p class="q-answer">A sustentabilidade cria tensão com a estética quando é tratada apenas como obrigação técnica. Porém, pode transformar a linguagem do edifício através de sombras, vegetação, materiais locais, ventilação natural e relação com o clima. A sustentabilidade não precisa negar a beleza; pode tornar-se parte da sua expressão.</p></div></div>
+  <div class="q-card hidden" data-q="35"><span class="q-num">35</span><div><p class="q-question">A sustentabilidade pode constituir uma linguagem estética na arquitetura contemporânea?</p><p class="q-answer">Sim. Elementos como brises, fachadas ventiladas, coberturas verdes, pátios, materiais naturais e sistemas passivos podem definir a imagem do edifício. A resposta ambiental deixa de ser apenas técnica e passa a fazer parte da expressão arquitetónica.</p></div></div>
+  <div class="q-card hidden" data-q="36"><span class="q-num">36</span><div><p class="q-question">Explique como a California Academy of Sciences, de Renzo Piano, articula sustentabilidade e expressão arquitetónica.</p><p class="q-answer">O projeto transforma soluções ambientais em elementos formais: a cobertura verde, a ventilação natural, a iluminação natural e os painéis solares reduzem o impacto ambiental, enquanto a forma do edifício se integra à paisagem.</p></div></div>
+  <div class="q-card hidden" data-q="37"><span class="q-num">37</span><div><p class="q-question">Discuta a tensão entre universalidade estética e relativismo cultural.</p><p class="q-answer">A universalidade estética defende que existem princípios de beleza válidos para todos. O relativismo cultural afirma que a beleza depende dos valores e tradições de cada sociedade.</p></div></div>
+  <div class="q-card hidden" data-q="38"><span class="q-num">38</span><div><p class="q-question">Como a obra de Lina Bo Bardi demonstra a relação entre modernidade, cultura e contexto?</p><p class="q-answer">As suas obras usam princípios modernos adaptados à realidade brasileira, valorizando a cultura popular, a memória e os espaços de convivência.</p></div></div>
+  <div class="q-card hidden" data-q="39"><span class="q-num">39</span><div><p class="q-question">Como a obra de Tadao Ando permite discutir luz, silêncio, matéria e universalidade estética?</p><p class="q-answer">Tadao Ando utiliza luz natural, betão aparente e espaços minimalistas para criar ambientes contemplativos, marcados pela simplicidade formal e pela valorização do vazio.</p></div></div>
+  <div class="q-card hidden" data-q="40"><span class="q-num">40</span><div><p class="q-question">A beleza arquitetónica é universal ou culturalmente condicionada?</p><p class="q-answer">É parcialmente universal e parcialmente culturalmente condicionada. Certos aspetos como escala, luz, conforto e proporção podem ser partilhados; porém, cada cultura interpreta materiais, cores, símbolos, formas e espaços de maneira própria.</p></div></div>
+  <div class="q-card hidden" data-q="41"><span class="q-num">41</span><div><p class="q-question">Quais são as principais características da arquitetura contemporânea?</p><p class="q-answer">Sustentabilidade, minimalismo, tecnologia, elementos de alto padrão e desconstrutivismo.</p></div></div>
+  <div class="q-card hidden" data-q="42"><span class="q-num">42</span><div><p class="q-question">Explique por que razão a arquitetura contemporânea não produz um cânone estético único.</p><p class="q-answer">Porque a arquitetura contemporânea mistura estilos, culturas, tecnologias e discursos diferentes. Já não existe uma regra dominante como no classicismo ou no modernismo. A pluralidade, a globalização, a sustentabilidade e a tecnologia digital impedem a existência de um cânone estético único.</p></div></div>
+</div>
+
+<div class="section-block hidden" id="sec-e">
+  <div class="section-header"><span class="sec-letter">E</span><span class="sec-name">Arquitetura contemporânea, lugar e crise estética</span></div>
+  <div class="q-card hidden" data-q="43"><span class="q-num">43</span><div><p class="q-question">Explique a relação entre pluralidade, tecnologia e sustentabilidade na arquitetura contemporânea.</p><p class="q-answer">A pluralidade permite múltiplas linguagens; a tecnologia permite novas formas e sistemas construtivos; a sustentabilidade obriga a repensar materiais, energia, clima e impacto ambiental. A arquitetura contemporânea nasce da tensão entre esses três fatores.</p></div></div>
+  <div class="q-card hidden" data-q="44"><span class="q-num">44</span><div><p class="q-question">Qual é a influência do minimalismo na arquitetura contemporânea?</p><p class="q-answer">O minimalismo valoriza simplicidade, redução formal, clareza, silêncio visual, geometria, luz e materialidade. Influencia edifícios com poucos elementos, mas grande intensidade espacial.</p></div></div>
+  <div class="q-card hidden" data-q="45"><span class="q-num">45</span><div><p class="q-question">Qual é a influência do desconstrutivismo na arquitetura contemporânea?</p><p class="q-answer">O desconstrutivismo introduz fragmentação, distorção, instabilidade visual, formas quebradas e recusa da ordem clássica. Produz edifícios impactantes, associados a arquitetos como Daniel Libeskind ou Zaha Hadid.</p></div></div>
+  <div class="q-card hidden" data-q="46"><span class="q-num">46</span><div><p class="q-question">Como as novas tecnologias digitais transformaram a conceção arquitetónica?</p><p class="q-answer">As tecnologias digitais transformaram a conceção arquitetónica através do desenho paramétrico, modelação 3D, BIM, simulações ambientais, fabricação digital e formas complexas antes difíceis de construir.</p></div></div>
+  <div class="q-card hidden" data-q="47"><span class="q-num">47</span><div><p class="q-question">Qual é a importância da noção de lugar na arquitetura?</p><p class="q-answer">A noção de lugar impede que a arquitetura seja genérica. Obriga o projeto a considerar clima, cultura, memória, materiais, topografia, modos de vida e identidade urbana.</p></div></div>
+  <div class="q-card hidden" data-q="48"><span class="q-num">48</span><div><p class="q-question">Quais são os riscos de negligenciar a estética na arquitetura?</p><p class="q-answer">Quando a estética é ignorada, surgem espaços frios, agressivos, desumanos, desorientadores ou sem identidade. A cidade perde qualidade, memória, conforto, dignidade e capacidade de criar pertença.</p></div></div>
+  <div class="q-card hidden" data-q="49"><span class="q-num">49</span><div><p class="q-question">Analise Pruitt-Igoe como crise urbana, social e estética.</p><p class="q-answer">Pruitt-Igoe é exemplo de fracasso da arquitetura moderna quando a solução funcional e racional não responde à vida real dos habitantes. O problema não foi só formal; envolveu pobreza, gestão, insegurança, segregação e perda de qualidade urbana.</p></div></div>
+  <div class="q-card hidden" data-q="50"><span class="q-num">50</span><div><p class="q-question">Explique a afirmação: "Um edifício pode cumprir a função, respeitar o orçamento e ainda assim fracassar como arquitetura."</p><p class="q-answer">Um edifício pode ser funcional e tecnicamente correto, mas falhar se não criar conforto, beleza, dignidade, relação com o lugar e valor urbano. A arquitetura não é apenas construção; é também cultura, perceção, uso, memória e vida coletiva.</p></div></div>
+</div>
+
+<div class="empty-state" id="empty" style="display: none;">
+  <p class="empty-big">0</p>
+  <p class="empty-msg">Sem resultados</p>
+</div>
+
+</main>
+
+<footer>
+  <p class="foot">Estética — Q&amp;A &nbsp;·&nbsp; Secções A–E &nbsp;·&nbsp; 50 questões</p>
+</footer>
+
+<script>
+const inp = document.getElementById('s');
+const clr = document.getElementById('sClr');
+const ico = document.getElementById('sIco');
+const empty = document.getElementById('empty');
+const bar = document.getElementById('result-bar');
+const secs = document.querySelectorAll('.section-block');
+
+function norm(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+
+function hl(text, q){
+  if(!q) return text;
+  const ln=norm(text), n=norm(q);
+  let r='', i=0;
+  while(i<text.length){
+    const x=ln.indexOf(n,i);
+    if(x===-1){r+=text.slice(i);break;}
+    r+=text.slice(i,x)+'<mark>'+text.slice(x,x+n.length)+'</mark>';
+    i=x+n.length;
+  }
+  return r;
+}
+
+// Cache original text BEFORE any innerHTML mutation
+const cards = Array.from(document.querySelectorAll('.q-card')).map(c=>({
+  el: c,
+  qEl: c.querySelector('.q-question'),
+  aEl: c.querySelector('.q-answer'),
+  qt: c.querySelector('.q-question').textContent,
+  at: c.querySelector('.q-answer').textContent,
+}));
+
+function search(){
+  const raw=inp.value.trim(), q=norm(raw);
+  clr.style.display=raw?'block':'none';
+  ico.style.display=raw?'none':'block';
+  let total=0;
+  cards.forEach(({el,qEl,aEl,qt,at})=>{
+    const match=!q||norm(qt).includes(q)||norm(at).includes(q);
+    el.classList.toggle('hidden',!match);
+    qEl.innerHTML=match?hl(qt,raw):qt;
+    aEl.innerHTML=match?hl(at,raw):at;
+    if(match) total++;
+  });
+  secs.forEach(s=>{
+    const vis=s.querySelectorAll('.q-card:not(.hidden)').length;
+    s.classList.toggle('hidden',vis===0);
+  });
+  empty.style.display=total===0?'block':'none';
+  bar.textContent=q?(total+' resultado'+(total!==1?'s':'')):'';
+}
+
+// 'input' + 'search' covers all browsers incl. iOS Safari native clear button
+inp.addEventListener('input', search);
+inp.addEventListener('search', search);
+clr.addEventListener('click',()=>{ inp.value=''; search(); inp.focus(); });
+inp.addEventListener('keydown',e=>{ if(e.key==='Escape'){inp.value='';search();} });
+</script>
+
+
+</body></html>
