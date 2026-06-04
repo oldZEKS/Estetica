@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>RCI — Representação, Comunicação & Imagem</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<title>RCI - Representação, Comunicação &amp; Imagem</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Archivo:wght@400;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -90,320 +91,524 @@ footer{background:#0c0c0c;padding:18px 20px;border-top:1px solid #181818}
 </style>
 </head>
 <body>
-
 <header>
-  <p class="tag">FAPF — Semestre II 2024</p>
-  <h1>RCI<span class="slash">—</span></h1>
-  <p class="h1-sub">Representação · Comunicação · Imagem</p>
-  <div class="search-wrap">
-    <input type="search" id="s" placeholder="Pesquisar questões…" autocomplete="off" spellcheck="false" inputmode="search">
-    <svg class="s-icon" id="sIco" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <button class="s-clear" id="sClr" aria-label="Limpar">×</button>
-  </div>
-</header>
-
-<div class="meta-bar">
-  <div class="m-item"><span class="m-num">50</span><span class="m-lbl">Questões</span></div>
-  <div class="m-item"><span class="m-num">3</span><span class="m-lbl">Capítulos</span></div>
-  <div class="m-item" style="border-right:none;margin-left:auto;padding-right:0"><span id="result-bar" class="m-lbl"></span></div>
+<p class="tag">FAPF - Semestre II 2024</p>
+<h1>RCI<span class="slash">·</span></h1>
+<p class="h1-sub">Representação · Comunicação · Imagem</p>
+<div class="search-wrap">
+<input autocomplete="off" id="s" inputmode="search" placeholder="Pesquisar questões…" spellcheck="false" type="search"/>
+<svg class="s-icon" fill="none" height="15" id="sIco" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+<button aria-label="Limpar" class="s-clear" id="sClr">×</button>
 </div>
-
+</header>
+<div class="meta-bar">
+<div class="m-item"><span class="m-num">50</span><span class="m-lbl">Questões</span></div>
+<div class="m-item"><span class="m-num">3</span><span class="m-lbl">Capítulos</span></div>
+<div class="m-item" style="border-right:none;margin-left:auto;padding-right:0"><span class="m-lbl" id="result-bar"></span></div>
+</div>
 <main id="main">
-
 <!-- ═══════════════════════════════════════════ CAP I ═══ -->
 <div class="chapter" id="cap-i">
-  <div class="chapter-header">
-    <span class="ch-num">I</span>
-    <span class="ch-name">Representação<br>Q1 – Q26</span>
-  </div>
-
-  <div class="q-card"><span class="q-num">01</span><div>
-    <p class="q-question">Defina, com rigor, o conceito de representação no contexto da arquitectura.</p>
-    <p class="q-answer">Representação em arquitectura é o processo de tornar presente algo que ainda não existe — um edifício por construir. Não é um registo do real, mas um acto projectivo que convoca o edifício à existência através de signos (desenhos, maquetes, modelos digitais, texto). Como escreveu Marx, "o que distingue o pior arquitecto da melhor abelha é que ele constrói na imaginação antes de construir na realidade".</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">02</span><div>
-    <p class="q-question">Explique a etimologia de repraesentare e a sua relevância para o pensamento arquitectónico.</p>
-    <p class="q-answer">Repraesentare, do latim, significa "tornar presente". A palavra contém uma tensão constitutiva: algo ausente é trazido à presença através de um signo. Em arquitectura, o projecto-representação está sempre entre o que existe (terreno, programa) e o que se convoca à existência (o edifício). O arquitecto representa o que ainda não é, mas que através da representação se torna possível.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">03</span><div>
-    <p class="q-question">Compare as perspectivas de Ockham, Descartes e Kant sobre a representação.</p>
-    <p class="q-answer">Ockham (séc. XIV): representação como signo mental que aponta para indivíduos concretos — só os indivíduos existem; os universais são apenas nomes. Descartes (séc. XVII): a ideia como imagem mental privada que representa o mundo externo — fosso entre mente e realidade. Kant (séc. XVIII): viragem copernicana — o mundo é organizado pelas categorias do sujeito; representar não é copiar o real, mas constituir o mundo que conhecemos. Em síntese: Ockham coloca a representação na linguagem; Descartes, na mente; Kant, na estrutura do entendimento.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">04</span><div>
-    <p class="q-question">Explique a diferença entre representação e representado, usando um exemplo arquitectónico.</p>
-    <p class="q-answer">A representação é o signo (desenho, maquete, render); o representado é aquilo a que o signo se refere (o edifício real ou projectado). O mapa não é o território. Exemplo: uma planta baixa de uma casa é a representação; a casa construída é o representado. A planta mostra paredes a duas dimensões, mas não mostra altura, textura, luz ou temperatura — o edifício real é sempre mais complexo que qualquer representação.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">05</span><div>
-    <p class="q-question">Desenvolva o princípio de que "o mapa não é o território" e aplique-o à arquitectura.</p>
-    <p class="q-answer">Formulado por Korzybski, o princípio afirma que qualquer representação é uma abstracção do real. Em arquitectura: (1) nenhum desenho capta a totalidade do edifício — cada representação é uma lente que revela certos aspectos e oculta outros; (2) a simplificação não é um defeito — é uma ferramenta cognitiva; (3) o arquitecto deve usar o mapa adequado para cada fase — um croquis no conceptual, o desenho técnico na execução, o render na comunicação com o cliente.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">06</span><div>
-    <p class="q-question">Explique por que razão a arquitectura ocupa uma posição intermédia entre o real e o representado.</p>
-    <p class="q-answer">A arquitectura é um tertium genus entre a ciência (que descreve o real) e a arte (que expressa o subjectivo). O projecto existe primeiro como representação (virtual), destina-se a tornar-se real (material), mas o edifício construído também comunica ideias e significados (representação). O arquitecto trabalha nesta dupla condição — lida simultaneamente com o real e o imaginado, o material e o simbólico.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">07</span><div>
-    <p class="q-question">Analise o papel da mimese na história da arte e a sua relação com a arquitectura.</p>
-    <p class="q-answer">Mimese (grego mímesis = imitação) é o conceito clássico de representação como imitação. Para Platão, a arte afasta-se da verdade ao imitar aparências. Para Aristóteles, a mimese é representação criativa — imita a essência, não a aparência. Em arquitectura, a boa mimese não imita — reinterpreta. A coluna clássica num edifício moderno é citação, transformação. A mimese arquitectónica é generativa, não repetitiva.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">08</span><div>
-    <p class="q-question">Distinga representação figurativa, simbólica e não-figurativa.</p>
-    <p class="q-answer">Figurativa: representa objectos reconhecíveis com aparência visual semelhante (render fotográfico, árvore na planta). Simbólica: representa ideias abstractas através de signos convencionados (círculo com cruz = altar; seta = circulação). Não-figurativa/abstracta: trabalha com qualidades formais puras — linha, cor, proporção (diagrama de relações espaciais, estudo de massas). As três coexistem na prática: figurativa para o público, simbólica para o técnico, abstracta para explorar conceitos.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">09</span><div>
-    <p class="q-question">Explique como a literatura demonstra a capacidade generativa da representação.</p>
-    <p class="q-answer">A literatura cria mundos que não existem através apenas de palavras — a Terra Média de Tolkien é o exemplo paradigmático: uma mitologia completa com geografia, línguas, história e culturas. A representação literária gera realidade imaginária com estrutura interna coerente. Em arquitectura, o mesmo princípio aplica-se: o projecto é um mundo possível que o arquitecto constrói primeiro como representação — a capacidade generativa da representação é o que permite "construir na imaginação antes de construir na realidade".</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">10</span><div>
-    <p class="q-question">Relacione cenografia e projecto arquitectónico enquanto formas de evocar mundos.</p>
-    <p class="q-answer">A cenografia cria espaços efémeros que evocam mundos — o palco é arquitectura temporária que o espectador habita com o olhar e a imaginação. O projecto arquitectónico faz o mesmo, mas com permanência. Cenografia: espaço para ser visto, narrativo, provisório. Arquitectura: espaço para ser habitado, funcional, durável. Ambas partilham a capacidade de evocar atmosferas através de luz, textura, escala e sequência espacial.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">11</span><div>
-    <p class="q-question">Caracterize a representação na cultura africana em contraste com modelos ocidentais dominantes.</p>
-    <p class="q-answer">A representação nas culturas africanas tradicionais: (1) não é prioritariamente visual/gráfica — passa pela palavra, gesto, corpo, ritual; (2) oralidade: o saber construtivo transmite-se por tradição oral, não por desenhos; (3) holística: não separa o funcional do espiritual; (4) colectiva: conhecimento distribuído na comunidade, não centralizado num autor; (5) processual: o edifício define-se durante a construção. O modelo ocidental dominante privilegia a representação gráfica, o autor individual e a pré-definição total.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">12</span><div>
-    <p class="q-question">Explique a relevância da tradição oral e gestual como formas de representação.</p>
-    <p class="q-answer">Oral: instruções verbais, histórias, provérbios que codificam técnicas construtivas e significados simbólicos — transmissão directa de mestre a aprendiz. Gestual: demonstração prática, gestos que indicam proporções, ângulos, distâncias — o corpo como instrumento de medida. Estas formas são mais flexíveis e adaptativas que o desenho: permitem ajustes em tempo real, incorporam conhecimento tácito e mantêm a relação directa entre quem concebe e quem constrói.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">13</span><div>
-    <p class="q-question">Analise o valor conceptual dos símbolos adinkra.</p>
-    <p class="q-answer">Adinkra é um sistema de símbolos visuais dos povos Akan (Gana) que codificam conceitos, provérbios e valores em formas gráficas simples. Valor para a arquitectura: (1) Síntese visual — um adinkra como Sankofa condensa uma ideia filosófica numa forma; (2) Linguagem partilhada — código visual colectivo compreendido pela comunidade; (3) Ornamento com significado — diferente do ornamento decorativo ocidental, os adinkra são significantes. Desafiam a dicotomia modernista entre ornamento e função.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">14</span><div>
-    <p class="q-question">Discuta o que a arquitectura contemporânea pode aprender com a arquitectura vernacular moçambicana.</p>
-    <p class="q-answer">A arquitectura vernacular moçambicana (palhotas, casas de macuti, esteios de madeira) ensina: (1) Clima como programa — soluções passivas de ventilação e gestão térmica milenares; (2) Matéria local como inteligência — o uso de terra, colmo, madeira é conhecimento profundo, não pobreza; (3) Flexibilidade e adaptação — a casa ajusta-se ao terreno e às necessidades; (4) Espaço como relação social — organizado pelas relações humanas, não por uma grelha abstracta; (5) Beleza como subproduto — a estética emerge do uso correcto dos materiais.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">15</span><div>
-    <p class="q-question">Identifique os principais marcos históricos da representação arquitectónica desde a Mesopotâmia até ao BIM.</p>
-    <p class="q-answer">Mesopotâmia (c. 1500 a.C.): primeiras plantas gravadas em pedra/argila. Egipto: representação por síntese informativa. Roma (séc. I a.C.): Vitrúvio sistematiza escalas e proporções. Renascença (séc. XV): Brunelleschi inventa a perspectiva linear; Alberti cria a tríade planta+corte+alçado. Séc. XVIII (1795): Monge — Geometria Descritiva. Séc. XIX: normalização e desenho técnico industrial. Séc. XX (Modernismo): o desenho como argumento. Séc. XXI: BIM — modelo paramétrico integrado com dados, simulação e gestão do ciclo de vida.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">16</span><div>
-    <p class="q-question">Explique a contribuição da Renascença para a sistematização da representação espacial.</p>
-    <p class="q-answer">A Renascença (séc. XV–XVI) criou: (1) Perspectiva linear (Brunelleschi, c. 1413) — sistema geométrico-matemático que simula a visão humana; (2) Alberti — formalizou matematicamente a perspectiva e codificou o desenho arquitectónico como disciplina intelectual; (3) Separação concepção-execução — o desenho passa a modelo preditivo; o arquitecto torna-se intelectual que projeta antes de construir; (4) Tríade canónica — planta + corte + alçado como linguagem universal. A representação passou de simbólica (medieval) para óptico-geométrica (moderna).</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">17</span><div>
-    <p class="q-question">Defina o papel de Rafael, Palladio ou Alberti na consolidação da linguagem arquitectónica.</p>
-    <p class="q-answer">Alberti (1404–1472): primeiro teórico a separar concepção de execução; De Re Aedificatoria (1452) sistematiza tipologias, proporções, desenho técnico — estabelece a arquitectura como disciplina intelectual. Rafael (1483–1520): sistematizou o desenho em planta, corte e alçado como linguagem complementar. Palladio (1508–1580): I Quattro Libri dell'Architettura (1570) difunde a linguagem clássica com clareza didáctica — um modelo que influenciou a arquitectura ocidental durante 400 anos. Os três consolidaram o sistema gráfico codificado como linguagem universal do arquitecto.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">18</span><div>
-    <p class="q-question">Explique a importância da geometria descritiva de Monge.</p>
-    <p class="q-answer">Gaspard Monge (Géométrie Descriptive, 1795) inventou o método de representar objectos tridimensionais através de projecções ortogonais em planos perpendiculares. Importância: (1) Rigor científico — representação com bases matemáticas exactas; (2) Reversibilidade — qualquer ponto em duas vistas permite reconstruir a sua posição no espaço; (3) Revolução industrial — permitiu fabricar peças complexas a partir de desenhos; (4) Base do BIM — a lógica de Monge (modelo 3D do qual se extraem vistas 2D) é conceptualmente a mesma do BIM contemporâneo.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">19</span><div>
-    <p class="q-question">Distinga croquis, desenho técnico e desenho de apresentação.</p>
-    <p class="q-answer">Croquis: primeiro pensamento, exploração — rápido, pessoal, imediato. Traço incerto que revela o que ainda não está decidido. Auto-comunicação. Desenho técnico: planta, corte, alçado rigorosos — exacto, normalizado, escala definida, cotas, simbologia convencional. Linguagem universal. Para construtores, engenheiros, fiscalização. Desenho de apresentação: comunicação do projecto a terceiros — curado, atmosférico, selectivo. Combina rigor com expressão. Para clientes, público, concursos. O croquis pergunta "o que pode ser?", o técnico afirma "como se faz", o de apresentação convence "porque vale a pena".</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">20</span><div>
-    <p class="q-question">Analise a afirmação: "representar é projectar".</p>
-    <p class="q-answer">A afirmação inverte a relação comum — em arquitectura, representar É projectar. O croquis não documenta uma ideia pré-existente — gera-a através do traço. A planta não é o registo do edifício — é o instrumento que permite descobrir relações espaciais. O modelo digital é um laboratório onde o projecto é testado. A representação é performática: faz acontecer o que mostra. Como escreveu Alberto Pérez-Gómez, a arquitectura não é uma ideia que depois se desenha — é um pensamento que só se completa no acto de desenhar.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">21</span><div>
-    <p class="q-question">Explique o valor da planta, do corte e do alçado na comunicação arquitectónica.</p>
-    <p class="q-answer">Planta: vista superior com corte horizontal (habitualmente a 1,50m do piso). Mostra organização espacial, circulações, dimensões horizontais — é o mapa do edifício. Corte: vista lateral com corte vertical. Mostra alturas, pé-direito, relação entre pisos, estrutura vertical — revela o que a planta esconde. Alçado: vista frontal do exterior. Mostra a imagem pública, composição de fachada, materiais. Cada vista revela o que as outras ocultam. Juntas permitem uma compreensão completa — código partilhado entre arquitecto, engenheiro, construtor e fiscalização.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">22</span><div>
-    <p class="q-question">Justifique por que o desenho técnico pode ser entendido como documento técnico e jurídico.</p>
-    <p class="q-answer">Documento técnico: contém todas as informações necessárias para construir (cotas, materiais, especificações, pormenores construtivos). Documento jurídico: faz parte do contrato de empreitada — o construtor obriga-se a executar o que está desenhado; qualquer alteração é uma alteração contratual; em caso de litígio, o desenho é a prova do que foi acordado. Por isso deve ser rigoroso, inequívoco, datado, numerado e assinado. Um erro de cota no desenho pode ter consequências legais e financeiras.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">23</span><div>
-    <p class="q-question">Analise a importância da maquete física no processo de concepção.</p>
-    <p class="q-answer">A maquete física é insubstituível porque oferece: (1) Relação corpórea — pode ser tocada, rodada, vista de todos os ângulos; (2) Luz real — sombras e reflexos físicos que nenhum render simula com a mesma verdade; (3) Escala real da mão — permite perceber como o espaço será habitado; (4) Exploração táctil — materiais, texturas, peso; (5) Erro produtivo — a maquete "erra" de forma diferente do digital, revelando descobertas que o modelo paramétrico não sugere. Alvar Aalto usava croquis para a ideia, maquete para testar luz e espaço, desenho técnico para construir.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">24</span><div>
-    <p class="q-question">Explique em que sentido o BIM pode ser entendido como imagem activa.</p>
-    <p class="q-answer">O BIM é uma imagem activa porque não é apenas uma representação visual — é uma base de dados paramétrica onde cada elemento contém informação: geometria, material, custo, U-value, fornecedor. Quando altera uma janela, o BIM actualiza automaticamente cortes, alçados e mapas de quantidades. Serve para análise solar, térmica, estrutural, acústica. O mesmo modelo serve para construir (4D: tempo), orçamentar (5D: custo) e gerir manutenção (6D: operação). Diferente do desenho que apenas mostra, o BIM calcula, relaciona e antecipa — é uma imagem que pensa.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">25</span><div>
-    <p class="q-question">Discuta a função da memória descritiva como instrumento de representação.</p>
-    <p class="q-answer">A memória descritiva é o texto que acompanha o projecto com funções específicas: (1) Explicar a intenção — o desenho mostra o quê; a memória explica o porquê; (2) Narrar o processo — descreve o percurso desde o programa até à solução; (3) Justificar opções — orçamento, condicionantes legais, materiais; (4) Registar o pensamento — referências teóricas, influências, partido arquitectónico; (5) Comunicar com não-técnicos — o cliente pode não ler plantas, mas lê texto. Uma boa memória descritiva não descreve o que já se vê no desenho — acrescenta camadas de sentido que o desenho sozinho não comunica.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">26</span><div>
-    <p class="q-question">Analise o papel da colagem e da fotomontagem na comunicação com públicos não técnicos.</p>
-    <p class="q-answer">Colagem: combina fragmentos de imagens reais (pessoas, árvores, texturas) com o desenho do projecto — cria atmosferas, sugere como o espaço será vivido. Fotomontagem: insere o projecto numa fotografia real do local — mostra relação com o contexto, escala urbana, impacto visual. Vantagens: comunicam emoção, escala humana, ambiente — o cliente não precisa de saber ler plantas para perceber "como vai ser viver aqui". Desvantagens: podem ser enganosas se distorcerem a realidade — esconder o contexto real ou distorcer proporções é eticamente problemático.</p>
-  </div></div>
+<div class="chapter-header">
+<span class="ch-num">I</span>
+<span class="ch-name">Representação<br/>Q1 – Q26</span>
 </div>
-
-
+<div class="q-card"><span class="q-num">01</span><div>
+<p class="q-question">Defina, com rigor, o conceito de representação no contexto da arquitectura.</p>
+<p class="q-answer">Representação em arquitectura é o modo de tornar visível uma ideia de espaço antes da obra existir. Ela pode aparecer em croquis, plantas, cortes, alçados, maquetes, modelos digitais, texto ou render. Também pode registar o existente, como num levantamento, mas no projecto tem uma função maior: ajuda a pensar, testar, comunicar e preparar a construção.</p>
+</div></div>
+<div class="q-card"><span class="q-num">02</span><div>
+<p class="q-question">Explique a etimologia de repraesentare e a sua relevância para o pensamento arquitectónico.</p>
+<p class="q-answer">Repraesentare vem do latim e significa tornar presente ou apresentar de novo. A palavra ajuda a entender o projecto arquitectónico porque o arquitecto trabalha com uma ausência: o edifício futuro. A representação traz essa ausência para o debate, tornando-a visível através de desenhos, modelos e textos.</p>
+</div></div>
+<div class="q-card"><span class="q-num">03</span><div>
+<p class="q-question">Compare as perspectivas de Ockham, Descartes e Kant sobre a representação.</p>
+<p class="q-answer">Para Ockham, a representação funciona como signo, ligando conceito, palavra e objecto. Para Descartes, a ideia é uma imagem mental que antecede a certeza sobre o mundo exterior. Para Kant, a representação organiza a percepção através das categorias do entendimento. Ockham aproxima a representação do signo, Descartes da mente, Kant da estrutura do conhecer.</p>
+</div></div>
+<div class="q-card"><span class="q-num">04</span><div>
+<p class="q-question">Explique a diferença entre representação e representado, usando um exemplo arquitectónico.</p>
+<p class="q-answer">A representação é o meio, como planta, maquete, mapa ou render. O representado é aquilo a que esse meio se refere, seja um edifício existente ou projectado. Uma planta de uma casa, por exemplo, não é a casa. Ela mostra paredes, vãos e relações espaciais, mas não contém luz, cheiro, temperatura nem uso real.</p>
+</div></div>
+<div class="q-card"><span class="q-num">05</span><div>
+<p class="q-question">Desenvolva o princípio de que "o mapa não é o território" e aplique-o à arquitectura.</p>
+<p class="q-answer">A frase significa que toda representação simplifica a realidade. Um mapa escolhe escala, símbolos e elementos a mostrar; deixa outros de fora. Em arquitectura acontece o mesmo. A planta não é o edifício, o corte não é a experiência do espaço e o render não é a obra vivida. Cada meio mostra uma parte e oculta outra.</p>
+</div></div>
+<div class="q-card"><span class="q-num">06</span><div>
+<p class="q-question">Explique por que razão a arquitectura ocupa uma posição intermédia entre o real e o representado.</p>
+<p class="q-answer">A arquitectura ocupa uma posição intermédia porque começa como representação e procura tornar-se realidade construída. O projecto representa um espaço que ainda não existe, mas que deve ser compreendido por cliente, técnicos, Estado e comunidade. Depois de construído, o próprio edifício também comunica valores, usos e identidades.</p>
+</div></div>
+<div class="q-card"><span class="q-num">07</span><div>
+<p class="q-question">Analise o papel da mimese na história da arte e a sua relação com a arquitectura.</p>
+<p class="q-answer">Mimese significa imitação ou representação da realidade. Na arte clássica, o termo esteve ligado à tentativa de representar a natureza e o mundo visível. Em arquitectura, a mimese aparece quando se retomam formas naturais, modelos históricos ou soluções vernaculares. O seu valor não está na cópia literal, mas na capacidade de reinterpretar essas referências.</p>
+</div></div>
+<div class="q-card"><span class="q-num">08</span><div>
+<p class="q-question">Distinga representação figurativa, simbólica e não-figurativa.</p>
+<p class="q-answer">A representação figurativa procura semelhança com objectos reconhecíveis, como um render realista ou o desenho de uma fachada. A simbólica usa signos convencionados para comunicar ideias, por exemplo setas de circulação ou cores num diagrama. A não figurativa abandona a semelhança directa e trabalha com linhas, massas, relações e proporções.</p>
+</div></div>
+<div class="q-card"><span class="q-num">09</span><div>
+<p class="q-question">Explique como a literatura demonstra a capacidade generativa da representação.</p>
+<p class="q-answer">A literatura mostra que a representação pode criar mundos inteiros sem depender de uma realidade prévia. A Terra Média de Tolkien existe através de mapas, descrições, línguas e histórias. No projecto arquitectónico há algo semelhante: antes de existir em obra, o edifício existe como mundo possível desenhado e descrito.</p>
+</div></div>
+<div class="q-card"><span class="q-num">10</span><div>
+<p class="q-question">Relacione cenografia e projecto arquitectónico enquanto formas de evocar mundos.</p>
+<p class="q-answer">A cenografia constrói mundos temporários com luz, cenário, som, escala e movimento. O projecto arquitectónico também evoca um mundo antes de existir fisicamente. A diferença principal está na permanência e no uso: o cenário é feito para produzir uma experiência representada; a arquitectura pretende ser habitada e durar.</p>
+</div></div>
+<div class="q-card"><span class="q-num">11</span><div>
+<p class="q-question">Caracterize a representação na cultura africana em contraste com modelos ocidentais dominantes.</p>
+<p class="q-answer">Nas culturas africanas, a representação nem sempre se concentra no desenho ou na perspectiva visual. Muitas vezes passa pela oralidade, pelo gesto, pela dança, pelo ritual, pela máscara e pelo símbolo. Em contraste, o modelo ocidental moderno privilegiou a representação gráfica, o autor individual e a definição prévia do edifício.</p>
+</div></div>
+<div class="q-card"><span class="q-num">12</span><div>
+<p class="q-question">Explique a relevância da tradição oral e gestual como formas de representação.</p>
+<p class="q-answer">A tradição oral e gestual mostra que a representação pode existir fora do papel. Técnicas, proporções, histórias e regras de uso do espaço podem ser transmitidas por fala, demonstração e prática. O corpo mede, ensina e corrige. Para a arquitectura, isso valoriza o conhecimento tácito e a relação directa com o lugar.</p>
+</div></div>
+<div class="q-card"><span class="q-num">13</span><div>
+<p class="q-question">Analise o valor conceptual dos símbolos adinkra.</p>
+<p class="q-answer">Os adinkra, originários dos Akan do Gana, são símbolos visuais que condensam provérbios, valores morais e ideias filosóficas. O seu valor conceptual está na síntese: uma forma simples comunica um pensamento complexo. Para a arquitectura, mostram que o ornamento pode carregar significado, memória e ética.</p>
+</div></div>
+<div class="q-card"><span class="q-num">14</span><div>
+<p class="q-question">Discuta o que a arquitectura contemporânea pode aprender com a arquitectura vernacular moçambicana.</p>
+<p class="q-answer">A arquitectura vernacular moçambicana ensina a responder ao clima, aos materiais disponíveis e aos modos de vida locais. Ventilação natural, sombra, coberturas leves, pátios, madeira, terra, colmo e macuti não devem ser vistos como atraso. São soluções acumuladas pela experiência e podem orientar uma arquitectura contemporânea mais adequada ao contexto.</p>
+</div></div>
+<div class="q-card"><span class="q-num">15</span><div>
+<p class="q-question">Identifique os principais marcos históricos da representação arquitectónica desde a Mesopotâmia até ao BIM.</p>
+<p class="q-answer">Os marcos principais incluem os registos mesopotâmicos em argila e pedra, a síntese informativa egípcia, a tradição romana de proporção e medida, a Renascença com perspectiva, planta, corte e alçado, a geometria descritiva de Monge, a normalização industrial, o CAD, a modelação 3D e o BIM.</p>
+</div></div>
+<div class="q-card"><span class="q-num">16</span><div>
+<p class="q-question">Explique a contribuição da Renascença para a sistematização da representação espacial.</p>
+<p class="q-answer">A Renascença deu à representação espacial um método geométrico mais rigoroso. A perspectiva linear, associada a Brunelleschi por volta de 1420, aproximou o desenho da experiência visual. Alberti ajudou a codificar a teoria e Rafael consolidou o uso articulado de planta, corte e alçado. O espaço passou a ser projectado com maior controlo.</p>
+</div></div>
+<div class="q-card"><span class="q-num">17</span><div>
+<p class="q-question">Defina o papel de Rafael, Palladio ou Alberti na consolidação da linguagem arquitectónica.</p>
+<p class="q-answer">Alberti reforçou a arquitectura como disciplina intelectual e tratou o desenho como meio de concepção. Rafael contribuiu para a sistematização de planta, corte e alçado no levantamento de Roma. Palladio difundiu uma linguagem clássica clara, baseada em proporção, simetria e desenhos legíveis. Os três ajudaram a fixar o desenho como linguagem do arquitecto.</p>
+</div></div>
+<div class="q-card"><span class="q-num">18</span><div>
+<p class="q-question">Explique a importância da geometria descritiva de Monge.</p>
+<p class="q-answer">A geometria descritiva de Gaspard Monge, publicada em 1795, deu base científica à representação ortogonal. Ela permite projectar o espaço tridimensional em planos bidimensionais e reconstruir mentalmente o objecto. Para a arquitectura, isso trouxe rigor, medição, controlo de alturas, leitura de volumes e comunicação técnica entre projectistas e construtores.</p>
+</div></div>
+<div class="q-card"><span class="q-num">19</span><div>
+<p class="q-question">Distinga croquis, desenho técnico e desenho de apresentação.</p>
+<p class="q-answer">O croquis é rápido, exploratório e pessoal; ajuda o arquitecto a pensar. O desenho técnico é rigoroso, cotado e normativo; orienta a execução. O desenho de apresentação comunica a proposta a clientes, júris ou comunidade, combinando clareza, selecção visual e intenção persuasiva.</p>
+</div></div>
+<div class="q-card"><span class="q-num">20</span><div>
+<p class="q-question">Analise a afirmação: "representar é projectar".</p>
+<p class="q-answer">A afirmação significa que o projecto nasce no próprio acto de representar. Ao desenhar, o arquitecto não apenas regista uma ideia pronta. Ele testa relações, descobre problemas, muda proporções e encontra soluções. O desenho, a maquete e o modelo são instrumentos activos de pensamento.</p>
+</div></div>
+<div class="q-card"><span class="q-num">21</span><div>
+<p class="q-question">Explique o valor da planta, do corte e do alçado na comunicação arquitectónica.</p>
+<p class="q-answer">A planta mostra a organização horizontal dos espaços, os acessos, a circulação e as relações entre compartimentos. O corte revela alturas, estrutura, luz, pé direito e ligação entre pisos. O alçado mostra a imagem exterior, as proporções, os vãos e a relação com a rua. Juntas, estas peças tornam o edifício compreensível.</p>
+</div></div>
+<div class="q-card"><span class="q-num">22</span><div>
+<p class="q-question">Justifique por que o desenho técnico pode ser entendido como documento técnico e jurídico.</p>
+<p class="q-answer">O desenho técnico é documento técnico porque contém medidas, materiais, símbolos, detalhes e informações de execução. Também é jurídico porque integra processos de licenciamento, contratos e responsabilidades. Um erro de cota, uma omissão ou uma alteração no desenho pode afectar custos, prazos e obrigações legais.</p>
+</div></div>
+<div class="q-card"><span class="q-num">23</span><div>
+<p class="q-question">Analise a importância da maquete física no processo de concepção.</p>
+<p class="q-answer">A maquete física permite compreender volume, escala, implantação e relação entre partes de forma táctil. Ao contrário do ecrã, pode ser rodada, observada com luz real e comparada com o corpo. No processo de concepção, ajuda a testar massas, vazios, percursos e presença do edifício no lugar.</p>
+</div></div>
+<div class="q-card"><span class="q-num">24</span><div>
+<p class="q-question">Explique em que sentido o BIM pode ser entendido como imagem activa.</p>
+<p class="q-answer">O BIM pode ser entendido como imagem activa porque contém forma e informação. Uma parede no BIM pode incluir espessura, material, custo, desempenho e fase de obra. Quando o modelo muda, plantas, cortes, alçados e mapas podem actualizar-se. A imagem deixa de apenas mostrar e passa a coordenar dados.</p>
+</div></div>
+<div class="q-card"><span class="q-num">25</span><div>
+<p class="q-question">Discuta a função da memória descritiva como instrumento de representação.</p>
+<p class="q-answer">A memória descritiva representa o projecto por palavras. Ela explica intenções, contexto, programa, decisões, materiais, relação com o lugar e critérios técnicos. O desenho mostra onde estão as coisas; a memória ajuda a entender por que foram escolhidas. É útil para clientes, júris, entidades públicas e equipa técnica.</p>
+</div></div>
+<div class="q-card"><span class="q-num">26</span><div>
+<p class="q-question">Analise o papel da colagem e da fotomontagem na comunicação com públicos não técnicos.</p>
+<p class="q-answer">A colagem e a fotomontagem aproximam o projecto de uma leitura imediata. A colagem constrói atmosfera combinando imagens, texturas, pessoas e fragmentos. A fotomontagem insere a proposta numa fotografia do local, mostrando escala e impacto. São úteis para públicos não técnicos porque comunicam uso e ambiente com rapidez.</p>
+</div></div>
+</div>
 <!-- ═══════════════════════════════════════════ CAP II ═══ -->
 <div class="chapter" id="cap-ii">
-  <div class="chapter-header">
-    <span class="ch-num">II</span>
-    <span class="ch-name">Imagem<br>Q27 – Q35</span>
-  </div>
-
-  <div class="q-card"><span class="q-num">27</span><div>
-    <p class="q-question">Explique por que a imagem arquitectónica não é neutra.</p>
-    <p class="q-answer">Toda a imagem arquitectónica é uma construção interpretativa, não um registo objectivo. Enquadramento: o que inclui e exclui do campo visual. Ponto de vista: olhar de baixo monumentaliza; ao nível do olho humaniza; de cima analisa. Luz: a hora do dia e a cor da luz alteram radicalmente a leitura. Pós-produção: saturação, contraste, remoção de elementos indesejados. A imagem arquitectónica é sempre um argumento visual — defende uma versão idealizada do projecto. O arquitecto competente sabe que constrói uma narrativa, não regista um facto.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">28</span><div>
-    <p class="q-question">Identifique os principais elementos narrativos do render arquitectónico.</p>
-    <p class="q-answer">O render conta uma história através de: (1) Enquadramento e ponto de vista — define a relação com o edifício (poder, intimidade, omnipotência); (2) Luz e atmosfera — cria o ambiente emocional; (3) Figura humana — escala e narrativa; (4) Contexto — vegetação, outros edifícios, mobiliário urbano; (5) Materialidade — texturas, reflexos, transparências; (6) Cor e temperatura — paleta cromática define o tom emocional (azuis frios = serenidade; laranjas quentes = acolhimento). Cada elemento é uma escolha narrativa — nenhum é neutro. O render não mostra como o edifício "será"; mostra como o arquitecto quer que o vejam.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">29</span><div>
-    <p class="q-question">Explique como enquadramento, luz e textura influenciam a leitura de um projecto.</p>
-    <p class="q-answer">Enquadramento: plano aberto mostra integração urbana; plano fechado foca um detalhe construtivo; contrapicado monumentaliza; ao nível do olho humaniza. Luz: difusa revela texturas sem sombras duras; rasante dramatiza superfícies; nocturna transforma o edifício em objecto luminoso autónomo. Textura: rugosa (betão, tijolo) sugere peso e honestidade material; lisa (vidro, metal polido) sugere leveza e tecnologia. Enquadramento fechado + luz rasante + betão rugoso = leitura brutalista; enquadramento aberto + luz difusa + vidro = leitura tecnológica. Os três funcionam em conjunto.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">30</span><div>
-    <p class="q-question">Analise a função da figura humana na construção da escala e da narrativa visual.</p>
-    <p class="q-answer">A figura humana tem duas funções. Escala: o corpo é a unidade de medida universal — uma figura ao pé de um edifício permite perceber imediatamente as dimensões; sem figura, o edifício pode parecer de qualquer tamanho. Narrativa: a figura não está ali por acaso — o que faz, como se veste, onde está posicionada conta uma história. Sentada a ler = espaço contemplativo; a caminhar = circulação; sozinha num espaço grande = solidão ou vazio; figuras diversas = inclusão (ou diversidade decorativa). Uma figura mal posicionada ou com escala incorrecta destrói a credibilidade do render.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">31</span><div>
-    <p class="q-question">Distinga diagrama descritivo de diagrama operativo.</p>
-    <p class="q-answer">Diagrama descritivo: explica o que existe ou se propõe — mostra relações, hierarquias, fluxos, mas não prescreve soluções. Responde a "como é". Exemplo: diagrama solar que mostra a incidência do sol no terreno. Diagrama operativo: gera o projecto — não descreve, prescreve. Transforma análise em síntese. Responde a "como fazer". Exemplo: diagrama de relações programáticas que define a organização do edifício. Na prática, um bom diagrama começa descritivo (análise) e torna-se operativo (síntese) — a fronteira é fluida.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">32</span><div>
-    <p class="q-question">Explique a função da infografia e dos mapas na defesa de uma ideia de projecto.</p>
-    <p class="q-answer">Infografias e mapas são instrumentos de argumentação visual. Infografia: combina dados quantitativos com representação gráfica (ícones, gráficos) — torna complexo compreensível. Exemplo: consumo energético comparado de diferentes soluções de fachada. Mapas: não são apenas localização geográfica — são instrumentos de leitura crítica do território. Um mapa de cheias, uso do solo ou densidades justifica decisões com base em evidência espacial. Ambos servem para fundamentar o projecto com dados objectivos — uma boa infografia convence mais que uma página de texto, desde que os dados sejam honestos.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">33</span><div>
-    <p class="q-question">Discuta a afirmação de Mario Biselli sobre representação gráfica e concursos.</p>
-    <p class="q-answer">Mario Biselli critica a sobrevalorização da representação gráfica nos concursos: a qualidade do render tornou-se mais importante que a qualidade da ideia. Os júris são seduzidos por imagens impressionantes, e projectos com boas ideias mas representação modesta são preteridos. Questões: (1) O concurso premia a melhor arquitectura ou a melhor imagem? (2) Escritórios com orçamento para renders fotorrealistas têm vantagem sobre escritórios pequenos. (3) A "indústria do render" cria imagens estandardizadas — o que se perde quando a imagem é feita por terceiros? Um concurso saudável equilibra qualidade da representação com solidez conceptual.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">34</span><div>
-    <p class="q-question">Defina o conceito de archiporn e os seus riscos éticos.</p>
-    <p class="q-answer">Archiporn designa imagens hiper-realistas de arquitectura que seduzem visualmente mas distorcem a verdade do projecto — renders "demasiado perfeitos" com céu irrealista, luz perfeita, sem imperfeições. Riscos éticos: (1) Expectativas irreais — o cliente compra uma imagem que o edifício real nunca alcançará; (2) Substituição do pensamento crítico — o tempo no render podia resolver problemas reais; (3) Homogeneização estética — todo o archiporn se parece (mesmos ângulos, mesmas luzes); (4) Desonestidade profissional — apresentar como verdade o que não será. A linha entre "comunicar uma intenção" (legítimo) e "criar uma ficção enganosa" (archiporn) é o que a ética da imagem procura definir.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">35</span><div>
-    <p class="q-question">Analise os desafios da ética da imagem no contexto moçambicano.</p>
-    <p class="q-answer">No contexto moçambicano a ética da imagem coloca desafios específicos: (1) Desfasamento promessa-realidade — renders de contextos europeus (vidro, ar condicionado) para edifícios onde esses materiais são inadequados; (2) Representação vs. identidade — renders que "embranquecem" o contexto, apagando a identidade moçambicana; (3) Sustentabilidade ilusória — imagens de edifícios "verdes" sem infraestrutura real; (4) Participação comunitária — a imagem é frequentemente imposta de cima para baixo, sem participação das comunidades. A ética da imagem exige representar com honestidade o que é possível construir, manter e habitar no contexto real.</p>
-  </div></div>
+<div class="chapter-header">
+<span class="ch-num">II</span>
+<span class="ch-name">Imagem<br/>Q27 – Q35</span>
 </div>
-
-
+<div class="q-card"><span class="q-num">27</span><div>
+<p class="q-question">Explique por que a imagem arquitectónica não é neutra.</p>
+<p class="q-answer">A imagem arquitectónica não é neutra porque resulta de escolhas. O autor decide ângulo, luz, hora do dia, vegetação, pessoas, enquadramento, materiais e contexto visível. Cada escolha orienta a leitura do observador. A imagem não mostra apenas o projecto; constrói uma versão dele.</p>
+</div></div>
+<div class="q-card"><span class="q-num">28</span><div>
+<p class="q-question">Identifique os principais elementos narrativos do render arquitectónico.</p>
+<p class="q-answer">Os principais elementos narrativos do render são enquadramento, ponto de vista, luz, atmosfera, textura, materialidade, profundidade de campo, figura humana, vegetação e contexto. Esses elementos dizem ao observador como deve perceber o projecto: monumental, acolhedor, público, íntimo, tecnológico, natural ou socialmente activo.</p>
+</div></div>
+<div class="q-card"><span class="q-num">29</span><div>
+<p class="q-question">Explique como enquadramento, luz e textura influenciam a leitura de um projecto.</p>
+<p class="q-answer">O enquadramento decide o que entra e o que fica fora da imagem. A luz define atmosfera, profundidade e emoção. A textura comunica material, peso, temperatura e proximidade táctil. Juntos, estes três elementos podem fazer o mesmo projecto parecer público ou íntimo, pesado ou leve, realista ou idealizado.</p>
+</div></div>
+<div class="q-card"><span class="q-num">30</span><div>
+<p class="q-question">Analise a função da figura humana na construção da escala e da narrativa visual.</p>
+<p class="q-answer">A figura humana dá escala ao projecto e mostra como o espaço pode ser usado. Um corpo junto a uma fachada ajuda a perceber altura e proporção. Pessoas sentadas, caminhando ou conversando criam narrativa de permanência, circulação ou encontro. Usada sem cuidado, a figura pode idealizar demais o uso real.</p>
+</div></div>
+<div class="q-card"><span class="q-num">31</span><div>
+<p class="q-question">Distinga diagrama descritivo de diagrama operativo.</p>
+<p class="q-answer">O diagrama descritivo explica uma situação, como fluxos existentes, orientação solar, densidades ou relações programáticas já definidas. O diagrama operativo participa na decisão de projecto. Ele não só mostra, mas propõe: organiza massas, percursos, acessos, usos e estratégias ambientais.</p>
+</div></div>
+<div class="q-card"><span class="q-num">32</span><div>
+<p class="q-question">Explique a função da infografia e dos mapas na defesa de uma ideia de projecto.</p>
+<p class="q-answer">A infografia traduz dados complexos em imagens legíveis, como fluxos, densidades, usos, fases ou consumos. O mapa situa o projecto no território e revela relações que justificam decisões. Ambos ajudam a defender uma ideia porque mostram evidências de modo visual, rápido e comparável.</p>
+</div></div>
+<div class="q-card"><span class="q-num">33</span><div>
+<p class="q-question">Discuta a afirmação de Mario Biselli sobre representação gráfica e concursos.</p>
+<p class="q-answer">A frase de Mario Biselli lembra que concursos dependem muito da representação gráfica. Uma boa imagem torna a ideia mais clara, sedutora e memorável para o júri. A provocação está no risco de a apresentação pesar mais do que a qualidade arquitectónica. O ideal é que a imagem sirva a ideia, não a substitua.</p>
+</div></div>
+<div class="q-card"><span class="q-num">34</span><div>
+<p class="q-question">Defina o conceito de archiporn e os seus riscos éticos.</p>
+<p class="q-answer">Archiporn designa imagens arquitectónicas demasiado sedutoras, geralmente renders com luz perfeita, vegetação exuberante, pessoas idealizadas e ausência de conflito urbano. O risco ético está em prometer uma experiência que a obra construída não conseguirá cumprir. A imagem vende desejo, mas pode produzir frustração depois da construção.</p>
+</div></div>
+<div class="q-card"><span class="q-num">35</span><div>
+<p class="q-question">Analise os desafios da ética da imagem no contexto moçambicano.</p>
+<p class="q-answer">Em Moçambique, a ética da imagem exige atenção à diversidade cultural, à literacia visual desigual e às condições reais de construção e manutenção. Muitas comunidades não leem renders de forma crítica. Por isso, imagens idealizadas podem criar expectativas falsas. O arquitecto deve representar o contexto real e explicar o que a imagem mostra.</p>
+</div></div>
+</div>
 <!-- ═══════════════════════════════════════════ CAP III ═══ -->
 <div class="chapter" id="cap-iii">
-  <div class="chapter-header">
-    <span class="ch-num">III</span>
-    <span class="ch-name">Comunicação<br>Q36 – Q50</span>
-  </div>
-
-  <div class="q-card"><span class="q-num">36</span><div>
-    <p class="q-question">Explique o processo de comunicação: emissor, mensagem, canal, receptor e feedback.</p>
-    <p class="q-answer">Emissor: o arquitecto que codifica e inicia a mensagem. Mensagem: forma, materiais, proporções, organização espacial, intenção. Canal: desenho, maquete, edifício, apresentação, texto. Receptor: cliente, utilizador, comunidade, crítico. Feedback: reacção do utilizador, crítica, aprovação, adaptação. Importante: o receptor nunca interpreta exactamente o que o emissor quis dizer — cada leitor traz o seu contexto cultural, experiência e expectativas. A comunicação arquitectónica é sempre imperfeita, e é essa imperfeição que a torna rica. O canal mais potente é o próprio edifício construído — o espaço comunica directa e silenciosamente com quem o habita.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">37</span><div>
-    <p class="q-question">Distinga comunicação verbal, não-verbal e espacial no contexto da arquitectura.</p>
-    <p class="q-answer">Verbal: palavras — orais (apresentações, debates) ou escritas (memória descritiva, relatórios). Transmite intenções e argumentos racionais. Não-verbal: gestos, postura, expressão facial do arquitecto durante a apresentação; mas também a linguagem corporal de quem usa o edifício; inclui a "comunicação silenciosa" do desenho — uma linha pode ser mais expressiva que mil palavras. Espacial: o edifício como mensagem silenciosa — forma, escala, materiais, luz, percursos comunicam directamente com o corpo de quem habita, sem palavras. Um corredor estreito e escuro comunica "passagem rápida"; um átrio amplo e iluminado comunica "permanência". As três formas coexistem.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">38</span><div>
-    <p class="q-question">Explique o conceito de comunicação poliédrica e a sua utilidade profissional.</p>
-    <p class="q-answer">Comunicação poliédrica significa que o arquitecto comunica de forma diferente consoante o interlocutor — como um poliedro que mostra faces diferentes a ângulos diferentes. Cliente: imagens evocativas, renders, storytelling — o cliente quer sentir o projecto. Engenheiros/construtores: desenho técnico rigoroso, especificações — querem saber exactamente o que fazer. Comunidade: linguagem simples, participação, imagens acessíveis. Júri: ideia forte, clareza, narrativa em poucos segundos. Órgãos públicos: documentos legais, comprovações normativas. O arquitecto que comunica com o cliente como comunica com o engenheiro falha profissionalmente.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">39</span><div>
-    <p class="q-question">Analise o conceito de imagem activa segundo Ammon e Capdevila-Werning.</p>
-    <p class="q-answer">Segundo Ammon e Capdevila-Werning, a imagem activa é uma representação que não se limita a mostrar — age sobre o projecto e sobre quem a vê. Age sobre o projecto: um modelo BIM quando se altera um parâmetro, toda a representação se actualiza; o desenho paramétrico gera novas configurações a partir de regras. Age sobre o espectador: não informa apenas — convence, seduz, emociona; guia a interpretação. Age como instrumento de pensamento: a imagem não é o resultado do pensamento — é o próprio pensamento a acontecer visualmente. Opõe-se à "imagem passiva" que apenas documenta. A imagem activa é performática.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">40</span><div>
-    <p class="q-question">Explique como a arquitectura funciona como linguagem.</p>
-    <p class="q-answer">A arquitectura funciona como linguagem porque comunica significados através de um sistema de signos. Sintaxe arquitectónica: as regras de combinação dos elementos formam uma "gramática espacial" — clássica, moderna ou vernacular. Semântica arquitectónica: os signos têm significado — uma coluna é poder, tradição, ordem; um telhado de palha é identidade, ecologia, memória. Pragmática arquitectónica: o significado depende do contexto — uma escada monumental num palácio diz uma coisa; a mesma escada numa casa popular diz outra. Diferente da linguagem verbal, a linguagem arquitectónica é ambígua e aberta a múltiplas leituras — e é essa ambiguidade que a torna rica.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">41</span><div>
-    <p class="q-question">Desenvolva a noção de semiótica arquitectónica com um exemplo.</p>
-    <p class="q-answer">A semiótica arquitectónica estuda como a arquitectura produz significados através de signos. Um signo tem três dimensões: significante (a forma física), significado (o conceito associado) e referente (o objecto real). Exemplo — a escadaria do Palácio da Bolsa no Porto: Significante: degraus de mármore, lanços simétricos, corrimão de madeira torneada, luz zenital. Denotação: escada que liga o piso térreo ao primeiro andar. Conotação: poder, riqueza, solenidade, distinção social — subir a escada não é apenas subir, é ascender simbolicamente. Como Umberto Eco mostrou, toda a arquitectura denota a sua função primária mas conota sempre significados culturais.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">42</span><div>
-    <p class="q-question">Explique como a arquitectura pode expressar identidade cultural.</p>
-    <p class="q-answer">A arquitectura expressa identidade cultural através de: (1) Referências históricas e tipológicas — reinterpretar formas vernaculares, tipologias tradicionais (pátio, varanda, palhota) com linguagem contemporânea; (2) Materiais locais — o betão importado não conta a mesma história que a terra do local; (3) Técnicas construtivas — resgatar técnicas tradicionais (taipa, adobe) é afirmar identidade; (4) Organização espacial — a forma como uma cultura organiza o espaço é profunda identidade cultural; (5) Ornamento e simbolismo — padrões, símbolos, cores que carregam significado cultural. Uma arquitectura que expressa identidade não imita o passado — reinterpreta-o criticamente.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">43</span><div>
-    <p class="q-question">Analise o impacto da organização espacial na experiência do utilizador.</p>
-    <p class="q-answer">A organização espacial afecta directamente como o utilizador percebe, se move e se sente. Percursos: corredor rectilíneo e estreito induz movimento rápido; percurso sinuoso e largo convida à exploração. Hierarquia espacial: transição público → semi-público → privado orienta o utilizador e define comportamentos. Proporções: pé-direito alto = solenidade; tecto baixo = intimidade. Luz ao longo de um percurso (de mais escuro para mais claro) guia o olhar e cria expectativa. Enquadramentos: uma janela que enquadra uma vista específica é uma decisão de projecto que molda a experiência. A experiência do utilizador não é um "extra" — é o que o projecto realmente produz.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">44</span><div>
-    <p class="q-question">Discuta a arquitectura como ferramenta de comunicação institucional.</p>
-    <p class="q-answer">A arquitectura comunica os valores e o poder das instituições. Estado/Governo: palácios, parlamentos — monumentalidade que comunica autoridade e permanência (escadarias largas, simetria axial). Igreja: catedrais góticas que apontam ao céu, mesquitas com pátio central — a forma comunica a relação com o divino. Empresas: sede da Apple (anel de vidro), Google (campus colorido) — o edifício é marketing, comunica inovação e cultura empresarial. Cultura/Educação: museus, bibliotecas — a arquitectura comunica o que a instituição valoriza. Uma instituição que se instala num edifício degradado comunica desinvestimento; uma que constrói um ícone comunica ambição.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">45</span><div>
-    <p class="q-question">Explique a função social da arquitectura com referência a inclusão e sustentabilidade.</p>
-    <p class="q-answer">Inclusão: acessibilidade (rampas, elevadores, sinalética tátil) não é concessão — é direito; espaços de encontro (praças, átrios, corredores generosos) criam ou inibem o encontro; segurança (espaços bem iluminados, visíveis); participação da comunidade no processo. Sustentabilidade ambiental: eficiência energética, materiais locais, gestão de água, conforto passivo — não é um estilo, é responsabilidade. Sustentabilidade económica: edifícios que se mantêm, adaptam e pagam ao longo da vida. Sustentabilidade social: edifícios que a comunidade mantém, usa e identifica-se — um edifício abandonado é insustentável por definição. A função social é criar lugares que dignificam as pessoas.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">46</span><div>
-    <p class="q-question">Identifique estratégias eficazes para a apresentação de projectos a diferentes públicos.</p>
-    <p class="q-answer">Cliente privado: renders, maquete, percursos virtuais, storytelling — vender a experiência, não o desenho. Cliente público/Estado: plantas oficiais, memória descritiva, estudos comparativos — demonstrar cumprimento normativo e durabilidade. Comunidade: linguagem simples, participação, maquetes físicas, assembleias. Júri de concurso: ideia forte, clareza, originalidade, diagramas conceptuais — ideia legível em poucos segundos. Engenheiros/construtores: desenho técnico, pormenores, BIM, especificações. Academia/crítica: argumento teórico, referências, posicionamento crítico. Regra de ouro: conhecer o público é o primeiro acto de comunicação.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">47</span><div>
-    <p class="q-question">Analise o papel das tecnologias digitais na comunicação arquitectónica contemporânea.</p>
-    <p class="q-answer">Oportunidades: Realidade virtual (VR) — o cliente percorre o edifício antes de existir; Realidade aumentada (AR) — sobrepor o projecto ao local real; Vídeo e animação — percursos animados, narrativas temporais; Plataformas online — Instagram como novo "caderno de obras"; BIM colaborativo — todas as disciplinas comunicam no mesmo modelo em tempo real. Riscos: excesso de tecnologia pode esconder falta de ideias; fosso digital (comunidades sem acesso ficam excluídas); dependência de software que apaga a "verdade do momento" do croquis. O equilíbrio está em usar a tecnologia para o que faz melhor (simulação, colaboração) sem perder o que o analógico faz melhor (pensamento aberto, relação corpórea).</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">48</span><div>
-    <p class="q-question">Discuta a relação entre marketing e arquitectura na prática profissional actual.</p>
-    <p class="q-answer">O marketing tornou-se indissociável da prática contemporânea. Manifestações: Instagram como portfólio (a imagem do edifício é o produto); arquitecto como marca (Zaha Hadid, Bjarke Ingels — o nome vende tanto como o projecto); concurso como palco de visibilidade; prémios e publicações como certificação de qualidade. Problemas: estilo sobre substância (o marketing premia o fotogénico, não o bom); homogeneização (edifícios que poderiam estar em qualquer cidade); desigualdade (pequenos escritórios competem em desvantagem). Uma relação saudável exige que a comunicação sirva o projecto, não o contrário. O melhor marketing é um edifício bem construído.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">49</span><div>
-    <p class="q-question">Explique de que forma a globalização transformou a comunicação arquitectónica.</p>
-    <p class="q-answer">Positivos: difusão rápida de ideias (um projecto em Tóquio é conhecido em Maputo no mesmo dia); referências cruzadas; padrões internacionais (BIM, normas). Negativos: homogeneização — o "estilo internacional" globaliza a imagem dos edifícios (aeroportos, hotéis, torres parecem-se em todo o lado); descontextualização (fachadas de vidro em climas tropicais); desigualdade de voz (a arquitectura "global" é dominada por escritórios do hemisfério norte, arquitectos do sul têm menos visibilidade); domínio do inglês na publicação e no discurso crítico. O desafio é ser global nos recursos e local na resposta — usar o que o mundo oferece sem perder o que o lugar exige.</p>
-  </div></div>
-
-  <div class="q-card"><span class="q-num">50</span><div>
-    <p class="q-question">Redija uma reflexão crítica sobre a relação entre representação, imagem e comunicação na formação e prática do arquitecto contemporâneo.</p>
-    <p class="q-answer">Representação, imagem e comunicação não são disciplinas separadas — são as três faces do mesmo acto projectual. Na formação: a separação pedagógica (primeiro representa-se, depois constrói imagens, depois comunica) é artificial — na prática, os três fundem-se. Um bom exercício de projecto é simultaneamente exercício de representação, de imagem e de comunicação. Na prática profissional: o arquitecto vive um paradoxo — nunca teve tantos meios para representar e comunicar, e nunca esteve tão ameaçado pela superficialidade da imagem. Síntese crítica: a representação não é o edifício (o mapa não é o território); a imagem não é neutra (toda a imagem é um argumento); a comunicação não é transparente (cada público interpreta à sua maneira). O desafio final é ético: representar, imaginar e comunicar para construir um mundo melhor — não apenas para vender um edifício.</p>
-  </div></div>
+<div class="chapter-header">
+<span class="ch-num">III</span>
+<span class="ch-name">Comunicação<br/>Q36 – Q50</span>
 </div>
-
+<div class="q-card"><span class="q-num">36</span><div>
+<p class="q-question">Explique o processo de comunicação: emissor, mensagem, canal, receptor e feedback.</p>
+<p class="q-answer">O processo de comunicação envolve emissor, mensagem, canal, receptor e feedback. Na arquitectura, o emissor pode ser o arquitecto; a mensagem é o projecto ou uma decisão; o canal pode ser desenho, maquete, reunião ou texto; o receptor pode ser cliente, construtor, Estado ou comunidade. O feedback confirma se houve entendimento.</p>
+</div></div>
+<div class="q-card"><span class="q-num">37</span><div>
+<p class="q-question">Distinga comunicação verbal, não-verbal e espacial no contexto da arquitectura.</p>
+<p class="q-answer">A comunicação verbal usa palavras, em apresentações, reuniões, relatórios e memórias descritivas. A não verbal inclui postura, gestos, expressão facial e também sinais visuais que acompanham a apresentação. A comunicação espacial ocorre quando o próprio edifício fala por forma, escala, materiais, luz, circulação e relação com o entorno.</p>
+</div></div>
+<div class="q-card"><span class="q-num">38</span><div>
+<p class="q-question">Explique o conceito de comunicação poliédrica e a sua utilidade profissional.</p>
+<p class="q-answer">Comunicação poliédrica significa adaptar a representação ao público. O cliente precisa de imagens acessíveis e foco na experiência. O construtor precisa de desenhos técnicos claros. A comunidade precisa de linguagem simples e participativa. O Estado precisa de documentação normativa. O arquitecto competente muda o modo de comunicar sem alterar a coerência do projecto.</p>
+</div></div>
+<div class="q-card"><span class="q-num">39</span><div>
+<p class="q-question">Analise o conceito de imagem activa segundo Ammon e Capdevila-Werning.</p>
+<p class="q-answer">Imagem activa é a representação que não apenas mostra, mas participa no pensamento e na gestão do projecto. Um BIM, por exemplo, reúne forma, materiais, custos, fases e desempenho. A imagem pode ser lida em camadas e pode alterar decisões. Ela funciona como interface de informação.</p>
+</div></div>
+<div class="q-card"><span class="q-num">40</span><div>
+<p class="q-question">Explique como a arquitectura funciona como linguagem.</p>
+<p class="q-answer">A arquitectura funciona como linguagem porque comunica por signos espaciais. Forma, escala, materiais, luz, cor, textura, percurso e proporção transmitem valores e orientam comportamentos. Um edifício pode sugerir abertura, poder, intimidade, memória, transparência ou exclusão sem usar palavras.</p>
+</div></div>
+<div class="q-card"><span class="q-num">41</span><div>
+<p class="q-question">Desenvolva a noção de semiótica arquitectónica com um exemplo.</p>
+<p class="q-answer">A semiótica arquitectónica estuda como os elementos do espaço funcionam como signos. Por exemplo, grandes vãos envidraçados podem comunicar abertura e transparência, enquanto muros altos podem comunicar protecção ou exclusão. O mesmo elemento pode mudar de significado conforme o lugar, a cultura e o uso.</p>
+</div></div>
+<div class="q-card"><span class="q-num">42</span><div>
+<p class="q-question">Explique como a arquitectura pode expressar identidade cultural.</p>
+<p class="q-answer">A arquitectura expressa identidade cultural quando trabalha com memória, materiais locais, técnicas construtivas, padrões, clima e modos de habitar. Não precisa copiar o passado. Pode reinterpretar elementos vernaculares numa linguagem contemporânea, criando continuidade entre tradição, inovação e vida actual.</p>
+</div></div>
+<div class="q-card"><span class="q-num">43</span><div>
+<p class="q-question">Analise o impacto da organização espacial na experiência do utilizador.</p>
+<p class="q-answer">A organização espacial influencia percepção, movimento, emoção e memória. Um percurso directo acelera o deslocamento; uma sequência de espaços abre expectativa; um átrio iluminado pode acolher; uma zona confusa pode gerar insegurança. O utilizador não vive o edifício como objecto, mas como experiência no tempo.</p>
+</div></div>
+<div class="q-card"><span class="q-num">44</span><div>
+<p class="q-question">Discuta a arquitectura como ferramenta de comunicação institucional.</p>
+<p class="q-answer">A arquitectura institucional comunica valores de uma organização. Um tribunal pode transmitir autoridade; uma biblioteca pode comunicar abertura ao conhecimento; uma empresa pode usar forma, material e organização para expressar inovação, transparência ou colaboração. O edifício torna-se parte da imagem pública da instituição.</p>
+</div></div>
+<div class="q-card"><span class="q-num">45</span><div>
+<p class="q-question">Explique a função social da arquitectura com referência a inclusão e sustentabilidade.</p>
+<p class="q-answer">A função social da arquitectura está em criar espaços acessíveis, inclusivos, seguros e sustentáveis. Um edifício deve poder ser usado por pessoas com diferentes capacidades, idades e condições sociais. Também deve reduzir impacto ambiental, usar recursos com responsabilidade e fortalecer a vida comunitária.</p>
+</div></div>
+<div class="q-card"><span class="q-num">46</span><div>
+<p class="q-question">Identifique estratégias eficazes para a apresentação de projectos a diferentes públicos.</p>
+<p class="q-answer">Uma apresentação eficaz começa por identificar o público. Para clientes, funcionam imagens claras, maquetes e narrativa de uso. Para o Estado, documentação técnica e conformidade legal. Para a comunidade, linguagem simples e participação. Para construtores, pormenores e especificações. Para júris, conceito forte, diagramas e síntese visual.</p>
+</div></div>
+<div class="q-card"><span class="q-num">47</span><div>
+<p class="q-question">Analise o papel das tecnologias digitais na comunicação arquitectónica contemporânea.</p>
+<p class="q-answer">As tecnologias digitais ampliaram a comunicação arquitectónica com CAD, modelação 3D, render fotorrealista, BIM, realidade virtual, realidade aumentada e plataformas colaborativas. Elas permitem visualizar, simular e coordenar o projecto antes da obra. O risco está em substituir análise crítica por imagem sedutora ou em excluir públicos sem acesso digital.</p>
+</div></div>
+<div class="q-card"><span class="q-num">48</span><div>
+<p class="q-question">Discuta a relação entre marketing e arquitectura na prática profissional actual.</p>
+<p class="q-answer">O marketing entrou na prática arquitectónica porque os arquitectos precisam comunicar valor, portfólio e posicionamento. Redes sociais, vídeos, artigos, publicações e concursos ajudam a atrair clientes e divulgar ideias. O problema surge quando a imagem de marca pesa mais do que qualidade construtiva, contexto e responsabilidade.</p>
+</div></div>
+<div class="q-card"><span class="q-num">49</span><div>
+<p class="q-question">Explique de que forma a globalização transformou a comunicação arquitectónica.</p>
+<p class="q-answer">A globalização aumentou a circulação de imagens, referências, softwares e métodos de comunicação. Arquitectos de diferentes países podem colaborar em tempo real e usar códigos técnicos comuns. Ao mesmo tempo, cresceu o risco de padronização estética e de importação de soluções pouco adaptadas ao clima, cultura e economia locais.</p>
+</div></div>
+<div class="q-card"><span class="q-num">50</span><div>
+<p class="q-question">Redija uma reflexão crítica sobre a relação entre representação, imagem e comunicação na formação e prática do arquitecto contemporâneo.</p>
+<p class="q-answer">Representação, imagem e comunicação formam uma mesma competência na arquitectura. A representação ajuda a pensar o projecto; a imagem constrói a forma como ele será percebido; a comunicação adapta essa ideia a clientes, técnicos, Estado e comunidade. O arquitecto contemporâneo precisa dominar os três campos com rigor e responsabilidade ética.</p>
+</div></div>
+</div>
 <div class="empty-state" id="empty">
-  <p class="empty-big">0</p>
-  <p class="empty-msg">Sem resultados — tenta outra palavra</p>
+<p class="empty-big">0</p>
+<p class="empty-msg">Sem resultados - tenta outra palavra</p>
 </div>
-
 </main>
-
 <footer>
-  <p class="foot">RCI — Representação, Comunicação &amp; Imagem · FAPF Semestre II 2024 · 50 Questões · Capítulos I–III</p>
+<p class="foot">RCI · Representação, Comunicação &amp; Imagem · FAPF Semestre II 2024 · 50 Questões · Capítulos I–III</p>
 </footer>
-
 <script>
+const answerVariations = [
+  [
+    "Representação em arquitectura é o modo de tornar visível uma ideia de espaço antes da obra existir. Ela pode aparecer em croquis, plantas, cortes, alçados, maquetes, modelos digitais, texto ou render. Também pode registar o existente, como num levantamento, mas no projecto tem uma função maior: ajuda a pensar, testar, comunicar e preparar a construção.",
+    "Representar, no projecto arquitectónico, significa dar forma legível a algo que ainda está em pensamento. O edifício passa a ser discutido antes de ser construído, por meio de desenhos, modelos, imagens e palavras. Por isso, a representação não copia apenas a realidade. Ela organiza a ideia, selecciona informação e permite que outros compreendam o espaço proposto.",
+    "Na arquitectura, a representação é o primeiro corpo do projecto. Antes de haver pedra, betão ou madeira, há linhas, maquetes, esquemas e descrições que tornam a ideia comunicável. Esses meios não substituem a obra, mas tornam possível imaginá-la, corrigi-la, aprová-la e executá-la."
+  ],
+  [
+    "Repraesentare vem do latim e significa tornar presente ou apresentar de novo. A palavra ajuda a entender o projecto arquitectónico porque o arquitecto trabalha com uma ausência: o edifício futuro. A representação traz essa ausência para o debate, tornando-a visível através de desenhos, modelos e textos.",
+    "A etimologia de repraesentare indica a acção de fazer aparecer algo que não está ali. Em arquitectura, isso descreve bem o projecto. O terreno e o programa já existem, mas o edifício ainda não. A representação liga esses dois tempos, o presente do lugar e o futuro da obra.",
+    "Repraesentare significa chamar algo à presença. Para o pensamento arquitectónico, isto é decisivo: o projecto nasce quando uma ideia invisível ganha forma gráfica, verbal ou tridimensional. Assim, a representação não vem no fim do processo. Ela inaugura a possibilidade de pensar e construir."
+  ],
+  [
+    "Para Ockham, a representação funciona como signo, ligando conceito, palavra e objecto. Para Descartes, a ideia é uma imagem mental que antecede a certeza sobre o mundo exterior. Para Kant, a representação organiza a percepção através das categorias do entendimento. Ockham aproxima a representação do signo, Descartes da mente, Kant da estrutura do conhecer.",
+    "Ockham entende a representação como mediação entre a coisa e o pensamento. Descartes desloca o problema para a consciência: primeiro existe a ideia mental, depois se questiona a realidade exterior. Kant acrescenta que o sujeito não recebe o mundo passivamente, pois organiza aquilo que percebe. As três posições mostram que representar envolve signo, imagem mental e entendimento.",
+    "Em Ockham, representar é fazer uma coisa comparecer no pensamento por meio de um signo. Em Descartes, a representação aparece como ideia interna, base do conhecimento. Em Kant, ela deixa de ser simples reflexo e passa a participar na forma como o mundo é conhecido. A comparação mostra uma passagem do signo para a mente e da mente para as condições do conhecimento."
+  ],
+  [
+    "A representação é o meio, como planta, maquete, mapa ou render. O representado é aquilo a que esse meio se refere, seja um edifício existente ou projectado. Uma planta de uma casa, por exemplo, não é a casa. Ela mostra paredes, vãos e relações espaciais, mas não contém luz, cheiro, temperatura nem uso real.",
+    "Representação e representado não são a mesma coisa. O desenho é uma tradução parcial do objecto; o objecto é a realidade ou a ideia a que o desenho aponta. No caso de uma escola, a planta organiza salas e circulações, enquanto a escola construída inclui escala corporal, ruído, materiais, clima e vida quotidiana.",
+    "O representado é o edifício, o lugar ou o espaço pensado. A representação é o sistema usado para o tornar legível. Um render pode mostrar a aparência provável de uma praça, mas a praça real dependerá da luz, dos materiais, da manutenção e da forma como as pessoas a ocupam."
+  ],
+  [
+    "A frase significa que toda representação simplifica a realidade. Um mapa escolhe escala, símbolos e elementos a mostrar; deixa outros de fora. Em arquitectura acontece o mesmo. A planta não é o edifício, o corte não é a experiência do espaço e o render não é a obra vivida. Cada meio mostra uma parte e oculta outra.",
+    "O mapa não é o território porque nenhum desenho coincide totalmente com aquilo que representa. Para o arquitecto, esta ideia obriga a escolher bem o meio de comunicação. Um croquis pode revelar uma intenção, uma planta mostra organização, um corte mostra altura e um render sugere atmosfera. Nenhum deles esgota a realidade.",
+    "Aplicado à arquitectura, o princípio lembra que a representação é sempre uma leitura. Uma maquete reduz escala, uma planta achata o espaço e uma imagem escolhe um ponto de vista. Essa perda não é apenas falha. Ela permite seleccionar o que importa em cada fase do projecto."
+  ],
+  [
+    "A arquitectura ocupa uma posição intermédia porque começa como representação e procura tornar-se realidade construída. O projecto representa um espaço que ainda não existe, mas que deve ser compreendido por cliente, técnicos, Estado e comunidade. Depois de construído, o próprio edifício também comunica valores, usos e identidades.",
+    "O edifício nasce no campo das imagens, desenhos e modelos, mas tem destino material. Por isso a arquitectura vive entre imaginação e construção. A representação antecipa a obra; a obra construída confirma, corrige ou ultrapassa aquilo que foi representado.",
+    "A arquitectura não lida apenas com o real existente nem apenas com a imaginação. Ela transforma uma ideia em matéria. Enquanto o edifício não existe, plantas, cortes, maquetes e textos tornam esse futuro discutível. Quando a obra surge, ela própria passa a representar funções, valores sociais e memória."
+  ],
+  [
+    "Mimese significa imitação ou representação da realidade. Na arte clássica, o termo esteve ligado à tentativa de representar a natureza e o mundo visível. Em arquitectura, a mimese aparece quando se retomam formas naturais, modelos históricos ou soluções vernaculares. O seu valor não está na cópia literal, mas na capacidade de reinterpretar essas referências.",
+    "Na história da arte, a mimese explica a relação entre obra e mundo. Platão via a imitação com desconfiança; Aristóteles entendia-a como uma forma de conhecimento. A arquitectura aproveita essa tensão. Pode imitar proporções, tipos ou formas naturais, mas ganha força quando transforma a referência em resposta espacial.",
+    "A mimese aproxima arte, natureza e arquitectura. Um edifício pode imitar uma coluna antiga, uma concha, uma árvore ou uma casa tradicional. Mas o projecto não deve parar na aparência. A referência torna-se arquitectónica quando passa a resolver espaço, estrutura, clima, uso e significado."
+  ],
+  [
+    "A representação figurativa procura semelhança com objectos reconhecíveis, como um render realista ou o desenho de uma fachada. A simbólica usa signos convencionados para comunicar ideias, por exemplo setas de circulação ou cores num diagrama. A não figurativa abandona a semelhança directa e trabalha com linhas, massas, relações e proporções.",
+    "Figurativa é a representação que mostra algo identificável. Simbólica é a que depende de códigos partilhados, como símbolos técnicos numa planta. Não figurativa é a que usa forma, cor ou composição sem representar objectos visíveis. No projecto, as três podem coexistir: uma planta técnica, um esquema conceptual e uma perspectiva habitada.",
+    "A diferença está no modo de significar. A figurativa aproxima-se da aparência; a simbólica condensa uma ideia num signo; a não figurativa trabalha com relações abstractas. Um desenho de uma árvore é figurativo, uma seta de percurso é simbólica e um diagrama de fluxos pode ser não figurativo."
+  ],
+  [
+    "A literatura mostra que a representação pode criar mundos inteiros sem depender de uma realidade prévia. A Terra Média de Tolkien existe através de mapas, descrições, línguas e histórias. No projecto arquitectónico há algo semelhante: antes de existir em obra, o edifício existe como mundo possível desenhado e descrito.",
+    "Um romance pode tornar credível um lugar que nunca existiu fisicamente. Isso revela a força geradora da representação. O arquitecto também cria uma realidade possível com plantas, maquetes, cortes e memória descritiva. A diferença é que esse mundo imaginado pretende, em muitos casos, tornar-se construído.",
+    "A literatura ajuda a perceber que representar não significa apenas copiar. Palavras podem construir geografia, atmosfera, cultura e memória. Do mesmo modo, a arquitectura usa desenhos e modelos para criar um espaço futuro, com regras internas, usos e relações antes de qualquer construção."
+  ],
+  [
+    "A cenografia constrói mundos temporários com luz, cenário, som, escala e movimento. O projecto arquitectónico também evoca um mundo antes de existir fisicamente. A diferença principal está na permanência e no uso: o cenário é feito para produzir uma experiência representada; a arquitectura pretende ser habitada e durar.",
+    "Cenografia e projecto aproximam-se porque ambos fazem aparecer um espaço ausente. No palco, um conjunto de signos pode sugerir uma rua, uma casa ou uma floresta. No projecto, uma maquete ou um render sugere um edifício futuro. Em ambos os casos, a representação organiza o olhar e a imaginação.",
+    "A cenografia é uma arquitectura efémera. Ela cria atmosfera, percurso e leitura espacial sem depender da permanência da obra construída. O projecto arquitectónico usa processo semelhante quando apresenta ao cliente ou ao júri um espaço que ainda não existe, mas que já precisa de ser compreendido."
+  ],
+  [
+    "Nas culturas africanas, a representação nem sempre se concentra no desenho ou na perspectiva visual. Muitas vezes passa pela oralidade, pelo gesto, pela dança, pelo ritual, pela máscara e pelo símbolo. Em contraste, o modelo ocidental moderno privilegiou a representação gráfica, o autor individual e a definição prévia do edifício.",
+    "A representação africana tradicional tende a ligar memória, espiritualidade, corpo e comunidade. O conhecimento pode ser transmitido por histórias, ritos e práticas construtivas, não apenas por documentos. O modelo ocidental, sobretudo desde a Renascença, separa mais claramente concepção, desenho e execução.",
+    "Uma diferença importante está no suporte. Em muitos contextos africanos, representar é manter viva uma memória colectiva através da palavra, do corpo e do símbolo. No modelo ocidental dominante, representar costuma significar desenhar, medir, codificar e controlar a construção antes da obra."
+  ],
+  [
+    "A tradição oral e gestual mostra que a representação pode existir fora do papel. Técnicas, proporções, histórias e regras de uso do espaço podem ser transmitidas por fala, demonstração e prática. O corpo mede, ensina e corrige. Para a arquitectura, isso valoriza o conhecimento tácito e a relação directa com o lugar.",
+    "Oralidade e gesto são formas de representar porque tornam comunicável um saber. Um mestre pode explicar uma cobertura, indicar uma distância com o corpo ou ensinar uma técnica pela repetição. Esse modo de transmissão é flexível e responde ao material, ao clima e às condições da obra.",
+    "A arquitectura não depende apenas de desenhos. Em muitas tradições, constrói-se a partir de instruções faladas, memória colectiva e gestos aprendidos. Essas formas representam relações espaciais, técnicas e valores. Elas lembram que o projecto também pode nascer do fazer e não apenas da folha ou do ecrã."
+  ],
+  [
+    "Os adinkra, originários dos Akan do Gana, são símbolos visuais que condensam provérbios, valores morais e ideias filosóficas. O seu valor conceptual está na síntese: uma forma simples comunica um pensamento complexo. Para a arquitectura, mostram que o ornamento pode carregar significado, memória e ética.",
+    "O interesse dos adinkra está na capacidade de transformar ideias abstractas em signos gráficos partilhados. Eles não imitam a natureza; representam conceitos. Essa lógica ajuda a pensar uma arquitectura em que padrões, materiais e detalhes não sejam apenas decoração, mas veículos de identidade e conhecimento.",
+    "Adinkra mostra que uma imagem pode ser pequena e densa ao mesmo tempo. Um símbolo pode conter um provérbio, uma regra de vida ou uma visão comunitária. Na arquitectura, essa lição aproxima representação, cultura e ornamento, sobretudo quando o projecto quer comunicar valores de um lugar."
+  ],
+  [
+    "A arquitectura vernacular moçambicana ensina a responder ao clima, aos materiais disponíveis e aos modos de vida locais. Ventilação natural, sombra, coberturas leves, pátios, madeira, terra, colmo e macuti não devem ser vistos como atraso. São soluções acumuladas pela experiência e podem orientar uma arquitectura contemporânea mais adequada ao contexto.",
+    "O principal ensinamento da arquitectura vernacular é a ligação entre construção e lugar. Ela trabalha com materiais próximos, técnicas conhecidas, organização comunitária e conforto passivo. A arquitectura contemporânea pode reinterpretar esses princípios sem copiar a forma antiga, produzindo edifícios mais sustentáveis e culturalmente reconhecíveis.",
+    "A vernacular moçambicana lembra que a boa arquitectura não nasce apenas de imagens importadas. Ela nasce do clima, da sombra, da ventilação, da vida no exterior, da relação entre família e comunidade. Reaproveitar essas lógicas pode reduzir dependência tecnológica e reforçar identidade local."
+  ],
+  [
+    "Os marcos principais incluem os registos mesopotâmicos em argila e pedra, a síntese informativa egípcia, a tradição romana de proporção e medida, a Renascença com perspectiva, planta, corte e alçado, a geometria descritiva de Monge, a normalização industrial, o CAD, a modelação 3D e o BIM.",
+    "Da Mesopotâmia ao BIM, a representação passou de registos materiais simples para modelos digitais informados. A história inclui a escrita cuneiforme e plantas antigas, a convenção egípcia, a perspectiva renascentista, o sistema ortogonal das academias, o rigor de Monge, o desenho técnico industrial, o CAD e os modelos BIM com dados.",
+    "A linha histórica pode ser lida como aumento de precisão e de informação. Primeiro aparecem planos gravados e convenções simbólicas; depois, perspectiva e planta, corte e alçado; mais tarde, geometria descritiva e normalização. No século XX e XXI surgem CAD, render, 3D, BIM, realidade virtual, realidade aumentada e inteligência artificial."
+  ],
+  [
+    "A Renascença deu à representação espacial um método geométrico mais rigoroso. A perspectiva linear, associada a Brunelleschi por volta de 1420, aproximou o desenho da experiência visual. Alberti ajudou a codificar a teoria e Rafael consolidou o uso articulado de planta, corte e alçado. O espaço passou a ser projectado com maior controlo.",
+    "A contribuição renascentista está na passagem de uma representação sobretudo simbólica para uma representação óptica e geométrica. A perspectiva permitiu simular profundidade; a planta, o corte e o alçado permitiram descrever o edifício com precisão. O arquitecto passou a controlar a obra antes da construção.",
+    "No Renascimento, representar o espaço tornou-se uma operação matemática e intelectual. A perspectiva organizou a visão; os desenhos ortogonais organizaram a construção. Essa mudança separou mais claramente o arquitecto do construtor, pois a ideia passou a dirigir a obra através do desenho."
+  ],
+  [
+    "Alberti reforçou a arquitectura como disciplina intelectual e tratou o desenho como meio de concepção. Rafael contribuiu para a sistematização de planta, corte e alçado no levantamento de Roma. Palladio difundiu uma linguagem clássica clara, baseada em proporção, simetria e desenhos legíveis. Os três ajudaram a fixar o desenho como linguagem do arquitecto.",
+    "Rafael, Palladio e Alberti consolidaram uma forma de comunicar arquitectura por meio de regras, proporções e peças gráficas. Alberti deu base teórica, Rafael organizou o levantamento e a representação técnica, Palladio tornou o sistema didáctico e influente através dos seus livros. A arquitectura ganhou uma linguagem transmissível.",
+    "O papel destes autores foi transformar o desenho em instrumento de pensamento e comunicação. Alberti escreveu e codificou, Rafael articulou vistas complementares, Palladio mostrou como a proporção e a clareza gráfica podiam orientar projecto e construção. A linguagem arquitectónica tornou-se mais estável e partilhável."
+  ],
+  [
+    "A geometria descritiva de Gaspard Monge, publicada em 1795, deu base científica à representação ortogonal. Ela permite projectar o espaço tridimensional em planos bidimensionais e reconstruir mentalmente o objecto. Para a arquitectura, isso trouxe rigor, medição, controlo de alturas, leitura de volumes e comunicação técnica entre projectistas e construtores.",
+    "Monge tornou a representação espacial mais exacta. Com projecções ortogonais, um objecto pode ser descrito por vistas complementares, como planta, alçado e perfil. Esse método reduz ambiguidades e permite que o desenho seja usado para construir. Por isso, a geometria descritiva está na base do desenho técnico moderno.",
+    "A importância de Monge está na passagem do desenho como aparência para o desenho como método. A geometria descritiva não procura apenas mostrar um objecto bonito. Ela permite localizar pontos, planos e volumes no espaço. Na arquitectura, isso sustenta plantas, cortes, alçados e pormenores executivos."
+  ],
+  [
+    "O croquis é rápido, exploratório e pessoal; ajuda o arquitecto a pensar. O desenho técnico é rigoroso, cotado e normativo; orienta a execução. O desenho de apresentação comunica a proposta a clientes, júris ou comunidade, combinando clareza, selecção visual e intenção persuasiva.",
+    "Cada tipo de desenho responde a uma fase e a um público. O croquis serve a descoberta da ideia. O desenho técnico serve a obra e precisa de precisão. O desenho de apresentação serve a compreensão externa, por isso organiza a informação para explicar e convencer.",
+    "A diferença está na intenção. No croquis, o arquitecto conversa consigo mesmo. No desenho técnico, fala com construtores, engenheiros e entidades licenciadoras. No desenho de apresentação, fala com quem precisa perceber o valor do projecto sem dominar todos os códigos técnicos."
+  ],
+  [
+    "A afirmação significa que o projecto nasce no próprio acto de representar. Ao desenhar, o arquitecto não apenas regista uma ideia pronta. Ele testa relações, descobre problemas, muda proporções e encontra soluções. O desenho, a maquete e o modelo são instrumentos activos de pensamento.",
+    "Representar é projectar porque a arquitectura se desenvolve por meio das suas representações. Uma planta revela conflitos de circulação; um corte mostra problemas de altura e luz; uma maquete evidencia volume e escala. Cada representação faz o projecto avançar.",
+    "O projecto não existe primeiro de forma completa para depois ser desenhado. Ele ganha forma enquanto é desenhado, modelado, descrito e revisto. Por isso, a representação é parte do pensamento arquitectónico, não uma etapa de acabamento."
+  ],
+  [
+    "A planta mostra a organização horizontal dos espaços, os acessos, a circulação e as relações entre compartimentos. O corte revela alturas, estrutura, luz, pé direito e ligação entre pisos. O alçado mostra a imagem exterior, as proporções, os vãos e a relação com a rua. Juntas, estas peças tornam o edifício compreensível.",
+    "Planta, corte e alçado são a base da linguagem técnica da arquitectura. A planta ajuda a ler o edifício como organização; o corte mostra a dimensão vertical; o alçado comunica a fachada. Nenhuma vista basta sozinha. A compreensão surge da leitura cruzada entre elas.",
+    "O valor destas peças está na complementaridade. A planta funciona como mapa do edifício, o corte explica o interior e as alturas, o alçado apresenta a face pública. São desenhos usados por arquitectos, engenheiros, construtores, clientes e entidades públicas."
+  ],
+  [
+    "O desenho técnico é documento técnico porque contém medidas, materiais, símbolos, detalhes e informações de execução. Também é jurídico porque integra processos de licenciamento, contratos e responsabilidades. Um erro de cota, uma omissão ou uma alteração no desenho pode afectar custos, prazos e obrigações legais.",
+    "Na obra, o desenho técnico não é uma imagem livre. Ele orienta o que deve ser construído, com que dimensões e segundo que especificações. Por isso tem valor técnico. Como pode ser aprovado, assinado e usado em contrato, também tem valor jurídico.",
+    "Plantas, cortes, alçados e pormenores são instrumentos de comunicação e prova. Definem limites, alturas, materiais, vãos e soluções construtivas. Quando entram num processo oficial ou numa empreitada, deixam de ser apenas desenhos e passam a vincular decisões."
+  ],
+  [
+    "A maquete física permite compreender volume, escala, implantação e relação entre partes de forma táctil. Ao contrário do ecrã, pode ser rodada, observada com luz real e comparada com o corpo. No processo de concepção, ajuda a testar massas, vazios, percursos e presença do edifício no lugar.",
+    "A importância da maquete está na experiência directa. Ela revela sombras, proporções e relações espaciais que às vezes escapam na planta ou no modelo digital. A maquete de estudo ajuda a decidir; a maquete de apresentação ajuda a comunicar a forma e a intenção do projecto.",
+    "Fazer uma maquete obriga o arquitecto a simplificar e escolher. Essa operação é útil porque mostra o essencial: volume, escala, cheios, vazios e implantação. A dimensão manual também introduz descobertas que podem não aparecer no desenho técnico."
+  ],
+  [
+    "O BIM pode ser entendido como imagem activa porque contém forma e informação. Uma parede no BIM pode incluir espessura, material, custo, desempenho e fase de obra. Quando o modelo muda, plantas, cortes, alçados e mapas podem actualizar-se. A imagem deixa de apenas mostrar e passa a coordenar dados.",
+    "No BIM, o modelo digital é uma base de dados visual. Ele reúne geometria, materiais, quantidades, custos e fases de construção. Assim, a representação participa na gestão do projecto e da obra. É activa porque calcula, relaciona e permite simulações.",
+    "A imagem activa não fica parada como um desenho isolado. No BIM, cada elemento está ligado a informações e consequências. Alterar uma janela pode afectar fachada, orçamento, iluminação e documentação. Por isso o modelo funciona como representação, ferramenta de análise e meio de comunicação entre disciplinas."
+  ],
+  [
+    "A memória descritiva representa o projecto por palavras. Ela explica intenções, contexto, programa, decisões, materiais, relação com o lugar e critérios técnicos. O desenho mostra onde estão as coisas; a memória ajuda a entender por que foram escolhidas. É útil para clientes, júris, entidades públicas e equipa técnica.",
+    "A função da memória descritiva é transformar a lógica do projecto em argumento escrito. Ela narra o problema, justifica a solução e liga desenho, contexto e conceito. Quando bem feita, não repete a planta; acrescenta sentido ao que a planta não consegue dizer sozinha.",
+    "No processo arquitectónico, a memória descritiva é uma representação verbal. Ela organiza o discurso do projecto, esclarece opções e regista decisões. Também ajuda quem não domina desenhos técnicos a perceber a proposta, os seus objectivos e a sua relação com o lugar."
+  ],
+  [
+    "A colagem e a fotomontagem aproximam o projecto de uma leitura imediata. A colagem constrói atmosfera combinando imagens, texturas, pessoas e fragmentos. A fotomontagem insere a proposta numa fotografia do local, mostrando escala e impacto. São úteis para públicos não técnicos porque comunicam uso e ambiente com rapidez.",
+    "Para quem não lê plantas, a colagem e a fotomontagem ajudam a perceber como o projecto pode aparecer no mundo real. Elas mostram proporção, contexto, presença humana e materialidade. O cuidado ético é não esconder problemas do lugar nem criar uma expectativa que a obra não poderá cumprir.",
+    "Estes meios traduzem o projecto para uma linguagem visual acessível. Uma fotomontagem mostra o edifício no terreno; uma colagem pode mostrar vida, sombra, textura e apropriação. Por isso são eficazes em apresentações a clientes, comunidades e júris, desde que não manipulem a realidade de forma enganosa."
+  ],
+  [
+    "A imagem arquitectónica não é neutra porque resulta de escolhas. O autor decide ângulo, luz, hora do dia, vegetação, pessoas, enquadramento, materiais e contexto visível. Cada escolha orienta a leitura do observador. A imagem não mostra apenas o projecto; constrói uma versão dele.",
+    "Uma imagem de arquitectura é sempre interpretação. Mostrar uma fachada ao pôr do sol não comunica o mesmo que mostrá-la ao meio dia. Retirar postes, lixo ou edifícios vizinhos também altera a percepção. Por isso, a imagem pode esclarecer, valorizar ou manipular.",
+    "Não existe render ou fotografia totalmente inocente. O ponto de vista, a escala humana, a cor, a profundidade de campo e a selecção do contexto funcionam como argumentos visuais. A imagem arquitectónica deve ser lida com atenção crítica."
+  ],
+  [
+    "Os principais elementos narrativos do render são enquadramento, ponto de vista, luz, atmosfera, textura, materialidade, profundidade de campo, figura humana, vegetação e contexto. Esses elementos dizem ao observador como deve perceber o projecto: monumental, acolhedor, público, íntimo, tecnológico, natural ou socialmente activo.",
+    "O render constrói uma história com recursos visuais. A luz define clima, o enquadramento define foco, a textura sugere materialidade, a figura humana dá escala e uso, o contexto mostra integração ou isolamento. Quando estes elementos são combinados, a imagem passa a argumentar.",
+    "Num render, nada é apenas decorativo. O céu, a hora, as pessoas, o mobiliário, a vegetação e os reflexos ajudam a criar uma narrativa sobre a vida esperada naquele espaço. O risco aparece quando a narrativa fica mais convincente do que o próprio projecto."
+  ],
+  [
+    "O enquadramento decide o que entra e o que fica fora da imagem. A luz define atmosfera, profundidade e emoção. A textura comunica material, peso, temperatura e proximidade táctil. Juntos, estes três elementos podem fazer o mesmo projecto parecer público ou íntimo, pesado ou leve, realista ou idealizado.",
+    "Um enquadramento baixo pode monumentalizar um edifício; um enquadramento ao nível do olhar aproxima-o do utilizador. A luz rasante dramatiza volumes, enquanto a luz difusa suaviza a leitura. A textura do betão, da madeira ou do vidro afecta a forma como imaginamos tocar e habitar o espaço.",
+    "A leitura do projecto muda conforme a imagem é construída. Enquadrar um detalhe valoriza materialidade; enquadrar o conjunto valoriza contexto. A luz pode revelar ou esconder. A textura pode sugerir honestidade construtiva, conforto, tecnologia ou desgaste. Esses recursos orientam a percepção antes da obra existir."
+  ],
+  [
+    "A figura humana dá escala ao projecto e mostra como o espaço pode ser usado. Um corpo junto a uma fachada ajuda a perceber altura e proporção. Pessoas sentadas, caminhando ou conversando criam narrativa de permanência, circulação ou encontro. Usada sem cuidado, a figura pode idealizar demais o uso real.",
+    "No render, a figura humana funciona como medida e como história. Mede porque o observador compara o edifício ao corpo. Conta história porque indica quem usa o espaço, que actividades acontecem e que ambiente social se pretende comunicar.",
+    "A presença humana transforma uma imagem técnica em espaço habitável. Mostra se o lugar é de passagem, descanso, trabalho, festa ou contemplação. Mas também tem responsabilidade ética: pessoas demasiado idealizadas ou fora do contexto podem vender uma imagem social falsa."
+  ],
+  [
+    "O diagrama descritivo explica uma situação, como fluxos existentes, orientação solar, densidades ou relações programáticas já definidas. O diagrama operativo participa na decisão de projecto. Ele não só mostra, mas propõe: organiza massas, percursos, acessos, usos e estratégias ambientais.",
+    "A diferença está na função. O descritivo ajuda a compreender uma condição; o operativo ajuda a transformá-la. Um mapa de cheias pode ser descritivo. Quando esse mapa orienta a implantação, define cotas e desloca programas, passa a operar no projecto.",
+    "Diagramas descritivos respondem à pergunta: como é a situação? Diagramas operativos respondem: como agir sobre ela? Na prática, a análise pode começar como descrição e tornar-se operação quando passa a justificar uma decisão espacial."
+  ],
+  [
+    "A infografia traduz dados complexos em imagens legíveis, como fluxos, densidades, usos, fases ou consumos. O mapa situa o projecto no território e revela relações que justificam decisões. Ambos ajudam a defender uma ideia porque mostram evidências de modo visual, rápido e comparável.",
+    "Infografias e mapas dão suporte ao argumento do projecto. Um mapa de acessos pode justificar uma entrada; uma infografia de ventilação pode explicar uma solução ambiental. Eles não são simples decoração de painel. São formas de organizar informação para convencer com clareza.",
+    "A defesa de uma proposta ganha força quando dados e espaço são apresentados visualmente. O mapa mostra onde e com que relações o projecto se insere. A infografia mostra como números, processos ou fluxos sustentam a solução. A qualidade depende da honestidade da selecção."
+  ],
+  [
+    "A frase de Mario Biselli lembra que concursos dependem muito da representação gráfica. Uma boa imagem torna a ideia mais clara, sedutora e memorável para o júri. A provocação está no risco de a apresentação pesar mais do que a qualidade arquitectónica. O ideal é que a imagem sirva a ideia, não a substitua.",
+    "Biselli chama atenção para o poder da imagem em concursos, clientes e financiamento. Um projecto bem representado chega mais facilmente ao debate e pode vencer pela clareza emocional. Mas isso cria uma pergunta ética: estamos a premiar a melhor arquitectura ou a melhor comunicação visual?",
+    "A representação gráfica pode decidir a leitura de um concurso. Diagramas, renders e painéis bem organizados ajudam o júri a entender rapidamente a proposta. O problema aparece quando a imagem encobre fragilidades de programa, construção ou contexto. A boa representação deve revelar o projecto, não disfarçá-lo."
+  ],
+  [
+    "Archiporn designa imagens arquitectónicas demasiado sedutoras, geralmente renders com luz perfeita, vegetação exuberante, pessoas idealizadas e ausência de conflito urbano. O risco ético está em prometer uma experiência que a obra construída não conseguirá cumprir. A imagem vende desejo, mas pode produzir frustração depois da construção.",
+    "O conceito critica a imagem que transforma o projecto em fantasia visual. Um render pode esconder fios eléctricos, poeira, manutenção difícil, vizinhança real ou limitações materiais. Quando isso acontece, a representação deixa de informar e passa a manipular expectativas.",
+    "Archiporn é a arquitectura apresentada como espectáculo visual desligado da experiência provável. O problema não é tornar a imagem bonita; é mascarar a realidade do lugar, do uso e da construção. A ética exige distinguir valorização legítima de promessa enganosa."
+  ],
+  [
+    "Em Moçambique, a ética da imagem exige atenção à diversidade cultural, à literacia visual desigual e às condições reais de construção e manutenção. Muitas comunidades não leem renders de forma crítica. Por isso, imagens idealizadas podem criar expectativas falsas. O arquitecto deve representar o contexto real e explicar o que a imagem mostra.",
+    "O desafio moçambicano passa por comunicar sem apagar o lugar. Renders com vegetação irreal, figuras fora do contexto, materiais importados ou ausência de elementos existentes podem distorcer a proposta. A imagem deve ajudar o público a compreender o projecto, não vender uma realidade improvável.",
+    "A ética da imagem em Moçambique liga representação, cultura e responsabilidade social. O arquitecto precisa considerar quem vai ver a imagem e que ferramentas tem para a interpretar. Para comunidades, governo ou cliente, a comunicação deve ser clara, situada e honesta sobre limites, fases e condições reais."
+  ],
+  [
+    "O processo de comunicação envolve emissor, mensagem, canal, receptor e feedback. Na arquitectura, o emissor pode ser o arquitecto; a mensagem é o projecto ou uma decisão; o canal pode ser desenho, maquete, reunião ou texto; o receptor pode ser cliente, construtor, Estado ou comunidade. O feedback confirma se houve entendimento.",
+    "Comunicar é partilhar significado. O emissor codifica uma ideia, a mensagem circula por um canal e o receptor interpreta a partir da sua experiência. O feedback fecha o ciclo, permitindo corrigir falhas. Na arquitectura, isso evita conflitos entre intenção, desenho e execução.",
+    "Aplicado ao projecto, o processo é simples: alguém comunica uma ideia de espaço, escolhe um meio e recebe uma resposta. Se o cliente não entende a planta, se o construtor interpreta mal um detalhe ou se a comunidade rejeita uma imagem, o feedback mostra que a comunicação precisa ser ajustada."
+  ],
+  [
+    "A comunicação verbal usa palavras, em apresentações, reuniões, relatórios e memórias descritivas. A não verbal inclui postura, gestos, expressão facial e também sinais visuais que acompanham a apresentação. A comunicação espacial ocorre quando o próprio edifício fala por forma, escala, materiais, luz, circulação e relação com o entorno.",
+    "Na arquitectura, comunicar não é apenas falar. A linguagem verbal explica conceitos; a não verbal pode reforçar ou contrariar o discurso; a espacial é sentida no corpo, quando o utilizador percorre, entra, espera, sobe ou se orienta num edifício.",
+    "A verbal está ligada ao texto e à fala. A não verbal aparece no corpo, no gesto e na atitude do apresentador. A espacial está no ambiente construído: um átrio amplo comunica abertura, um corredor estreito comunica passagem rápida, uma fachada transparente comunica visibilidade."
+  ],
+  [
+    "Comunicação poliédrica significa adaptar a representação ao público. O cliente precisa de imagens acessíveis e foco na experiência. O construtor precisa de desenhos técnicos claros. A comunidade precisa de linguagem simples e participativa. O Estado precisa de documentação normativa. O arquitecto competente muda o modo de comunicar sem alterar a coerência do projecto.",
+    "A ideia de comunicação poliédrica parte do facto de que a arquitectura tem muitos interlocutores. O mesmo projecto não deve ser explicado da mesma maneira a um júri, a um empreiteiro, a uma câmara municipal ou a moradores. Cada público exige uma face diferente da informação.",
+    "Profissionalmente, este conceito evita falhas de entendimento. Um render pode convencer um cliente, mas não orienta a obra. Um pormenor técnico serve ao construtor, mas pode confundir a comunidade. Comunicar de forma poliédrica é escolher o meio certo para cada relação."
+  ],
+  [
+    "Imagem activa é a representação que não apenas mostra, mas participa no pensamento e na gestão do projecto. Um BIM, por exemplo, reúne forma, materiais, custos, fases e desempenho. A imagem pode ser lida em camadas e pode alterar decisões. Ela funciona como interface de informação.",
+    "Segundo a noção de imagem activa, a representação age. Um desenho pode fazer o arquitecto descobrir um problema; um render pode orientar a percepção do cliente; um modelo BIM pode actualizar quantidades e vistas. A imagem deixa de ser resultado final e passa a ferramenta de trabalho.",
+    "A imagem activa opõe-se à imagem passiva. Ela não fica limitada à aparência. Contém dados, relações, regras ou camadas de leitura. Em arquitectura, isto aparece no modelo digital, no diagrama operativo e em qualquer representação que ajuda a decidir, calcular, comunicar ou corrigir."
+  ],
+  [
+    "A arquitectura funciona como linguagem porque comunica por signos espaciais. Forma, escala, materiais, luz, cor, textura, percurso e proporção transmitem valores e orientam comportamentos. Um edifício pode sugerir abertura, poder, intimidade, memória, transparência ou exclusão sem usar palavras.",
+    "Como linguagem, a arquitectura tem elementos que podem ser lidos. Uma coluna pode comunicar estabilidade; o vidro pode sugerir transparência; um pátio pode comunicar encontro; uma escadaria monumental pode indicar autoridade. O significado depende do contexto cultural e do uso.",
+    "Um edifício fala através da sua organização. A entrada diz como se acede, a circulação diz como se move, os materiais dizem que tipo de ambiente se quer criar. Essa linguagem não é única nem fechada, pois cada utilizador interpreta a partir da sua experiência."
+  ],
+  [
+    "A semiótica arquitectónica estuda como os elementos do espaço funcionam como signos. Por exemplo, grandes vãos envidraçados podem comunicar abertura e transparência, enquanto muros altos podem comunicar protecção ou exclusão. O mesmo elemento pode mudar de significado conforme o lugar, a cultura e o uso.",
+    "Na arquitectura, signo é qualquer elemento que transmite significado além da sua função imediata. Uma porta permite passagem, mas se for monumental também comunica importância. Uma rampa permite acesso, mas pode comunicar inclusão. A semiótica ajuda a ler essas camadas.",
+    "Um exemplo simples é o corredor estreito que se abre para um átrio amplo. Funcionalmente, ele conduz pessoas. Simbolicamente, cria compressão e libertação. A semiótica arquitectónica analisa precisamente essa passagem entre forma física, uso e significado cultural."
+  ],
+  [
+    "A arquitectura expressa identidade cultural quando trabalha com memória, materiais locais, técnicas construtivas, padrões, clima e modos de habitar. Não precisa copiar o passado. Pode reinterpretar elementos vernaculares numa linguagem contemporânea, criando continuidade entre tradição, inovação e vida actual.",
+    "A identidade cultural aparece na forma como o edifício se relaciona com o lugar. Materiais, sombra, pátios, varandas, ritmos de fachada, ornamentos e organização social do espaço podem comunicar pertença. O desafio é evitar folclore superficial e transformar referências em arquitectura viva.",
+    "Um projecto expressa cultura quando respeita as práticas e valores de quem o usa. Isso pode acontecer por materiais locais, técnicas adaptadas, símbolos reconhecíveis ou formas de convivência. A arquitectura torna-se identidade quando as pessoas se reconhecem nela."
+  ],
+  [
+    "A organização espacial influencia percepção, movimento, emoção e memória. Um percurso directo acelera o deslocamento; uma sequência de espaços abre expectativa; um átrio iluminado pode acolher; uma zona confusa pode gerar insegurança. O utilizador não vive o edifício como objecto, mas como experiência no tempo.",
+    "O modo como os espaços se organizam determina como as pessoas entram, se orientam, permanecem e se encontram. Luz, som, proporção, circulação e materiais afectam o comportamento. Por isso, a experiência do utilizador deve ser considerada desde o início do projecto.",
+    "A planta não organiza apenas funções. Ela organiza relações humanas. A posição das entradas, a largura dos corredores, a visibilidade entre espaços, as zonas de pausa e a hierarquia entre público e privado influenciam conforto, segurança, encontro e memória."
+  ],
+  [
+    "A arquitectura institucional comunica valores de uma organização. Um tribunal pode transmitir autoridade; uma biblioteca pode comunicar abertura ao conhecimento; uma empresa pode usar forma, material e organização para expressar inovação, transparência ou colaboração. O edifício torna-se parte da imagem pública da instituição.",
+    "Instituições usam arquitectura para tornar visível a sua identidade. O Apple Park, por exemplo, comunica colaboração, controlo formal e uma ideia de inovação através da sua forma circular e linguagem minimalista. Nesse sentido, o edifício funciona como comunicação permanente.",
+    "Uma sede, escola, museu ou edifício governamental não é apenas contentor de actividades. Ele apresenta uma imagem de quem o ocupa. Escala, fachada, acesso, materiais e espaços internos dizem como a instituição se vê e como quer ser vista."
+  ],
+  [
+    "A função social da arquitectura está em criar espaços acessíveis, inclusivos, seguros e sustentáveis. Um edifício deve poder ser usado por pessoas com diferentes capacidades, idades e condições sociais. Também deve reduzir impacto ambiental, usar recursos com responsabilidade e fortalecer a vida comunitária.",
+    "Inclusão e sustentabilidade são partes da responsabilidade arquitectónica. Rampas, percursos claros, conforto climático, materiais adequados, sombra, água, energia e espaços de encontro afectam directamente a vida das pessoas. A arquitectura cumpre função social quando melhora o quotidiano e não exclui.",
+    "A arquitectura tem impacto público mesmo quando é privada. Pode facilitar encontro, proteger do clima, reduzir consumo energético, acolher diferenças e responder a problemas locais. A função social aparece quando o projecto considera pessoas, ambiente, manutenção e comunidade."
+  ],
+  [
+    "Uma apresentação eficaz começa por identificar o público. Para clientes, funcionam imagens claras, maquetes e narrativa de uso. Para o Estado, documentação técnica e conformidade legal. Para a comunidade, linguagem simples e participação. Para construtores, pormenores e especificações. Para júris, conceito forte, diagramas e síntese visual.",
+    "As estratégias principais são conhecer o interlocutor, construir uma narrativa, seleccionar os meios visuais adequados e recolher feedback. O arquitecto deve adaptar vocabulário, detalhe e imagem. A mesma proposta pode precisar de render, planta, corte, maquete, memória descritiva ou conversa pública, conforme o público.",
+    "Apresentar bem é traduzir o projecto. Um cliente quer perceber benefícios e experiência; um engenheiro precisa de precisão; uma comunidade quer saber impactos; um júri procura clareza de ideia. A eficácia depende da escolha do canal, da ordem do argumento e da abertura para respostas."
+  ],
+  [
+    "As tecnologias digitais ampliaram a comunicação arquitectónica com CAD, modelação 3D, render fotorrealista, BIM, realidade virtual, realidade aumentada e plataformas colaborativas. Elas permitem visualizar, simular e coordenar o projecto antes da obra. O risco está em substituir análise crítica por imagem sedutora ou em excluir públicos sem acesso digital.",
+    "O digital permite mostrar o projecto de modos antes difíceis: percursos virtuais, modelos informados, imagens de materiais, simulações solares e coordenação entre especialidades. Essas ferramentas melhoram a compreensão, mas exigem ética. Uma visualização bonita não garante que a solução seja boa ou viável.",
+    "Na prática contemporânea, a comunicação passa cada vez mais por ecrãs, modelos e plataformas. O BIM coordena informação, o render aproxima o cliente da aparência, a realidade aumentada mostra o projecto no local. O desafio é usar a tecnologia para esclarecer, não para mascarar problemas."
+  ],
+  [
+    "O marketing entrou na prática arquitectónica porque os arquitectos precisam comunicar valor, portfólio e posicionamento. Redes sociais, vídeos, artigos, publicações e concursos ajudam a atrair clientes e divulgar ideias. O problema surge quando a imagem de marca pesa mais do que qualidade construtiva, contexto e responsabilidade.",
+    "Arquitectura e marketing relacionam-se através da forma como o projecto é apresentado ao público. Um gabinete comunica competência por obras, imagens, textos e presença digital. A comunicação pode educar e aproximar clientes, mas não deve transformar arquitectura em simples produto visual.",
+    "Na prática actual, o arquitecto também gere narrativa pública. Portfólio, redes sociais, fotografias e publicações influenciam oportunidades profissionais. Essa visibilidade é útil, mas deve manter compromisso com rigor, ética e qualidade. O melhor marketing continua a ser uma obra bem pensada e bem construída."
+  ],
+  [
+    "A globalização aumentou a circulação de imagens, referências, softwares e métodos de comunicação. Arquitectos de diferentes países podem colaborar em tempo real e usar códigos técnicos comuns. Ao mesmo tempo, cresceu o risco de padronização estética e de importação de soluções pouco adaptadas ao clima, cultura e economia locais.",
+    "A comunicação arquitectónica tornou-se mais rápida e internacional. Um projecto publicado online pode influenciar estudantes e escritórios em vários continentes. Isso amplia repertório, mas também cria edifícios parecidos em contextos distintos. O desafio é usar recursos globais sem perder resposta local.",
+    "Com a globalização, a arquitectura passou a comunicar para públicos mais amplos. Inglês técnico, softwares, redes sociais e plataformas de projecto criam uma linguagem comum. Porém, essa facilidade pode apagar diferenças culturais. A boa prática combina clareza global com atenção ao lugar."
+  ],
+  [
+    "Representação, imagem e comunicação formam uma mesma competência na arquitectura. A representação ajuda a pensar o projecto; a imagem constrói a forma como ele será percebido; a comunicação adapta essa ideia a clientes, técnicos, Estado e comunidade. O arquitecto contemporâneo precisa dominar os três campos com rigor e responsabilidade ética.",
+    "Na formação do arquitecto, desenhar, produzir imagens e apresentar ideias não são tarefas separadas. O croquis ajuda a pensar, o desenho técnico permite construir, o render e a maquete aproximam públicos diferentes, e a palavra organiza o argumento. A prática profissional exige essa integração.",
+    "A relação entre representação, imagem e comunicação define a passagem da ideia à obra. Representar torna o invisível discutível. A imagem cria percepção, desejo e também risco de manipulação. A comunicação verifica se o projecto foi entendido. O desafio do arquitecto é usar esses meios para esclarecer e construir melhor, não apenas para convencer."
+  ]
+];
+
 const inp = document.getElementById('s');
 const clr = document.getElementById('sClr');
 const ico = document.getElementById('sIco');
 const empty = document.getElementById('empty');
 const bar = document.getElementById('result-bar');
 const chapters = document.querySelectorAll('.chapter');
+
+function pickAnswer(list){
+  return list[Math.floor(Math.random() * list.length)];
+}
+
+document.querySelectorAll('.q-card').forEach((card, index) => {
+  const aEl = card.querySelector('.q-answer');
+  const list = answerVariations[index];
+  if(!aEl || !Array.isArray(list) || list.length === 0) return;
+  const choice = Math.floor(Math.random() * list.length);
+  aEl.textContent = list[choice];
+  aEl.dataset.variation = String(choice + 1);
+});
 
 function norm(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
 
@@ -420,7 +625,7 @@ function hl(text, q){
   return r;
 }
 
-// Cache originals before any innerHTML mutation
+// Cache after randomizing, so the search works with the visible answer only.
 const cards = Array.from(document.querySelectorAll('.q-card')).map(c => ({
   el: c,
   qEl: c.querySelector('.q-question'),
