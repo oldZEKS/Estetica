@@ -1,179 +1,400 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/ZEKSTK/Downloads/estetica%20(3).html -->
-<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Estética — ZEKS&amp;A</title>
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="./Estética — Q&amp;A_files/css2" rel="stylesheet">
+<title>RCI — Representação, Comunicação & Imagem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:#111;color:#f0f0ec;font-family:'Archivo',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased}
 
-/* HEADER */
-header{padding:40px 20px 28px;border-bottom:1px solid #222}
-.tag{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#444;margin-bottom:16px}
-h1{font-family:'Archivo Black',sans-serif;font-size:clamp(52px,16vw,80px);line-height:.88;letter-spacing:-.04em;color:#f0f0ec;margin-bottom:24px}
-h1 em{font-style:normal;color:#2e2e2e}
+/* ── HEADER ── */
+header{padding:36px 20px 24px;border-bottom:1px solid #1e1e1e;position:relative;overflow:hidden}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#3a3a3a;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.tag::before{content:'';display:inline-block;width:18px;height:1px;background:#2e2e2e}
+h1{font-family:'Archivo Black',sans-serif;font-size:clamp(54px,17vw,82px);line-height:.86;letter-spacing:-.05em;color:#f0f0ec;margin-bottom:6px}
+h1 .slash{color:#222;font-style:normal}
+.h1-sub{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#2e2e2e;margin-bottom:24px;padding-left:2px}
 
-/* SEARCH */
-.search-wrap{position:relative;margin-bottom:0}
+/* ── SEARCH ── */
+.search-wrap{position:relative}
 .search-wrap input{
-  width:100%;background:#1a1a1a;border:1px solid #2e2e2e;
-  color:#f0f0ec;font-family:'Archivo',sans-serif;font-size:16px;
-  padding:14px 44px 14px 16px;outline:none;border-radius:0;
-  -webkit-appearance:none;transition:border-color .2s
+  width:100%;background:#181818;border:1px solid #272727;
+  color:#f0f0ec;font-family:'Archivo',sans-serif;font-size:15px;
+  padding:15px 48px 15px 18px;outline:none;border-radius:0;
+  -webkit-appearance:none;transition:border-color .18s,background .18s;
+  letter-spacing:-.01em
 }
-.search-wrap input::placeholder{color:#444}
-.search-wrap input:focus{border-color:#555}
-.s-icon,.s-clear{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:#555;cursor:pointer;font-size:18px;line-height:1;padding:4px}
-.s-clear{display:none;color:#888}
+.search-wrap input::placeholder{color:#333}
+.search-wrap input:focus{border-color:#444;background:#1c1c1c}
+.s-icon,.s-clear{position:absolute;right:15px;top:50%;transform:translateY(-50%);background:none;border:none;color:#444;cursor:pointer;line-height:1;padding:5px;transition:color .15s}
+.s-clear{display:none;font-size:20px;color:#555}
 .s-clear:hover{color:#f0f0ec}
 
-/* STATS */
-.stats{display:flex;gap:24px;padding:14px 20px;border-bottom:1px solid #1e1e1e;background:#0d0d0d}
-.stat-num{font-family:'Archivo Black',sans-serif;font-size:18px;color:#f0f0ec;letter-spacing:-.04em;margin-right:5px}
-.stat-lbl{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#444}
-#result-bar{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#444;align-self:center}
-
-/* SECTIONS */
-main{background:#f6f6f2}
-.section-block{}
-.section-header{
-  display:flex;align-items:baseline;gap:12px;
-  padding:28px 20px 16px;
-  border-bottom:1px solid #ddddd8;
-  position:sticky;top:0;background:#f6f6f2;z-index:10
+/* ── META BAR ── */
+.meta-bar{
+  display:flex;align-items:center;gap:0;
+  background:#0c0c0c;border-bottom:1px solid #181818;
+  padding:0 20px;height:42px;overflow:hidden
 }
-.sec-letter{font-family:'Archivo Black',sans-serif;font-size:28px;color:#ccc;letter-spacing:-.04em;line-height:1}
-.sec-name{font-size:12px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.06em}
+.m-item{display:flex;align-items:center;gap:6px;padding-right:20px;margin-right:20px;border-right:1px solid #1e1e1e}
+.m-item:last-child{border-right:none;margin-right:0;margin-left:auto}
+.m-num{font-family:'Archivo Black',sans-serif;font-size:16px;color:#f0f0ec;letter-spacing:-.04em}
+.m-lbl{font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#333}
+#result-bar{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#444;white-space:nowrap}
 
-/* CARDS */
+/* ── CHAPTERS ── */
+main{background:#f4f4f0}
+.chapter{border-bottom:2px solid #e0e0da}
+.chapter-header{
+  display:flex;align-items:baseline;gap:10px;
+  padding:22px 20px 12px;
+  border-bottom:1px solid #e0e0da;
+  position:sticky;top:0;background:#f4f4f0;z-index:10
+}
+.ch-num{font-family:'Archivo Black',sans-serif;font-size:24px;color:#c8c8c2;letter-spacing:-.05em;line-height:1;flex-shrink:0}
+.ch-name{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#909088;line-height:1.3}
+
+/* ── CARDS ── */
 .q-card{
-  padding:20px 20px 20px 20px;
-  border-bottom:1px solid #e4e4e0;
-  display:grid;grid-template-columns:32px 1fr;gap:0;
-  background:#f6f6f2
+  padding:18px 20px;border-bottom:1px solid #e8e8e2;
+  display:grid;grid-template-columns:28px 1fr;gap:0;
+  background:#f4f4f0;transition:background .12s
 }
-.q-num{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#ccc;padding-top:3px;font-weight:400}
-.q-question{font-size:14px;font-weight:700;line-height:1.4;color:#1a1a1a;margin-bottom:10px;letter-spacing:-.01em}
-.q-answer{font-size:13px;line-height:1.68;color:#6a6a6a;font-weight:400}
-mark{background:#1a1a1a;color:#f6f6f2;padding:0 1px;border-radius:0}
+.q-card:active{background:#eeeee8}
+.q-num{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#c0c0ba;padding-top:2px;font-weight:400;letter-spacing:.02em}
+.q-question{font-size:13.5px;font-weight:700;line-height:1.38;color:#161616;margin-bottom:9px;letter-spacing:-.015em}
+.q-answer{font-size:12.5px;line-height:1.65;color:#686862;font-weight:400}
+mark{background:#161616;color:#f4f4f0;padding:0 2px;border-radius:0;font-weight:inherit}
 
-/* EMPTY */
-.empty-state{display:none;padding:64px 20px;text-align:center;background:#f6f6f2}
-.empty-big{font-family:'Archivo Black',sans-serif;font-size:72px;color:#e0e0da;letter-spacing:-.06em;line-height:1;margin-bottom:12px}
-.empty-msg{font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#aaa}
+/* ── TABLE IN CARDS ── */
+.q-answer table{width:100%;border-collapse:collapse;margin-top:8px;font-size:11px}
+.q-answer th,.q-answer td{text-align:left;padding:5px 8px;border:1px solid #d8d8d2;vertical-align:top;line-height:1.5}
+.q-answer th{background:#e4e4de;color:#333;font-weight:600;font-size:10px;letter-spacing:.03em}
 
-/* HIDDEN */
-.section-block.hidden{display:none}
+/* ── EMPTY ── */
+.empty-state{display:none;padding:72px 20px;text-align:center;background:#f4f4f0}
+.empty-big{font-family:'Archivo Black',sans-serif;font-size:80px;color:#ddddd8;letter-spacing:-.08em;line-height:1;margin-bottom:10px}
+.empty-msg{font-family:'IBM Plex Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:#aaa}
+
+/* ── HIDDEN ── */
+.chapter.hidden{display:none}
 .q-card.hidden{display:none}
 
-/* FOOTER */
-footer{background:#0d0d0d;padding:20px;border-top:1px solid #1e1e1e}
-.foot{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#333;text-transform:uppercase;letter-spacing:.1em;line-height:1.8}
+/* ── FOOTER ── */
+footer{background:#0c0c0c;padding:18px 20px;border-top:1px solid #181818}
+.foot{font-family:'IBM Plex Mono',monospace;font-size:8px;color:#2a2a2a;text-transform:uppercase;letter-spacing:.12em;line-height:2}
 </style>
 </head>
 <body>
 
 <header>
-  <p class="tag">Estética — Questões &amp; Respostas</p>
-  <h1><em>—</em><br>Estética</h1>
+  <p class="tag">FAPF — Semestre II 2024</p>
+  <h1>RCI<span class="slash">—</span></h1>
+  <p class="h1-sub">Representação · Comunicação · Imagem</p>
   <div class="search-wrap">
-    <input type="search" id="s" placeholder="Pesquisar…" autocomplete="off" spellcheck="false">
-    <svg class="s-icon" id="sIco" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-    <button class="s-clear" id="sClr" aria-label="Limpar" style="display: block;">×</button>
+    <input type="search" id="s" placeholder="Pesquisar questões…" autocomplete="off" spellcheck="false" inputmode="search">
+    <svg class="s-icon" id="sIco" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <button class="s-clear" id="sClr" aria-label="Limpar">×</button>
   </div>
 </header>
 
-<div class="stats">
-  <span><span class="stat-num">50</span><span class="stat-lbl">Questões</span></span>
-  <span><span class="stat-num">5</span><span class="stat-lbl">Secções</span></span>
-  <span id="result-bar">5 resultados</span>
+<div class="meta-bar">
+  <div class="m-item"><span class="m-num">50</span><span class="m-lbl">Questões</span></div>
+  <div class="m-item"><span class="m-num">3</span><span class="m-lbl">Capítulos</span></div>
+  <div class="m-item" style="border-right:none;margin-left:auto;padding-right:0"><span id="result-bar" class="m-lbl"></span></div>
 </div>
 
 <main id="main">
 
-<div class="section-block hidden" id="sec-a">
-  <div class="section-header"><span class="sec-letter">A</span><span class="sec-name">Fundamentos da estética</span></div>
-  <div class="q-card hidden" data-q="1"><span class="q-num">01</span><div><p class="q-question">Explique o significado do termo estética e a sua origem no conceito grego aisthesis.</p><p class="q-answer">O termo estética significa aquilo que se nota ou se percebe, estando ligado à perceção sensorial. Indica a teoria do conhecimento do sensível.</p></div></div>
-  <div class="q-card hidden" data-q="2"><span class="q-num">02</span><div><p class="q-question">Por que razão a estética pode ser entendida como uma disciplina filosófica autónoma?</p><p class="q-answer">A estética explora princípios fundamentais que regem a experiência estética sem depender diretamente de outros campos. O seu escopo inclui a análise de propriedades e conceitos estéticos, o estudo da expressão artística e da criatividade, e a relação entre juízos estéticos e contextos culturais ou históricos. Tem objeto próprio de estudo, usa métodos próprios e procura fundamentos próprios; a experiência estética possui validade própria, não derivada de outras áreas.</p></div></div>
-  <div class="q-card hidden" data-q="3"><span class="q-num">03</span><div><p class="q-question">Explique a contribuição de Alexander Baumgarten para a fundação da estética moderna.</p><p class="q-answer">Baumgarten atribuiu o atual significado ao termo estética, designando-a como ciência que trata do conhecimento sensorial, que chega à apreensão do belo e se expressa nas imagens da arte.</p></div></div>
-  <div class="q-card hidden" data-q="4"><span class="q-num">04</span><div><p class="q-question">O que significa afirmar que, para Baumgarten, a estética é a "ciência do conhecimento sensível"?</p><p class="q-answer">Significa que Baumgarten introduziu a estética como ciência do conhecimento sensorial, propondo um estudo sistemático paralelo à lógica, mas focado na experiência sensível em vez do intelecto.</p></div></div>
-  <div class="q-card hidden" data-q="5"><span class="q-num">05</span><div><p class="q-question">Explique a ideia de beleza como perfeição sensível em Baumgarten.</p><p class="q-answer">A perfeição sensível envolve a plenitude harmoniosa que a mente apreende não pela razão, mas pela cognição sensorial. Ela proporciona prazer quando um objeto é percebido de forma rica, vívida e unificada, aproximando-se da ideia do objeto.</p></div></div>
-  <div class="q-card hidden" data-q="6"><span class="q-num">06</span><div><p class="q-question">Qual é a diferença entre conhecimento sensorial e conhecimento lógico no pensamento de Baumgarten?</p><p class="q-answer">A lógica procura a verdade através da razão, enquanto a estética procura compreender a perfeição e a riqueza da experiência sensível.</p></div></div>
-  <div class="q-card hidden" data-q="7"><span class="q-num">07</span><div><p class="q-question">Explique por que razão a estética não deve ser reduzida apenas ao estudo do belo.</p><p class="q-answer">Limitar a estética unicamente ao belo restringe o seu âmbito e ignora o leque mais vasto de experiências humanas envolvidas na perceção artística e sensorial, como o sublime, o feio, o grotesco, o trágico, o cómico e o kitsch.</p></div></div>
-  <div class="q-card hidden" data-q="8"><span class="q-num">08</span><div><p class="q-question">Analise a relação entre estética, perceção e experiência sensorial na arquitetura.</p><p class="q-answer">A arquitetura não é meramente o produto de estruturas físicas; é também uma experiência imersiva que envolve os sentidos e as faculdades cognitivas humanas. A estética diz respeito aos princípios e qualidades que determinam a beleza e o poder expressivo do objeto. A perceção refere-se à forma como os seres humanos interpretam a informação sensorial para formar uma compreensão do ambiente.</p></div></div>
-  <div class="q-card hidden" data-q="9"><span class="q-num">09</span><div><p class="q-question">Por que razão a estética é considerada uma dimensão irredutível da experiência humana?</p><p class="q-answer">Porque envolve perceções, emoções e julgamentos que vão além do aspeto funcional. Está ligada à maneira como percebemos e valorizamos a arte, a beleza, a harmonia e a forma, constituindo parte fundamental da nossa vivência e compreensão do mundo.</p></div></div>
-  <div class="q-card hidden" data-q="10"><span class="q-num">10</span><div><p class="q-question">Explique a diferença entre juízo estético, preferência pessoal e gosto subjetivo.</p><p class="q-answer">O juízo estético procura justificar por que algo é considerado belo. A preferência pessoal refere-se ao que cada indivíduo gosta ou não gosta. O gosto subjetivo está relacionado com as características individuais, experiências e sensibilidades de cada pessoa.</p></div></div>
+<!-- ═══════════════════════════════════════════ CAP I ═══ -->
+<div class="chapter" id="cap-i">
+  <div class="chapter-header">
+    <span class="ch-num">I</span>
+    <span class="ch-name">Representação<br>Q1 – Q26</span>
+  </div>
+
+  <div class="q-card"><span class="q-num">01</span><div>
+    <p class="q-question">Defina, com rigor, o conceito de representação no contexto da arquitectura.</p>
+    <p class="q-answer">Representação em arquitectura é o processo de tornar presente algo que ainda não existe — um edifício por construir. Não é um registo do real, mas um acto projectivo que convoca o edifício à existência através de signos (desenhos, maquetes, modelos digitais, texto). Como escreveu Marx, "o que distingue o pior arquitecto da melhor abelha é que ele constrói na imaginação antes de construir na realidade".</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">02</span><div>
+    <p class="q-question">Explique a etimologia de repraesentare e a sua relevância para o pensamento arquitectónico.</p>
+    <p class="q-answer">Repraesentare, do latim, significa "tornar presente". A palavra contém uma tensão constitutiva: algo ausente é trazido à presença através de um signo. Em arquitectura, o projecto-representação está sempre entre o que existe (terreno, programa) e o que se convoca à existência (o edifício). O arquitecto representa o que ainda não é, mas que através da representação se torna possível.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">03</span><div>
+    <p class="q-question">Compare as perspectivas de Ockham, Descartes e Kant sobre a representação.</p>
+    <p class="q-answer">Ockham (séc. XIV): representação como signo mental que aponta para indivíduos concretos — só os indivíduos existem; os universais são apenas nomes. Descartes (séc. XVII): a ideia como imagem mental privada que representa o mundo externo — fosso entre mente e realidade. Kant (séc. XVIII): viragem copernicana — o mundo é organizado pelas categorias do sujeito; representar não é copiar o real, mas constituir o mundo que conhecemos. Em síntese: Ockham coloca a representação na linguagem; Descartes, na mente; Kant, na estrutura do entendimento.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">04</span><div>
+    <p class="q-question">Explique a diferença entre representação e representado, usando um exemplo arquitectónico.</p>
+    <p class="q-answer">A representação é o signo (desenho, maquete, render); o representado é aquilo a que o signo se refere (o edifício real ou projectado). O mapa não é o território. Exemplo: uma planta baixa de uma casa é a representação; a casa construída é o representado. A planta mostra paredes a duas dimensões, mas não mostra altura, textura, luz ou temperatura — o edifício real é sempre mais complexo que qualquer representação.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">05</span><div>
+    <p class="q-question">Desenvolva o princípio de que "o mapa não é o território" e aplique-o à arquitectura.</p>
+    <p class="q-answer">Formulado por Korzybski, o princípio afirma que qualquer representação é uma abstracção do real. Em arquitectura: (1) nenhum desenho capta a totalidade do edifício — cada representação é uma lente que revela certos aspectos e oculta outros; (2) a simplificação não é um defeito — é uma ferramenta cognitiva; (3) o arquitecto deve usar o mapa adequado para cada fase — um croquis no conceptual, o desenho técnico na execução, o render na comunicação com o cliente.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">06</span><div>
+    <p class="q-question">Explique por que razão a arquitectura ocupa uma posição intermédia entre o real e o representado.</p>
+    <p class="q-answer">A arquitectura é um tertium genus entre a ciência (que descreve o real) e a arte (que expressa o subjectivo). O projecto existe primeiro como representação (virtual), destina-se a tornar-se real (material), mas o edifício construído também comunica ideias e significados (representação). O arquitecto trabalha nesta dupla condição — lida simultaneamente com o real e o imaginado, o material e o simbólico.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">07</span><div>
+    <p class="q-question">Analise o papel da mimese na história da arte e a sua relação com a arquitectura.</p>
+    <p class="q-answer">Mimese (grego mímesis = imitação) é o conceito clássico de representação como imitação. Para Platão, a arte afasta-se da verdade ao imitar aparências. Para Aristóteles, a mimese é representação criativa — imita a essência, não a aparência. Em arquitectura, a boa mimese não imita — reinterpreta. A coluna clássica num edifício moderno é citação, transformação. A mimese arquitectónica é generativa, não repetitiva.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">08</span><div>
+    <p class="q-question">Distinga representação figurativa, simbólica e não-figurativa.</p>
+    <p class="q-answer">Figurativa: representa objectos reconhecíveis com aparência visual semelhante (render fotográfico, árvore na planta). Simbólica: representa ideias abstractas através de signos convencionados (círculo com cruz = altar; seta = circulação). Não-figurativa/abstracta: trabalha com qualidades formais puras — linha, cor, proporção (diagrama de relações espaciais, estudo de massas). As três coexistem na prática: figurativa para o público, simbólica para o técnico, abstracta para explorar conceitos.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">09</span><div>
+    <p class="q-question">Explique como a literatura demonstra a capacidade generativa da representação.</p>
+    <p class="q-answer">A literatura cria mundos que não existem através apenas de palavras — a Terra Média de Tolkien é o exemplo paradigmático: uma mitologia completa com geografia, línguas, história e culturas. A representação literária gera realidade imaginária com estrutura interna coerente. Em arquitectura, o mesmo princípio aplica-se: o projecto é um mundo possível que o arquitecto constrói primeiro como representação — a capacidade generativa da representação é o que permite "construir na imaginação antes de construir na realidade".</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">10</span><div>
+    <p class="q-question">Relacione cenografia e projecto arquitectónico enquanto formas de evocar mundos.</p>
+    <p class="q-answer">A cenografia cria espaços efémeros que evocam mundos — o palco é arquitectura temporária que o espectador habita com o olhar e a imaginação. O projecto arquitectónico faz o mesmo, mas com permanência. Cenografia: espaço para ser visto, narrativo, provisório. Arquitectura: espaço para ser habitado, funcional, durável. Ambas partilham a capacidade de evocar atmosferas através de luz, textura, escala e sequência espacial.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">11</span><div>
+    <p class="q-question">Caracterize a representação na cultura africana em contraste com modelos ocidentais dominantes.</p>
+    <p class="q-answer">A representação nas culturas africanas tradicionais: (1) não é prioritariamente visual/gráfica — passa pela palavra, gesto, corpo, ritual; (2) oralidade: o saber construtivo transmite-se por tradição oral, não por desenhos; (3) holística: não separa o funcional do espiritual; (4) colectiva: conhecimento distribuído na comunidade, não centralizado num autor; (5) processual: o edifício define-se durante a construção. O modelo ocidental dominante privilegia a representação gráfica, o autor individual e a pré-definição total.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">12</span><div>
+    <p class="q-question">Explique a relevância da tradição oral e gestual como formas de representação.</p>
+    <p class="q-answer">Oral: instruções verbais, histórias, provérbios que codificam técnicas construtivas e significados simbólicos — transmissão directa de mestre a aprendiz. Gestual: demonstração prática, gestos que indicam proporções, ângulos, distâncias — o corpo como instrumento de medida. Estas formas são mais flexíveis e adaptativas que o desenho: permitem ajustes em tempo real, incorporam conhecimento tácito e mantêm a relação directa entre quem concebe e quem constrói.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">13</span><div>
+    <p class="q-question">Analise o valor conceptual dos símbolos adinkra.</p>
+    <p class="q-answer">Adinkra é um sistema de símbolos visuais dos povos Akan (Gana) que codificam conceitos, provérbios e valores em formas gráficas simples. Valor para a arquitectura: (1) Síntese visual — um adinkra como Sankofa condensa uma ideia filosófica numa forma; (2) Linguagem partilhada — código visual colectivo compreendido pela comunidade; (3) Ornamento com significado — diferente do ornamento decorativo ocidental, os adinkra são significantes. Desafiam a dicotomia modernista entre ornamento e função.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">14</span><div>
+    <p class="q-question">Discuta o que a arquitectura contemporânea pode aprender com a arquitectura vernacular moçambicana.</p>
+    <p class="q-answer">A arquitectura vernacular moçambicana (palhotas, casas de macuti, esteios de madeira) ensina: (1) Clima como programa — soluções passivas de ventilação e gestão térmica milenares; (2) Matéria local como inteligência — o uso de terra, colmo, madeira é conhecimento profundo, não pobreza; (3) Flexibilidade e adaptação — a casa ajusta-se ao terreno e às necessidades; (4) Espaço como relação social — organizado pelas relações humanas, não por uma grelha abstracta; (5) Beleza como subproduto — a estética emerge do uso correcto dos materiais.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">15</span><div>
+    <p class="q-question">Identifique os principais marcos históricos da representação arquitectónica desde a Mesopotâmia até ao BIM.</p>
+    <p class="q-answer">Mesopotâmia (c. 1500 a.C.): primeiras plantas gravadas em pedra/argila. Egipto: representação por síntese informativa. Roma (séc. I a.C.): Vitrúvio sistematiza escalas e proporções. Renascença (séc. XV): Brunelleschi inventa a perspectiva linear; Alberti cria a tríade planta+corte+alçado. Séc. XVIII (1795): Monge — Geometria Descritiva. Séc. XIX: normalização e desenho técnico industrial. Séc. XX (Modernismo): o desenho como argumento. Séc. XXI: BIM — modelo paramétrico integrado com dados, simulação e gestão do ciclo de vida.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">16</span><div>
+    <p class="q-question">Explique a contribuição da Renascença para a sistematização da representação espacial.</p>
+    <p class="q-answer">A Renascença (séc. XV–XVI) criou: (1) Perspectiva linear (Brunelleschi, c. 1413) — sistema geométrico-matemático que simula a visão humana; (2) Alberti — formalizou matematicamente a perspectiva e codificou o desenho arquitectónico como disciplina intelectual; (3) Separação concepção-execução — o desenho passa a modelo preditivo; o arquitecto torna-se intelectual que projeta antes de construir; (4) Tríade canónica — planta + corte + alçado como linguagem universal. A representação passou de simbólica (medieval) para óptico-geométrica (moderna).</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">17</span><div>
+    <p class="q-question">Defina o papel de Rafael, Palladio ou Alberti na consolidação da linguagem arquitectónica.</p>
+    <p class="q-answer">Alberti (1404–1472): primeiro teórico a separar concepção de execução; De Re Aedificatoria (1452) sistematiza tipologias, proporções, desenho técnico — estabelece a arquitectura como disciplina intelectual. Rafael (1483–1520): sistematizou o desenho em planta, corte e alçado como linguagem complementar. Palladio (1508–1580): I Quattro Libri dell'Architettura (1570) difunde a linguagem clássica com clareza didáctica — um modelo que influenciou a arquitectura ocidental durante 400 anos. Os três consolidaram o sistema gráfico codificado como linguagem universal do arquitecto.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">18</span><div>
+    <p class="q-question">Explique a importância da geometria descritiva de Monge.</p>
+    <p class="q-answer">Gaspard Monge (Géométrie Descriptive, 1795) inventou o método de representar objectos tridimensionais através de projecções ortogonais em planos perpendiculares. Importância: (1) Rigor científico — representação com bases matemáticas exactas; (2) Reversibilidade — qualquer ponto em duas vistas permite reconstruir a sua posição no espaço; (3) Revolução industrial — permitiu fabricar peças complexas a partir de desenhos; (4) Base do BIM — a lógica de Monge (modelo 3D do qual se extraem vistas 2D) é conceptualmente a mesma do BIM contemporâneo.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">19</span><div>
+    <p class="q-question">Distinga croquis, desenho técnico e desenho de apresentação.</p>
+    <p class="q-answer">Croquis: primeiro pensamento, exploração — rápido, pessoal, imediato. Traço incerto que revela o que ainda não está decidido. Auto-comunicação. Desenho técnico: planta, corte, alçado rigorosos — exacto, normalizado, escala definida, cotas, simbologia convencional. Linguagem universal. Para construtores, engenheiros, fiscalização. Desenho de apresentação: comunicação do projecto a terceiros — curado, atmosférico, selectivo. Combina rigor com expressão. Para clientes, público, concursos. O croquis pergunta "o que pode ser?", o técnico afirma "como se faz", o de apresentação convence "porque vale a pena".</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">20</span><div>
+    <p class="q-question">Analise a afirmação: "representar é projectar".</p>
+    <p class="q-answer">A afirmação inverte a relação comum — em arquitectura, representar É projectar. O croquis não documenta uma ideia pré-existente — gera-a através do traço. A planta não é o registo do edifício — é o instrumento que permite descobrir relações espaciais. O modelo digital é um laboratório onde o projecto é testado. A representação é performática: faz acontecer o que mostra. Como escreveu Alberto Pérez-Gómez, a arquitectura não é uma ideia que depois se desenha — é um pensamento que só se completa no acto de desenhar.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">21</span><div>
+    <p class="q-question">Explique o valor da planta, do corte e do alçado na comunicação arquitectónica.</p>
+    <p class="q-answer">Planta: vista superior com corte horizontal (habitualmente a 1,50m do piso). Mostra organização espacial, circulações, dimensões horizontais — é o mapa do edifício. Corte: vista lateral com corte vertical. Mostra alturas, pé-direito, relação entre pisos, estrutura vertical — revela o que a planta esconde. Alçado: vista frontal do exterior. Mostra a imagem pública, composição de fachada, materiais. Cada vista revela o que as outras ocultam. Juntas permitem uma compreensão completa — código partilhado entre arquitecto, engenheiro, construtor e fiscalização.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">22</span><div>
+    <p class="q-question">Justifique por que o desenho técnico pode ser entendido como documento técnico e jurídico.</p>
+    <p class="q-answer">Documento técnico: contém todas as informações necessárias para construir (cotas, materiais, especificações, pormenores construtivos). Documento jurídico: faz parte do contrato de empreitada — o construtor obriga-se a executar o que está desenhado; qualquer alteração é uma alteração contratual; em caso de litígio, o desenho é a prova do que foi acordado. Por isso deve ser rigoroso, inequívoco, datado, numerado e assinado. Um erro de cota no desenho pode ter consequências legais e financeiras.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">23</span><div>
+    <p class="q-question">Analise a importância da maquete física no processo de concepção.</p>
+    <p class="q-answer">A maquete física é insubstituível porque oferece: (1) Relação corpórea — pode ser tocada, rodada, vista de todos os ângulos; (2) Luz real — sombras e reflexos físicos que nenhum render simula com a mesma verdade; (3) Escala real da mão — permite perceber como o espaço será habitado; (4) Exploração táctil — materiais, texturas, peso; (5) Erro produtivo — a maquete "erra" de forma diferente do digital, revelando descobertas que o modelo paramétrico não sugere. Alvar Aalto usava croquis para a ideia, maquete para testar luz e espaço, desenho técnico para construir.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">24</span><div>
+    <p class="q-question">Explique em que sentido o BIM pode ser entendido como imagem activa.</p>
+    <p class="q-answer">O BIM é uma imagem activa porque não é apenas uma representação visual — é uma base de dados paramétrica onde cada elemento contém informação: geometria, material, custo, U-value, fornecedor. Quando altera uma janela, o BIM actualiza automaticamente cortes, alçados e mapas de quantidades. Serve para análise solar, térmica, estrutural, acústica. O mesmo modelo serve para construir (4D: tempo), orçamentar (5D: custo) e gerir manutenção (6D: operação). Diferente do desenho que apenas mostra, o BIM calcula, relaciona e antecipa — é uma imagem que pensa.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">25</span><div>
+    <p class="q-question">Discuta a função da memória descritiva como instrumento de representação.</p>
+    <p class="q-answer">A memória descritiva é o texto que acompanha o projecto com funções específicas: (1) Explicar a intenção — o desenho mostra o quê; a memória explica o porquê; (2) Narrar o processo — descreve o percurso desde o programa até à solução; (3) Justificar opções — orçamento, condicionantes legais, materiais; (4) Registar o pensamento — referências teóricas, influências, partido arquitectónico; (5) Comunicar com não-técnicos — o cliente pode não ler plantas, mas lê texto. Uma boa memória descritiva não descreve o que já se vê no desenho — acrescenta camadas de sentido que o desenho sozinho não comunica.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">26</span><div>
+    <p class="q-question">Analise o papel da colagem e da fotomontagem na comunicação com públicos não técnicos.</p>
+    <p class="q-answer">Colagem: combina fragmentos de imagens reais (pessoas, árvores, texturas) com o desenho do projecto — cria atmosferas, sugere como o espaço será vivido. Fotomontagem: insere o projecto numa fotografia real do local — mostra relação com o contexto, escala urbana, impacto visual. Vantagens: comunicam emoção, escala humana, ambiente — o cliente não precisa de saber ler plantas para perceber "como vai ser viver aqui". Desvantagens: podem ser enganosas se distorcerem a realidade — esconder o contexto real ou distorcer proporções é eticamente problemático.</p>
+  </div></div>
 </div>
 
-<div class="section-block" id="sec-b">
-  <div class="section-header"><span class="sec-letter">B</span><span class="sec-name">Kant, Hegel e juízo estético</span></div>
-  <div class="q-card hidden" data-q="11"><span class="q-num">11</span><div><p class="q-question">Explique o conceito kantiano de juízo de gosto.</p><p class="q-answer">Refere-se a um juízo que determina a beleza ou agradabilidade de um objeto sem se fixar em conceitos ou propriedades objetivas, mas sim num sentimento subjetivo de prazer ou desprazer. O objeto é considerado belo sem ter em conta a sua utilidade ou valor moral.</p></div></div>
-  <div class="q-card hidden" data-q="12"><span class="q-num">12</span><div><p class="q-question">O que significa dizer que o juízo de gosto é universal sem conceito?</p><p class="q-answer">Significa que, embora o juízo de gosto não se baseie em conceitos ou regras definidas, ele reivindica uma validade universal. Quando alguém faz um juízo de gosto, espera que outros possam concordar.</p></div></div>
-  <div class="q-card hidden" data-q="13"><span class="q-num">13</span><div><p class="q-question">Explique a noção kantiana de prazer desinteressado.</p><p class="q-answer">É o prazer que sentimos diante do belo sem querer possuir, usar ou tirar proveito do objeto. Trata-se de uma apreciação pura, livre de interesse prático, moral ou material.</p></div></div>
-  <div class="q-card hidden" data-q="14"><span class="q-num">14</span><div><p class="q-question">Distinga, segundo Kant, beleza livre e beleza aderente, aplicando a distinção à arquitetura.</p><p class="q-answer">Na arquitetura, a beleza livre pode ser encontrada em elementos decorativos que encantam simplesmente pela sua forma e proporção. A beleza aderente é aquela em que o atrativo está ligado ao modo como o design serve a função ou expressa o seu propósito.</p></div></div>
-  <div class="q-card hidden" data-q="15"><span class="q-num">15</span><div><p class="q-question">Como pode ser aplicado o pensamento de Kant à avaliação estética de um edifício?</p><p class="q-answer">Pode ser aplicado avaliando o efeito estético produzido pelo edifício, e não apenas a sua utilidade. Devem ser consideradas a forma, a harmonia, o prazer desinteressado e, ao mesmo tempo, o facto de que a arquitetura pode possuir uma beleza aderente, ligada à função.</p></div></div>
-  <div class="q-card" data-q="16"><span class="q-num">16</span><div><p class="q-question">Explique a afirmação de <mark>Hegel</mark> segundo a qual a arte é a manifestação sensível da ideia.</p><p class="q-answer">A arte é o lugar onde a ideia pode ser contemplada. É através da arte que o ser humano ganha perceção de si mesmo e transforma algo exterior ou alheio ao espírito em algo próprio.</p></div></div>
-  <div class="q-card" data-q="17"><span class="q-num">17</span><div><p class="q-question">Para <mark>Hegel</mark>, por que razão a beleza artística é superior à beleza natural?</p><p class="q-answer">Porque a obra artística nasce do espírito humano, expressa uma ideia e possui intenção. A natureza pode ser bela, mas não possui a mesma intenção estética consciente que existe na criação artística.</p></div></div>
+
+<!-- ═══════════════════════════════════════════ CAP II ═══ -->
+<div class="chapter" id="cap-ii">
+  <div class="chapter-header">
+    <span class="ch-num">II</span>
+    <span class="ch-name">Imagem<br>Q27 – Q35</span>
+  </div>
+
+  <div class="q-card"><span class="q-num">27</span><div>
+    <p class="q-question">Explique por que a imagem arquitectónica não é neutra.</p>
+    <p class="q-answer">Toda a imagem arquitectónica é uma construção interpretativa, não um registo objectivo. Enquadramento: o que inclui e exclui do campo visual. Ponto de vista: olhar de baixo monumentaliza; ao nível do olho humaniza; de cima analisa. Luz: a hora do dia e a cor da luz alteram radicalmente a leitura. Pós-produção: saturação, contraste, remoção de elementos indesejados. A imagem arquitectónica é sempre um argumento visual — defende uma versão idealizada do projecto. O arquitecto competente sabe que constrói uma narrativa, não regista um facto.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">28</span><div>
+    <p class="q-question">Identifique os principais elementos narrativos do render arquitectónico.</p>
+    <p class="q-answer">O render conta uma história através de: (1) Enquadramento e ponto de vista — define a relação com o edifício (poder, intimidade, omnipotência); (2) Luz e atmosfera — cria o ambiente emocional; (3) Figura humana — escala e narrativa; (4) Contexto — vegetação, outros edifícios, mobiliário urbano; (5) Materialidade — texturas, reflexos, transparências; (6) Cor e temperatura — paleta cromática define o tom emocional (azuis frios = serenidade; laranjas quentes = acolhimento). Cada elemento é uma escolha narrativa — nenhum é neutro. O render não mostra como o edifício "será"; mostra como o arquitecto quer que o vejam.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">29</span><div>
+    <p class="q-question">Explique como enquadramento, luz e textura influenciam a leitura de um projecto.</p>
+    <p class="q-answer">Enquadramento: plano aberto mostra integração urbana; plano fechado foca um detalhe construtivo; contrapicado monumentaliza; ao nível do olho humaniza. Luz: difusa revela texturas sem sombras duras; rasante dramatiza superfícies; nocturna transforma o edifício em objecto luminoso autónomo. Textura: rugosa (betão, tijolo) sugere peso e honestidade material; lisa (vidro, metal polido) sugere leveza e tecnologia. Enquadramento fechado + luz rasante + betão rugoso = leitura brutalista; enquadramento aberto + luz difusa + vidro = leitura tecnológica. Os três funcionam em conjunto.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">30</span><div>
+    <p class="q-question">Analise a função da figura humana na construção da escala e da narrativa visual.</p>
+    <p class="q-answer">A figura humana tem duas funções. Escala: o corpo é a unidade de medida universal — uma figura ao pé de um edifício permite perceber imediatamente as dimensões; sem figura, o edifício pode parecer de qualquer tamanho. Narrativa: a figura não está ali por acaso — o que faz, como se veste, onde está posicionada conta uma história. Sentada a ler = espaço contemplativo; a caminhar = circulação; sozinha num espaço grande = solidão ou vazio; figuras diversas = inclusão (ou diversidade decorativa). Uma figura mal posicionada ou com escala incorrecta destrói a credibilidade do render.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">31</span><div>
+    <p class="q-question">Distinga diagrama descritivo de diagrama operativo.</p>
+    <p class="q-answer">Diagrama descritivo: explica o que existe ou se propõe — mostra relações, hierarquias, fluxos, mas não prescreve soluções. Responde a "como é". Exemplo: diagrama solar que mostra a incidência do sol no terreno. Diagrama operativo: gera o projecto — não descreve, prescreve. Transforma análise em síntese. Responde a "como fazer". Exemplo: diagrama de relações programáticas que define a organização do edifício. Na prática, um bom diagrama começa descritivo (análise) e torna-se operativo (síntese) — a fronteira é fluida.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">32</span><div>
+    <p class="q-question">Explique a função da infografia e dos mapas na defesa de uma ideia de projecto.</p>
+    <p class="q-answer">Infografias e mapas são instrumentos de argumentação visual. Infografia: combina dados quantitativos com representação gráfica (ícones, gráficos) — torna complexo compreensível. Exemplo: consumo energético comparado de diferentes soluções de fachada. Mapas: não são apenas localização geográfica — são instrumentos de leitura crítica do território. Um mapa de cheias, uso do solo ou densidades justifica decisões com base em evidência espacial. Ambos servem para fundamentar o projecto com dados objectivos — uma boa infografia convence mais que uma página de texto, desde que os dados sejam honestos.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">33</span><div>
+    <p class="q-question">Discuta a afirmação de Mario Biselli sobre representação gráfica e concursos.</p>
+    <p class="q-answer">Mario Biselli critica a sobrevalorização da representação gráfica nos concursos: a qualidade do render tornou-se mais importante que a qualidade da ideia. Os júris são seduzidos por imagens impressionantes, e projectos com boas ideias mas representação modesta são preteridos. Questões: (1) O concurso premia a melhor arquitectura ou a melhor imagem? (2) Escritórios com orçamento para renders fotorrealistas têm vantagem sobre escritórios pequenos. (3) A "indústria do render" cria imagens estandardizadas — o que se perde quando a imagem é feita por terceiros? Um concurso saudável equilibra qualidade da representação com solidez conceptual.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">34</span><div>
+    <p class="q-question">Defina o conceito de archiporn e os seus riscos éticos.</p>
+    <p class="q-answer">Archiporn designa imagens hiper-realistas de arquitectura que seduzem visualmente mas distorcem a verdade do projecto — renders "demasiado perfeitos" com céu irrealista, luz perfeita, sem imperfeições. Riscos éticos: (1) Expectativas irreais — o cliente compra uma imagem que o edifício real nunca alcançará; (2) Substituição do pensamento crítico — o tempo no render podia resolver problemas reais; (3) Homogeneização estética — todo o archiporn se parece (mesmos ângulos, mesmas luzes); (4) Desonestidade profissional — apresentar como verdade o que não será. A linha entre "comunicar uma intenção" (legítimo) e "criar uma ficção enganosa" (archiporn) é o que a ética da imagem procura definir.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">35</span><div>
+    <p class="q-question">Analise os desafios da ética da imagem no contexto moçambicano.</p>
+    <p class="q-answer">No contexto moçambicano a ética da imagem coloca desafios específicos: (1) Desfasamento promessa-realidade — renders de contextos europeus (vidro, ar condicionado) para edifícios onde esses materiais são inadequados; (2) Representação vs. identidade — renders que "embranquecem" o contexto, apagando a identidade moçambicana; (3) Sustentabilidade ilusória — imagens de edifícios "verdes" sem infraestrutura real; (4) Participação comunitária — a imagem é frequentemente imposta de cima para baixo, sem participação das comunidades. A ética da imagem exige representar com honestidade o que é possível construir, manter e habitar no contexto real.</p>
+  </div></div>
 </div>
 
-<div class="section-block" id="sec-c">
-  <div class="section-header"><span class="sec-letter">C</span><span class="sec-name">Estética e arquitetura</span></div>
-  <div class="q-card" data-q="18"><span class="q-num">18</span><div><p class="q-question">Explique as três formas históricas de arte em <mark>Hegel</mark>: simbólica, clássica e romântica.</p><p class="q-answer">Forma simbólica: excessiva, quando o conteúdo é maior que a forma. Forma clássica: equilíbrio entre forma e conteúdo; a forma representa a expressão adequada do espírito. Forma romântica: desloca-se para o interior, a subjetividade e o espiritual, revelando a inadequação da matéria para expressar o espírito infinito.</p></div></div>
-  <div class="q-card" data-q="19"><span class="q-num">19</span><div><p class="q-question">Qual é o lugar da arquitetura no sistema estético de <mark>Hegel</mark>?</p><p class="q-answer">A arquitetura é considerada a primeira arte, pois organiza a matéria e cria espaços adequados para a manifestação do espírito humano, trabalhando com a exterioridade e a materialidade.</p></div></div>
-  <div class="q-card" data-q="20"><span class="q-num">20</span><div><p class="q-question">Compare a conceção de beleza de Kant e <mark>Hegel</mark>.</p><p class="q-answer">Kant enfatiza a experiência estética como subjetiva e desinteressada, na qual o belo é percebido sem a intervenção de conceitos ou interesses. <mark>Hegel</mark> propõe uma filosofia da arte que considera a relação entre reflexão intelectual, contexto histórico, experiência artística e busca do conhecimento do espírito.</p></div></div>
-  <div class="q-card hidden" data-q="21"><span class="q-num">21</span><div><p class="q-question">Explique a diferença entre estética arquitetónica e teoria arquitetónica.</p><p class="q-answer">A teoria arquitetónica fornece métodos para alcançar fins conhecidos. A estética arquitetónica procura compreender o valor universal e abstrato presente na apreciação da arquitetura.</p></div></div>
-  <div class="q-card hidden" data-q="22"><span class="q-num">22</span><div><p class="q-question">Segundo Roger Scruton, por que razão a arquitetura não pode ser entendida apenas como técnica?</p><p class="q-answer">Porque a arquitetura possui uma dimensão que transcende o puro construir. Ela envolve reflexão sobre a experiência da beleza e sobre a necessidade humana de uma relação emocional com o espaço.</p></div></div>
-  <div class="q-card hidden" data-q="23"><span class="q-num">23</span><div><p class="q-question">Explique a ideia de que arquitetura é uma arte pública e uma responsabilidade cívica.</p><p class="q-answer">A arquitetura molda espaços, ambientes e comunidades, impactando o quotidiano e o bem-estar das pessoas. Por isso, contribui para a identidade cultural e assume uma responsabilidade cívica.</p></div></div>
-  <div class="q-card hidden" data-q="24"><span class="q-num">24</span><div><p class="q-question">Por que razão a beleza arquitetónica não pode ser reduzida à eficiência funcional?</p><p class="q-answer">A beleza arquitetónica reside na capacidade de um edifício despertar emoção através da contemplação, algo que a eficiência funcional, por si só, não consegue suscitar de forma plena.</p></div></div>
-  <div class="q-card hidden" data-q="25"><span class="q-num">25</span><div><p class="q-question">Explique a diferença entre construir corretamente e construir com valor estético.</p><p class="q-answer">Construir corretamente significa conhecer os métodos para alcançar fins conhecidos, como funcionalidade, estabilidade e utilidade. Construir com valor estético procura também o porquê da apreciação, conferindo ao edifício identidade e capacidade de despertar emoções.</p></div></div>
-  <div class="q-card hidden" data-q="26"><span class="q-num">26</span><div><p class="q-question">Analise a relação entre forma, função e significado na arquitetura.</p><p class="q-answer">A forma organiza o espaço; a função responde às necessidades de uso; e o significado expressa valores culturais, simbólicos e sociais.</p></div></div>
-  <div class="q-card hidden" data-q="27"><span class="q-num">27</span><div><p class="q-question">Em que sentido a teoria arquitetónica fornece regras práticas enquanto a estética interroga o valor da experiência?</p><p class="q-answer">A teoria pergunta como projetar; a estética pergunta por que esse projeto emociona, comunica, representa e adquire significado.</p></div></div>
-  <div class="q-card hidden" data-q="28"><span class="q-num">28</span><div><p class="q-question">Por que razão a estética exige argumentação racional?</p><p class="q-answer">Porque a análise estética deve basear-se em critérios como proporção, coerência e contexto. Isso evita reduzir o debate crítico à simples afirmação "gosto" ou "não gosto", distinguindo o juízo de gosto da mera preferência pessoal.</p></div></div>
-  <div class="q-card hidden" data-q="29"><span class="q-num">29</span><div><p class="q-question">Como a proporção, a escala e a materialidade criam experiência estética na arquitetura?</p><p class="q-answer">A proporção cria ordem; a escala define a relação com o corpo humano; a materialidade produz textura, peso, temperatura e atmosfera. Juntas, essas dimensões criam experiência estética.</p></div></div>
-  <div class="q-card hidden" data-q="30"><span class="q-num">30</span><div><p class="q-question">Explique a importância da perceção corporal na experiência arquitetónica.</p><p class="q-answer">Habitamos a arquitetura com o corpo. Os nossos sentidos moldam a interação com o espaço e produzem respostas emocionais aos ambientes.</p></div></div>
+
+<!-- ═══════════════════════════════════════════ CAP III ═══ -->
+<div class="chapter" id="cap-iii">
+  <div class="chapter-header">
+    <span class="ch-num">III</span>
+    <span class="ch-name">Comunicação<br>Q36 – Q50</span>
+  </div>
+
+  <div class="q-card"><span class="q-num">36</span><div>
+    <p class="q-question">Explique o processo de comunicação: emissor, mensagem, canal, receptor e feedback.</p>
+    <p class="q-answer">Emissor: o arquitecto que codifica e inicia a mensagem. Mensagem: forma, materiais, proporções, organização espacial, intenção. Canal: desenho, maquete, edifício, apresentação, texto. Receptor: cliente, utilizador, comunidade, crítico. Feedback: reacção do utilizador, crítica, aprovação, adaptação. Importante: o receptor nunca interpreta exactamente o que o emissor quis dizer — cada leitor traz o seu contexto cultural, experiência e expectativas. A comunicação arquitectónica é sempre imperfeita, e é essa imperfeição que a torna rica. O canal mais potente é o próprio edifício construído — o espaço comunica directa e silenciosamente com quem o habita.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">37</span><div>
+    <p class="q-question">Distinga comunicação verbal, não-verbal e espacial no contexto da arquitectura.</p>
+    <p class="q-answer">Verbal: palavras — orais (apresentações, debates) ou escritas (memória descritiva, relatórios). Transmite intenções e argumentos racionais. Não-verbal: gestos, postura, expressão facial do arquitecto durante a apresentação; mas também a linguagem corporal de quem usa o edifício; inclui a "comunicação silenciosa" do desenho — uma linha pode ser mais expressiva que mil palavras. Espacial: o edifício como mensagem silenciosa — forma, escala, materiais, luz, percursos comunicam directamente com o corpo de quem habita, sem palavras. Um corredor estreito e escuro comunica "passagem rápida"; um átrio amplo e iluminado comunica "permanência". As três formas coexistem.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">38</span><div>
+    <p class="q-question">Explique o conceito de comunicação poliédrica e a sua utilidade profissional.</p>
+    <p class="q-answer">Comunicação poliédrica significa que o arquitecto comunica de forma diferente consoante o interlocutor — como um poliedro que mostra faces diferentes a ângulos diferentes. Cliente: imagens evocativas, renders, storytelling — o cliente quer sentir o projecto. Engenheiros/construtores: desenho técnico rigoroso, especificações — querem saber exactamente o que fazer. Comunidade: linguagem simples, participação, imagens acessíveis. Júri: ideia forte, clareza, narrativa em poucos segundos. Órgãos públicos: documentos legais, comprovações normativas. O arquitecto que comunica com o cliente como comunica com o engenheiro falha profissionalmente.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">39</span><div>
+    <p class="q-question">Analise o conceito de imagem activa segundo Ammon e Capdevila-Werning.</p>
+    <p class="q-answer">Segundo Ammon e Capdevila-Werning, a imagem activa é uma representação que não se limita a mostrar — age sobre o projecto e sobre quem a vê. Age sobre o projecto: um modelo BIM quando se altera um parâmetro, toda a representação se actualiza; o desenho paramétrico gera novas configurações a partir de regras. Age sobre o espectador: não informa apenas — convence, seduz, emociona; guia a interpretação. Age como instrumento de pensamento: a imagem não é o resultado do pensamento — é o próprio pensamento a acontecer visualmente. Opõe-se à "imagem passiva" que apenas documenta. A imagem activa é performática.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">40</span><div>
+    <p class="q-question">Explique como a arquitectura funciona como linguagem.</p>
+    <p class="q-answer">A arquitectura funciona como linguagem porque comunica significados através de um sistema de signos. Sintaxe arquitectónica: as regras de combinação dos elementos formam uma "gramática espacial" — clássica, moderna ou vernacular. Semântica arquitectónica: os signos têm significado — uma coluna é poder, tradição, ordem; um telhado de palha é identidade, ecologia, memória. Pragmática arquitectónica: o significado depende do contexto — uma escada monumental num palácio diz uma coisa; a mesma escada numa casa popular diz outra. Diferente da linguagem verbal, a linguagem arquitectónica é ambígua e aberta a múltiplas leituras — e é essa ambiguidade que a torna rica.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">41</span><div>
+    <p class="q-question">Desenvolva a noção de semiótica arquitectónica com um exemplo.</p>
+    <p class="q-answer">A semiótica arquitectónica estuda como a arquitectura produz significados através de signos. Um signo tem três dimensões: significante (a forma física), significado (o conceito associado) e referente (o objecto real). Exemplo — a escadaria do Palácio da Bolsa no Porto: Significante: degraus de mármore, lanços simétricos, corrimão de madeira torneada, luz zenital. Denotação: escada que liga o piso térreo ao primeiro andar. Conotação: poder, riqueza, solenidade, distinção social — subir a escada não é apenas subir, é ascender simbolicamente. Como Umberto Eco mostrou, toda a arquitectura denota a sua função primária mas conota sempre significados culturais.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">42</span><div>
+    <p class="q-question">Explique como a arquitectura pode expressar identidade cultural.</p>
+    <p class="q-answer">A arquitectura expressa identidade cultural através de: (1) Referências históricas e tipológicas — reinterpretar formas vernaculares, tipologias tradicionais (pátio, varanda, palhota) com linguagem contemporânea; (2) Materiais locais — o betão importado não conta a mesma história que a terra do local; (3) Técnicas construtivas — resgatar técnicas tradicionais (taipa, adobe) é afirmar identidade; (4) Organização espacial — a forma como uma cultura organiza o espaço é profunda identidade cultural; (5) Ornamento e simbolismo — padrões, símbolos, cores que carregam significado cultural. Uma arquitectura que expressa identidade não imita o passado — reinterpreta-o criticamente.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">43</span><div>
+    <p class="q-question">Analise o impacto da organização espacial na experiência do utilizador.</p>
+    <p class="q-answer">A organização espacial afecta directamente como o utilizador percebe, se move e se sente. Percursos: corredor rectilíneo e estreito induz movimento rápido; percurso sinuoso e largo convida à exploração. Hierarquia espacial: transição público → semi-público → privado orienta o utilizador e define comportamentos. Proporções: pé-direito alto = solenidade; tecto baixo = intimidade. Luz ao longo de um percurso (de mais escuro para mais claro) guia o olhar e cria expectativa. Enquadramentos: uma janela que enquadra uma vista específica é uma decisão de projecto que molda a experiência. A experiência do utilizador não é um "extra" — é o que o projecto realmente produz.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">44</span><div>
+    <p class="q-question">Discuta a arquitectura como ferramenta de comunicação institucional.</p>
+    <p class="q-answer">A arquitectura comunica os valores e o poder das instituições. Estado/Governo: palácios, parlamentos — monumentalidade que comunica autoridade e permanência (escadarias largas, simetria axial). Igreja: catedrais góticas que apontam ao céu, mesquitas com pátio central — a forma comunica a relação com o divino. Empresas: sede da Apple (anel de vidro), Google (campus colorido) — o edifício é marketing, comunica inovação e cultura empresarial. Cultura/Educação: museus, bibliotecas — a arquitectura comunica o que a instituição valoriza. Uma instituição que se instala num edifício degradado comunica desinvestimento; uma que constrói um ícone comunica ambição.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">45</span><div>
+    <p class="q-question">Explique a função social da arquitectura com referência a inclusão e sustentabilidade.</p>
+    <p class="q-answer">Inclusão: acessibilidade (rampas, elevadores, sinalética tátil) não é concessão — é direito; espaços de encontro (praças, átrios, corredores generosos) criam ou inibem o encontro; segurança (espaços bem iluminados, visíveis); participação da comunidade no processo. Sustentabilidade ambiental: eficiência energética, materiais locais, gestão de água, conforto passivo — não é um estilo, é responsabilidade. Sustentabilidade económica: edifícios que se mantêm, adaptam e pagam ao longo da vida. Sustentabilidade social: edifícios que a comunidade mantém, usa e identifica-se — um edifício abandonado é insustentável por definição. A função social é criar lugares que dignificam as pessoas.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">46</span><div>
+    <p class="q-question">Identifique estratégias eficazes para a apresentação de projectos a diferentes públicos.</p>
+    <p class="q-answer">Cliente privado: renders, maquete, percursos virtuais, storytelling — vender a experiência, não o desenho. Cliente público/Estado: plantas oficiais, memória descritiva, estudos comparativos — demonstrar cumprimento normativo e durabilidade. Comunidade: linguagem simples, participação, maquetes físicas, assembleias. Júri de concurso: ideia forte, clareza, originalidade, diagramas conceptuais — ideia legível em poucos segundos. Engenheiros/construtores: desenho técnico, pormenores, BIM, especificações. Academia/crítica: argumento teórico, referências, posicionamento crítico. Regra de ouro: conhecer o público é o primeiro acto de comunicação.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">47</span><div>
+    <p class="q-question">Analise o papel das tecnologias digitais na comunicação arquitectónica contemporânea.</p>
+    <p class="q-answer">Oportunidades: Realidade virtual (VR) — o cliente percorre o edifício antes de existir; Realidade aumentada (AR) — sobrepor o projecto ao local real; Vídeo e animação — percursos animados, narrativas temporais; Plataformas online — Instagram como novo "caderno de obras"; BIM colaborativo — todas as disciplinas comunicam no mesmo modelo em tempo real. Riscos: excesso de tecnologia pode esconder falta de ideias; fosso digital (comunidades sem acesso ficam excluídas); dependência de software que apaga a "verdade do momento" do croquis. O equilíbrio está em usar a tecnologia para o que faz melhor (simulação, colaboração) sem perder o que o analógico faz melhor (pensamento aberto, relação corpórea).</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">48</span><div>
+    <p class="q-question">Discuta a relação entre marketing e arquitectura na prática profissional actual.</p>
+    <p class="q-answer">O marketing tornou-se indissociável da prática contemporânea. Manifestações: Instagram como portfólio (a imagem do edifício é o produto); arquitecto como marca (Zaha Hadid, Bjarke Ingels — o nome vende tanto como o projecto); concurso como palco de visibilidade; prémios e publicações como certificação de qualidade. Problemas: estilo sobre substância (o marketing premia o fotogénico, não o bom); homogeneização (edifícios que poderiam estar em qualquer cidade); desigualdade (pequenos escritórios competem em desvantagem). Uma relação saudável exige que a comunicação sirva o projecto, não o contrário. O melhor marketing é um edifício bem construído.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">49</span><div>
+    <p class="q-question">Explique de que forma a globalização transformou a comunicação arquitectónica.</p>
+    <p class="q-answer">Positivos: difusão rápida de ideias (um projecto em Tóquio é conhecido em Maputo no mesmo dia); referências cruzadas; padrões internacionais (BIM, normas). Negativos: homogeneização — o "estilo internacional" globaliza a imagem dos edifícios (aeroportos, hotéis, torres parecem-se em todo o lado); descontextualização (fachadas de vidro em climas tropicais); desigualdade de voz (a arquitectura "global" é dominada por escritórios do hemisfério norte, arquitectos do sul têm menos visibilidade); domínio do inglês na publicação e no discurso crítico. O desafio é ser global nos recursos e local na resposta — usar o que o mundo oferece sem perder o que o lugar exige.</p>
+  </div></div>
+
+  <div class="q-card"><span class="q-num">50</span><div>
+    <p class="q-question">Redija uma reflexão crítica sobre a relação entre representação, imagem e comunicação na formação e prática do arquitecto contemporâneo.</p>
+    <p class="q-answer">Representação, imagem e comunicação não são disciplinas separadas — são as três faces do mesmo acto projectual. Na formação: a separação pedagógica (primeiro representa-se, depois constrói imagens, depois comunica) é artificial — na prática, os três fundem-se. Um bom exercício de projecto é simultaneamente exercício de representação, de imagem e de comunicação. Na prática profissional: o arquitecto vive um paradoxo — nunca teve tantos meios para representar e comunicar, e nunca esteve tão ameaçado pela superficialidade da imagem. Síntese crítica: a representação não é o edifício (o mapa não é o território); a imagem não é neutra (toda a imagem é um argumento); a comunicação não é transparente (cada público interpreta à sua maneira). O desafio final é ético: representar, imaginar e comunicar para construir um mundo melhor — não apenas para vender um edifício.</p>
+  </div></div>
 </div>
 
-<div class="section-block hidden" id="sec-d">
-  <div class="section-header"><span class="sec-letter">D</span><span class="sec-name">Beleza, função, sustentabilidade e cultura</span></div>
-  <div class="q-card hidden" data-q="31"><span class="q-num">31</span><div><p class="q-question">Discuta a tensão entre função e beleza na arquitetura.</p><p class="q-answer">A arquitetura deve responder às necessidades práticas sem perder qualidade estética.</p></div></div>
-  <div class="q-card hidden" data-q="32"><span class="q-num">32</span><div><p class="q-question">Como o Edifício Seagram, de Mies van der Rohe, demonstra valor estético?</p><p class="q-answer">O Seagram Building mostra que um edifício funcional pode ter valor estético pela proporção, rigor estrutural, simplicidade, praça frontal, uso do vidro e bronze, e clareza formal. Porém, também pode ser criticado por representar uma arquitetura corporativa, universal e pouco adaptada a certos contextos.</p></div></div>
-  <div class="q-card hidden" data-q="33"><span class="q-num">33</span><div><p class="q-question">A função pode ser fonte de valor estético?</p><p class="q-answer">Sim. A função pode gerar valor estético quando produz ordem, clareza e harmonia.</p></div></div>
-  <div class="q-card hidden" data-q="34"><span class="q-num">34</span><div><p class="q-question">Discuta a tensão entre sustentabilidade e estética.</p><p class="q-answer">A sustentabilidade cria tensão com a estética quando é tratada apenas como obrigação técnica. Porém, pode transformar a linguagem do edifício através de sombras, vegetação, materiais locais, ventilação natural e relação com o clima. A sustentabilidade não precisa negar a beleza; pode tornar-se parte da sua expressão.</p></div></div>
-  <div class="q-card hidden" data-q="35"><span class="q-num">35</span><div><p class="q-question">A sustentabilidade pode constituir uma linguagem estética na arquitetura contemporânea?</p><p class="q-answer">Sim. Elementos como brises, fachadas ventiladas, coberturas verdes, pátios, materiais naturais e sistemas passivos podem definir a imagem do edifício. A resposta ambiental deixa de ser apenas técnica e passa a fazer parte da expressão arquitetónica.</p></div></div>
-  <div class="q-card hidden" data-q="36"><span class="q-num">36</span><div><p class="q-question">Explique como a California Academy of Sciences, de Renzo Piano, articula sustentabilidade e expressão arquitetónica.</p><p class="q-answer">O projeto transforma soluções ambientais em elementos formais: a cobertura verde, a ventilação natural, a iluminação natural e os painéis solares reduzem o impacto ambiental, enquanto a forma do edifício se integra à paisagem.</p></div></div>
-  <div class="q-card hidden" data-q="37"><span class="q-num">37</span><div><p class="q-question">Discuta a tensão entre universalidade estética e relativismo cultural.</p><p class="q-answer">A universalidade estética defende que existem princípios de beleza válidos para todos. O relativismo cultural afirma que a beleza depende dos valores e tradições de cada sociedade.</p></div></div>
-  <div class="q-card hidden" data-q="38"><span class="q-num">38</span><div><p class="q-question">Como a obra de Lina Bo Bardi demonstra a relação entre modernidade, cultura e contexto?</p><p class="q-answer">As suas obras usam princípios modernos adaptados à realidade brasileira, valorizando a cultura popular, a memória e os espaços de convivência.</p></div></div>
-  <div class="q-card hidden" data-q="39"><span class="q-num">39</span><div><p class="q-question">Como a obra de Tadao Ando permite discutir luz, silêncio, matéria e universalidade estética?</p><p class="q-answer">Tadao Ando utiliza luz natural, betão aparente e espaços minimalistas para criar ambientes contemplativos, marcados pela simplicidade formal e pela valorização do vazio.</p></div></div>
-  <div class="q-card hidden" data-q="40"><span class="q-num">40</span><div><p class="q-question">A beleza arquitetónica é universal ou culturalmente condicionada?</p><p class="q-answer">É parcialmente universal e parcialmente culturalmente condicionada. Certos aspetos como escala, luz, conforto e proporção podem ser partilhados; porém, cada cultura interpreta materiais, cores, símbolos, formas e espaços de maneira própria.</p></div></div>
-  <div class="q-card hidden" data-q="41"><span class="q-num">41</span><div><p class="q-question">Quais são as principais características da arquitetura contemporânea?</p><p class="q-answer">Sustentabilidade, minimalismo, tecnologia, elementos de alto padrão e desconstrutivismo.</p></div></div>
-  <div class="q-card hidden" data-q="42"><span class="q-num">42</span><div><p class="q-question">Explique por que razão a arquitetura contemporânea não produz um cânone estético único.</p><p class="q-answer">Porque a arquitetura contemporânea mistura estilos, culturas, tecnologias e discursos diferentes. Já não existe uma regra dominante como no classicismo ou no modernismo. A pluralidade, a globalização, a sustentabilidade e a tecnologia digital impedem a existência de um cânone estético único.</p></div></div>
-</div>
-
-<div class="section-block hidden" id="sec-e">
-  <div class="section-header"><span class="sec-letter">E</span><span class="sec-name">Arquitetura contemporânea, lugar e crise estética</span></div>
-  <div class="q-card hidden" data-q="43"><span class="q-num">43</span><div><p class="q-question">Explique a relação entre pluralidade, tecnologia e sustentabilidade na arquitetura contemporânea.</p><p class="q-answer">A pluralidade permite múltiplas linguagens; a tecnologia permite novas formas e sistemas construtivos; a sustentabilidade obriga a repensar materiais, energia, clima e impacto ambiental. A arquitetura contemporânea nasce da tensão entre esses três fatores.</p></div></div>
-  <div class="q-card hidden" data-q="44"><span class="q-num">44</span><div><p class="q-question">Qual é a influência do minimalismo na arquitetura contemporânea?</p><p class="q-answer">O minimalismo valoriza simplicidade, redução formal, clareza, silêncio visual, geometria, luz e materialidade. Influencia edifícios com poucos elementos, mas grande intensidade espacial.</p></div></div>
-  <div class="q-card hidden" data-q="45"><span class="q-num">45</span><div><p class="q-question">Qual é a influência do desconstrutivismo na arquitetura contemporânea?</p><p class="q-answer">O desconstrutivismo introduz fragmentação, distorção, instabilidade visual, formas quebradas e recusa da ordem clássica. Produz edifícios impactantes, associados a arquitetos como Daniel Libeskind ou Zaha Hadid.</p></div></div>
-  <div class="q-card hidden" data-q="46"><span class="q-num">46</span><div><p class="q-question">Como as novas tecnologias digitais transformaram a conceção arquitetónica?</p><p class="q-answer">As tecnologias digitais transformaram a conceção arquitetónica através do desenho paramétrico, modelação 3D, BIM, simulações ambientais, fabricação digital e formas complexas antes difíceis de construir.</p></div></div>
-  <div class="q-card hidden" data-q="47"><span class="q-num">47</span><div><p class="q-question">Qual é a importância da noção de lugar na arquitetura?</p><p class="q-answer">A noção de lugar impede que a arquitetura seja genérica. Obriga o projeto a considerar clima, cultura, memória, materiais, topografia, modos de vida e identidade urbana.</p></div></div>
-  <div class="q-card hidden" data-q="48"><span class="q-num">48</span><div><p class="q-question">Quais são os riscos de negligenciar a estética na arquitetura?</p><p class="q-answer">Quando a estética é ignorada, surgem espaços frios, agressivos, desumanos, desorientadores ou sem identidade. A cidade perde qualidade, memória, conforto, dignidade e capacidade de criar pertença.</p></div></div>
-  <div class="q-card hidden" data-q="49"><span class="q-num">49</span><div><p class="q-question">Analise Pruitt-Igoe como crise urbana, social e estética.</p><p class="q-answer">Pruitt-Igoe é exemplo de fracasso da arquitetura moderna quando a solução funcional e racional não responde à vida real dos habitantes. O problema não foi só formal; envolveu pobreza, gestão, insegurança, segregação e perda de qualidade urbana.</p></div></div>
-  <div class="q-card hidden" data-q="50"><span class="q-num">50</span><div><p class="q-question">Explique a afirmação: "Um edifício pode cumprir a função, respeitar o orçamento e ainda assim fracassar como arquitetura."</p><p class="q-answer">Um edifício pode ser funcional e tecnicamente correto, mas falhar se não criar conforto, beleza, dignidade, relação com o lugar e valor urbano. A arquitetura não é apenas construção; é também cultura, perceção, uso, memória e vida coletiva.</p></div></div>
-</div>
-
-<div class="empty-state" id="empty" style="display: none;">
+<div class="empty-state" id="empty">
   <p class="empty-big">0</p>
-  <p class="empty-msg">Sem resultados</p>
+  <p class="empty-msg">Sem resultados — tenta outra palavra</p>
 </div>
 
 </main>
 
 <footer>
-  <p class="foot">Estética — Q&amp;A &nbsp;·&nbsp; Secções A–E &nbsp;·&nbsp; 50 questões</p>
+  <p class="foot">RCI — Representação, Comunicação &amp; Imagem · FAPF Semestre II 2024 · 50 Questões · Capítulos I–III</p>
 </footer>
 
 <script>
@@ -182,25 +403,25 @@ const clr = document.getElementById('sClr');
 const ico = document.getElementById('sIco');
 const empty = document.getElementById('empty');
 const bar = document.getElementById('result-bar');
-const secs = document.querySelectorAll('.section-block');
+const chapters = document.querySelectorAll('.chapter');
 
 function norm(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
 
 function hl(text, q){
   if(!q) return text;
-  const ln=norm(text), n=norm(q);
-  let r='', i=0;
-  while(i<text.length){
-    const x=ln.indexOf(n,i);
-    if(x===-1){r+=text.slice(i);break;}
-    r+=text.slice(i,x)+'<mark>'+text.slice(x,x+n.length)+'</mark>';
-    i=x+n.length;
+  const ln = norm(text), n = norm(q);
+  let r = '', i = 0;
+  while(i < text.length){
+    const x = ln.indexOf(n, i);
+    if(x === -1){ r += text.slice(i); break; }
+    r += text.slice(i, x) + '<mark>' + text.slice(x, x + n.length) + '</mark>';
+    i = x + n.length;
   }
   return r;
 }
 
-// Cache original text BEFORE any innerHTML mutation
-const cards = Array.from(document.querySelectorAll('.q-card')).map(c=>({
+// Cache originals before any innerHTML mutation
+const cards = Array.from(document.querySelectorAll('.q-card')).map(c => ({
   el: c,
   qEl: c.querySelector('.q-question'),
   aEl: c.querySelector('.q-answer'),
@@ -209,31 +430,29 @@ const cards = Array.from(document.querySelectorAll('.q-card')).map(c=>({
 }));
 
 function search(){
-  const raw=inp.value.trim(), q=norm(raw);
-  clr.style.display=raw?'block':'none';
-  ico.style.display=raw?'none':'block';
-  let total=0;
-  cards.forEach(({el,qEl,aEl,qt,at})=>{
-    const match=!q||norm(qt).includes(q)||norm(at).includes(q);
-    el.classList.toggle('hidden',!match);
-    qEl.innerHTML=match?hl(qt,raw):qt;
-    aEl.innerHTML=match?hl(at,raw):at;
+  const raw = inp.value.trim(), q = norm(raw);
+  clr.style.display = raw ? 'block' : 'none';
+  ico.style.display = raw ? 'none' : 'block';
+  let total = 0;
+  cards.forEach(({el, qEl, aEl, qt, at}) => {
+    const match = !q || norm(qt).includes(q) || norm(at).includes(q);
+    el.classList.toggle('hidden', !match);
+    qEl.innerHTML = match ? hl(qt, raw) : qt;
+    aEl.innerHTML = match ? hl(at, raw) : at;
     if(match) total++;
   });
-  secs.forEach(s=>{
-    const vis=s.querySelectorAll('.q-card:not(.hidden)').length;
-    s.classList.toggle('hidden',vis===0);
+  chapters.forEach(ch => {
+    const vis = ch.querySelectorAll('.q-card:not(.hidden)').length;
+    ch.classList.toggle('hidden', vis === 0);
   });
-  empty.style.display=total===0?'block':'none';
-  bar.textContent=q?(total+' resultado'+(total!==1?'s':'')):'';
+  empty.style.display = total === 0 ? 'block' : 'none';
+  bar.textContent = q ? (total + ' resultado' + (total !== 1 ? 's' : '')) : '';
 }
 
-// 'input' + 'search' covers all browsers incl. iOS Safari native clear button
 inp.addEventListener('input', search);
 inp.addEventListener('search', search);
-clr.addEventListener('click',()=>{ inp.value=''; search(); inp.focus(); });
-inp.addEventListener('keydown',e=>{ if(e.key==='Escape'){inp.value='';search();} });
+clr.addEventListener('click', () => { inp.value = ''; search(); inp.focus(); });
+inp.addEventListener('keydown', e => { if(e.key === 'Escape'){ inp.value = ''; search(); } });
 </script>
-
-
-</body></html>
+</body>
+</html>
